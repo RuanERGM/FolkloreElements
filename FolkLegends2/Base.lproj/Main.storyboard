@@ -13,11 +13,11 @@
         <!--Bestiary-->
         <scene sceneID="ndE-pX-z1w">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AIT-GQ-Zy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Bestiary" id="N8T-qt-k0l" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="VKp-cE-CT4"/>
                     <navigationItem key="navigationItem" id="FMV-JJ-zZK"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIT-GQ-Zy0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1515" y="716"/>
         </scene>
@@ -187,7 +187,7 @@
         <scene sceneID="8pI-IV-647">
             <objects>
                 <viewController id="EkD-iN-cjs" customClass="MapController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GUO-XM-PnN">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="GUO-XM-PnN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -198,7 +198,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mapa" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-e7-Qyz">
-                                <rect key="frame" x="4" y="203" width="410" height="349"/>
+                                <rect key="frame" x="4" y="203" width="371" height="349"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="371" id="Lme-j4-ffg"/>
                                     <constraint firstAttribute="height" constant="349" id="Y4x-M4-4pA"/>
@@ -292,6 +292,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nb1-XG-tXs">
                                 <rect key="frame" x="0.0" y="415.5" width="156" height="129"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-lQ-Dbm">
+                                <rect key="frame" x="293" y="744" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="9NY-MF-lbH" kind="presentation" id="Fwx-V9-f6x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lqc-Ec-dJt"/>
                         <constraints>
@@ -311,10 +320,17 @@
             </objects>
             <point key="canvasLocation" x="3869.5652173913045" y="-285.26785714285711"/>
         </scene>
+        <!--Game-->
+        <scene sceneID="YNe-to-4FT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Game" id="9NY-MF-lbH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kmh-a7-8tL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4585" y="-277"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="L9I-C4-qB9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NUa-Yw-UmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="ZnF-nG-U7f" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" selectedImage="Book" id="chK-xW-gLO">
                         <imageReference key="image" image="BookLine" symbolScale="small"/>
@@ -332,6 +348,7 @@
                         <segue destination="N8T-qt-k0l" kind="relationship" relationship="rootViewController" id="mw9-N6-sTD"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUa-Yw-UmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749" y="716"/>
         </scene>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BC266B52847993000B72FBA /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC266B42847993000B72FBA /* Game.storyboard */; };
+		8BC266B7284799B700B72FBA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266B6284799B700B72FBA /* GameViewController.swift */; };
+		8BC266B92847A58C00B72FBA /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266B82847A58C00B72FBA /* CardGame.swift */; };
+		8BC266BB2847B05D00B72FBA /* CardCellGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266BA2847B05D00B72FBA /* CardCellGame.swift */; };
 		9C919F7F2846BB5700E75495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919F7E2846BB5700E75495 /* AppDelegate.swift */; };
 		9C919F812846BB5700E75495 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919F802846BB5700E75495 /* SceneDelegate.swift */; };
 		9C919F832846BB5700E75495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919F822846BB5700E75495 /* ViewController.swift */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BC266B42847993000B72FBA /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
+		8BC266B6284799B700B72FBA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8BC266B82847A58C00B72FBA /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
+		8BC266BA2847B05D00B72FBA /* CardCellGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellGame.swift; sourceTree = "<group>"; };
 		9C919F7B2846BB5700E75495 /* FolkLegends2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolkLegends2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C919F7E2846BB5700E75495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C919F802846BB5700E75495 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +138,10 @@
 				9C919F892846BB5800E75495 /* LaunchScreen.storyboard */,
 				9C919F872846BB5800E75495 /* Assets.xcassets */,
 				9C919F8C2846BB5800E75495 /* Info.plist */,
+				8BC266B42847993000B72FBA /* Game.storyboard */,
+				8BC266B6284799B700B72FBA /* GameViewController.swift */,
+				8BC266B82847A58C00B72FBA /* CardGame.swift */,
+				8BC266BA2847B05D00B72FBA /* CardCellGame.swift */,
 			);
 			path = FolkLegends2;
 			sourceTree = "<group>";
@@ -258,6 +270,7 @@
 				9C919F8B2846BB5800E75495 /* LaunchScreen.storyboard in Resources */,
 				9C919FBF2846C02A00E75495 /* Bestiary.storyboard in Resources */,
 				9C919F882846BB5800E75495 /* Assets.xcassets in Resources */,
+				8BC266B52847993000B72FBA /* Game.storyboard in Resources */,
 				9C919F862846BB5700E75495 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,11 +301,14 @@
 				9C919F832846BB5700E75495 /* ViewController.swift in Sources */,
 				9C919FBD2846BF0100E75495 /* TableViewController.swift in Sources */,
 				9C919FB32846BD1800E75495 /* Card.swift in Sources */,
+				8BC266B92847A58C00B72FBA /* CardGame.swift in Sources */,
 				9C919FAF2846BCE300E75495 /* BestiaryViewController.swift in Sources */,
 				9C919FB12846BD0900E75495 /* DetailViewController.swift in Sources */,
 				9C919FBB2846BEDD00E75495 /* Description.swift in Sources */,
 				9C919F7F2846BB5700E75495 /* AppDelegate.swift in Sources */,
+				8BC266B7284799B700B72FBA /* GameViewController.swift in Sources */,
 				9C919F812846BB5700E75495 /* SceneDelegate.swift in Sources */,
+				8BC266BB2847B05D00B72FBA /* CardCellGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
