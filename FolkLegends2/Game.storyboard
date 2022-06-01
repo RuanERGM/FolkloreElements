@@ -107,7 +107,7 @@
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCellCpu" id="gB2-mC-0dK" customClass="CardCellGame" customModule="FolkLegends2" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCellPlayer" id="gB2-mC-0dK" customClass="CardCellGame" customModule="FolkLegends2" customModuleProvider="target">
                                         <rect key="frame" x="20" y="0.0" width="150" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UZ9-MY-zn9">
@@ -171,12 +171,11 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wa7-Vo-Vbn">
-                                <rect key="frame" x="226" y="368" width="150" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wa7-Vo-Vbn">
+                                <rect key="frame" x="206" y="368" width="150" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A02-WS-P3b">
-                                        <rect key="frame" x="8" y="171" width="12" height="21"/>
+                                        <rect key="frame" x="8" y="171" width="21" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -209,13 +208,16 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gkS-bp-b52"/>
+                                    <constraint firstAttribute="width" constant="150" id="nAR-5P-apI"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-na-irE">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-na-irE">
                                 <rect key="frame" x="48" y="368" width="150" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlP-te-8M7">
-                                        <rect key="frame" x="8" y="171" width="12" height="21"/>
+                                        <rect key="frame" x="8" y="171" width="19" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,6 +250,10 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Rdw-un-siF"/>
+                                    <constraint firstAttribute="width" constant="150" id="fLi-nD-zG0"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -255,18 +261,27 @@
                         <constraints>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6LL-Ql-TLV"/>
                             <constraint firstItem="gz8-O5-XLi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6gV-Cc-vLV"/>
+                            <constraint firstItem="7LV-na-irE" firstAttribute="top" secondItem="Pqa-VZ-Jyf" secondAttribute="bottom" constant="60" id="Ie8-Kw-1IN"/>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="OWu-3I-ejW"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gz8-O5-XLi" secondAttribute="bottom" constant="20" id="Zgc-jA-Jmu"/>
                             <constraint firstItem="gz8-O5-XLi" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ctK-kb-Wh6"/>
+                            <constraint firstItem="7LV-na-irE" firstAttribute="top" secondItem="Wa7-Vo-Vbn" secondAttribute="top" id="iPi-p4-pXM"/>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jj8-kn-K9q"/>
+                            <constraint firstItem="Wa7-Vo-Vbn" firstAttribute="leading" secondItem="7LV-na-irE" secondAttribute="trailing" constant="8" symbolic="YES" id="qA3-FJ-lgC"/>
+                            <constraint firstItem="7LV-na-irE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="zHi-GX-2xF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Game" id="imI-J3-5V4"/>
                     <connections>
-                        <outlet property="cardCpu" destination="7LV-na-irE" id="cH3-xT-u2H"/>
-                        <outlet property="cardPlayer" destination="Wa7-Vo-Vbn" id="Pe9-6V-Ct3"/>
+                        <outlet property="cardCpu" destination="7LV-na-irE" id="b2y-B4-sNP"/>
+                        <outlet property="cardPlayer" destination="Wa7-Vo-Vbn" id="bJZ-gr-j89"/>
                         <outlet property="deckCpu" destination="Pqa-VZ-Jyf" id="Bb3-RR-HBt"/>
                         <outlet property="deckPlayer" destination="gz8-O5-XLi" id="szQ-JM-ZSy"/>
+                        <outlet property="imagePlayer" destination="nHz-DF-9ST" id="1aH-Fy-Qc0"/>
+                        <outlet property="labelBottomDamage" destination="bEu-yd-661" id="AUE-hR-vX0"/>
+                        <outlet property="labelBottomLife" destination="A02-WS-P3b" id="mWc-9q-F1j"/>
+                        <outlet property="labelTopDamage" destination="T0D-SD-Ggh" id="am9-9Y-vAb"/>
+                        <outlet property="labelTopLife" destination="OQb-Ip-AQZ" id="dB6-rw-Lek"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
