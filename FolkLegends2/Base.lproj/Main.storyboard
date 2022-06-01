@@ -298,7 +298,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <segue destination="9NY-MF-lbH" kind="presentation" id="Fwx-V9-f6x"/>
+                                    <segue destination="9NY-MF-lbH" kind="presentation" modalPresentationStyle="fullScreen" id="Fwx-V9-f6x"/>
                                 </connections>
                             </button>
                         </subviews>
