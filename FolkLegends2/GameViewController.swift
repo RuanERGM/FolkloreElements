@@ -41,6 +41,9 @@ class GameViewController: UIViewController {
     var selectedCardPlayer: CardGame = CardGame()
     var selectedCardCpu: CardGame = CardGame()
     
+    var countCardsPlayer: Int = 0
+    var countCardsCpu: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,13 +59,21 @@ class GameViewController: UIViewController {
         cardCpu.isHidden = true
         labelTitlePlayer.isHidden = true
         labelTitleCpu.isHidden = true
+        
+        countCardsPlayer = cardsPlayer.count
+        countCardsCpu = cardsCpu.count
     }
     
 }
 
 extension GameViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cardsPlayer.count
+        
+        if collectionView == deckCpu {
+            return countCardsCpu
+        } else {
+            return countCardsPlayer
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -100,31 +111,49 @@ extension GameViewController: UICollectionViewDelegate {
           cardPlayer.isHidden = false
           labelTitlePlayer.isHidden = false
           
-          selectedCardCpu = cardsCpu[Int.random(in: 0...cardsPlayer.count - 1)]
+          let indexCpu = Int.random(in: 0...cardsCpu.count - 1)
           
-          labelTopDamageCpu.text = String(selectedCardCpu.damage)
-          labelBottomDamageCpu.text = String(selectedCardCpu.damage)
+          DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
           
-          labelTopLifeCpu.text = String(selectedCardCpu.life)
-          labelBottomLifeCpu.text = String(selectedCardCpu.life)
-          
-          imageCpu.image = UIImage(named: selectedCardCpu.getElement())
-          
-          DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-          
+              self.selectedCardCpu = self.cardsCpu[indexCpu]
+              
+              self.labelTopDamageCpu.text = String(self.selectedCardCpu.damage)
+              self.labelBottomDamageCpu.text = String(self.selectedCardCpu.damage)
+              
+              self.labelTopLifeCpu.text = String(self.selectedCardCpu.life)
+              self.labelBottomLifeCpu.text = String(self.selectedCardCpu.life)
+              
+              self.imageCpu.image = UIImage(named: self.selectedCardCpu.getElement())
+              
               self.labelTitleCpu.isHidden = false
               self.cardCpu.isHidden = false
-              self.deckPlayer.isUserInteractionEnabled = false
-              self.deckPlayer.isOpaque = false
               
               let lifeCpu = String(self.selectedCardPlayer.fight(enemy: self.selectedCardCpu))
-              self.labelTopLifeCpu.text = lifeCpu
-              self.labelBottomLifeCpu.text = lifeCpu
+              
+              DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                  
+                  self.labelTopLifeCpu.text = lifeCpu
+                  self.labelBottomLifeCpu.text = lifeCpu
+                  self.deckCpu.reloadData()
+                  
+                  DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                  
+                      if (Int(lifeCpu)! < 1) {
+                          self.cardsCpu.remove(at: indexCpu)
+                          self.countCardsCpu = self.cardsCpu.count
+                      }
+                      
+                      self.deckCpu.reloadData()
+                      
+                      self.cardCpu.isHidden = true
+                      self.labelTitleCpu.isHidden = true
+                      
+                      self.cardPlayer.isHidden = true
+                      self.labelTitlePlayer.isHidden = true
+                  }
+              }
           }
-          
-          deckCpu.reloadData()
       }
-      
   }
 }
 
