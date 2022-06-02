@@ -255,12 +255,6 @@
                                     <constraint firstAttribute="width" constant="150" id="fLi-nD-zG0"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Carta CPU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVE-F2-Xd7">
-                                <rect key="frame" x="83" y="339" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiE-e0-ZAH">
                                 <rect key="frame" x="235" y="338" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -273,10 +267,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nan-x2-sJY">
+                                <rect key="frame" x="20" y="613" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="nan-x2-sJY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3BU-aO-M8a"/>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6LL-Ql-TLV"/>
                             <constraint firstItem="tiE-e0-ZAH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="235" id="6aP-Ki-sa9"/>
                             <constraint firstItem="gz8-O5-XLi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6gV-Cc-vLV"/>
@@ -285,8 +286,8 @@
                             <constraint firstItem="tiE-e0-ZAH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="250" id="FJz-dZ-oae"/>
                             <constraint firstItem="tiE-e0-ZAH" firstAttribute="centerX" secondItem="Wa7-Vo-Vbn" secondAttribute="centerX" id="FXr-IJ-1a1"/>
                             <constraint firstItem="7LV-na-irE" firstAttribute="top" secondItem="Pqa-VZ-Jyf" secondAttribute="bottom" constant="60" id="Ie8-Kw-1IN"/>
-                            <constraint firstItem="NVE-F2-Xd7" firstAttribute="centerX" secondItem="7LV-na-irE" secondAttribute="centerX" id="NhZ-jG-Gjs"/>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="OWu-3I-ejW"/>
+                            <constraint firstItem="gz8-O5-XLi" firstAttribute="firstBaseline" secondItem="nan-x2-sJY" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="Usm-jP-kDT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gz8-O5-XLi" secondAttribute="bottom" constant="20" id="Zgc-jA-Jmu"/>
                             <constraint firstItem="gz8-O5-XLi" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ctK-kb-Wh6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tiE-e0-ZAH" secondAttribute="trailing" constant="86" id="h25-xX-yCH"/>
@@ -295,6 +296,7 @@
                             <constraint firstItem="dJ0-gU-twE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="83" id="mvd-E7-Pxo"/>
                             <constraint firstItem="Wa7-Vo-Vbn" firstAttribute="leading" secondItem="7LV-na-irE" secondAttribute="trailing" constant="8" symbolic="YES" id="qA3-FJ-lgC"/>
                             <constraint firstItem="7LV-na-irE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="zHi-GX-2xF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nan-x2-sJY" secondAttribute="trailing" constant="20" id="zX8-wN-feD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Game" id="imI-J3-5V4"/>
@@ -309,6 +311,7 @@
                         <outlet property="labelBottomDamageCpu" destination="T8O-kq-KdZ" id="qyJ-QF-aru"/>
                         <outlet property="labelBottomLife" destination="A02-WS-P3b" id="mWc-9q-F1j"/>
                         <outlet property="labelBottomLifeCpu" destination="QlP-te-8M7" id="1LT-Ho-CbH"/>
+                        <outlet property="labelFeedback" destination="nan-x2-sJY" id="bqB-Wl-Abf"/>
                         <outlet property="labelTitleCpu" destination="dJ0-gU-twE" id="sk2-hW-nMH"/>
                         <outlet property="labelTitlePlayer" destination="tiE-e0-ZAH" id="fTP-z1-7lI"/>
                         <outlet property="labelTopDamage" destination="T0D-SD-Ggh" id="am9-9Y-vAb"/>

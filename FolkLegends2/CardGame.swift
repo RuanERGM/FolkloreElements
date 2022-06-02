@@ -12,7 +12,8 @@ class CardGame: Equatable {
     var life: Int
     var damage: Int
     var element: CardElement
-    
+//    var dictionary2: [CardElement: CardElement]
+//    var dictionary3 = [.agua: .fogo,: 8, "Orange": 11]
     
     init(life: Int, damage: Int, element: CardElement){
         self.life = (life < 1 || life > 10) ? 1 : life
@@ -32,9 +33,18 @@ class CardGame: Equatable {
     }
     
     func fight(enemy: CardGame) -> Int {
-        let value = enemy.life - self.damage
-        enemy.life = (value < 0) ? 0: value
+        let newEnemyLife = enemy.life - self.damage
+        enemy.life = (newEnemyLife < 0) ? 0: newEnemyLife
         return enemy.life
+    }
+    
+    func counterattack(enemy: CardGame) -> Int {
+        var newPlayerLife = 0
+        if self.element != enemy.element {
+            newPlayerLife = self.life - enemy.damage
+            self.life = (newPlayerLife < 0) ? 0: newPlayerLife
+        }
+        return self.life
     }
     
     func getElement() -> String {
