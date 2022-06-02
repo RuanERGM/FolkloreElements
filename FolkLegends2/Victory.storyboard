@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Victory-->
+        <scene sceneID="uM5-1x-0w1">
+            <objects>
+                <viewController id="t46-bX-yQK" customClass="Victory" customModule="FolkloreLegends" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOg-cf-obg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="EAH-0e-VJG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKc-fb-cZV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="terra" translatesAutoresizingMaskIntoConstraints="NO" id="FRx-Y4-Uzy">
+                                        <rect key="frame" x="0.0" y="32" width="414" height="818"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta desbloqueada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-7d-ulR">
+                                <rect key="frame" x="130.5" y="230" width="154" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="alf-0Y-29J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64l-yE-aXT">
+                                <rect key="frame" x="307" y="595" width="48" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="  "/>
+                                    </attributedString>
+                                    <attributedString key="attributedSubtitle">
+                                        <fragment content=" "/>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L59-A0-tBf">
+                                <rect key="frame" x="94" y="595" width="52" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="return.left" catalog="system" title=" " subtitle=" "/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="teste1" translatesAutoresizingMaskIntoConstraints="NO" id="Pkm-pJ-ZC9">
+                                <rect key="frame" x="86" y="300" width="243" height="307"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Mb-h9-VOZ"/>
+                        <constraints>
+                            <constraint firstItem="JKc-fb-cZV" firstAttribute="leading" secondItem="0Mb-h9-VOZ" secondAttribute="leading" id="29Q-UK-a9v"/>
+                            <constraint firstItem="EAH-0e-VJG" firstAttribute="top" secondItem="0Mb-h9-VOZ" secondAttribute="top" id="3ie-yd-Ixa"/>
+                            <constraint firstItem="Pkm-pJ-ZC9" firstAttribute="leading" secondItem="0Mb-h9-VOZ" secondAttribute="leading" constant="86" id="9T2-e8-XjU"/>
+                            <constraint firstItem="i5y-7d-ulR" firstAttribute="centerX" secondItem="Pkm-pJ-ZC9" secondAttribute="centerX" id="9wT-ce-mOr"/>
+                            <constraint firstItem="64l-yE-aXT" firstAttribute="top" secondItem="Pkm-pJ-ZC9" secondAttribute="bottom" constant="18" id="G0b-xS-hA8"/>
+                            <constraint firstItem="EAH-0e-VJG" firstAttribute="leading" secondItem="0Mb-h9-VOZ" secondAttribute="leading" id="Htw-9W-9o4"/>
+                            <constraint firstItem="JKc-fb-cZV" firstAttribute="trailing" secondItem="0Mb-h9-VOZ" secondAttribute="trailing" id="P57-qM-rKa"/>
+                            <constraint firstItem="EAH-0e-VJG" firstAttribute="bottom" secondItem="0Mb-h9-VOZ" secondAttribute="bottom" id="Skq-TI-lYq"/>
+                            <constraint firstItem="64l-yE-aXT" firstAttribute="firstBaseline" secondItem="L59-A0-tBf" secondAttribute="firstBaseline" id="UBg-4O-mQM"/>
+                            <constraint firstItem="0Mb-h9-VOZ" firstAttribute="trailing" secondItem="64l-yE-aXT" secondAttribute="trailing" constant="59" id="WcJ-sY-imu"/>
+                            <constraint firstItem="L59-A0-tBf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Mb-h9-VOZ" secondAttribute="leading" id="WsM-oC-4yU"/>
+                            <constraint firstItem="JKc-fb-cZV" firstAttribute="bottom" secondItem="0Mb-h9-VOZ" secondAttribute="bottom" id="Xi0-6B-krk"/>
+                            <constraint firstItem="0Mb-h9-VOZ" firstAttribute="trailing" secondItem="Pkm-pJ-ZC9" secondAttribute="trailing" constant="85" id="cCs-tO-w18"/>
+                            <constraint firstItem="EAH-0e-VJG" firstAttribute="trailing" secondItem="0Mb-h9-VOZ" secondAttribute="trailing" id="e0o-YQ-AQz"/>
+                            <constraint firstItem="64l-yE-aXT" firstAttribute="leading" secondItem="L59-A0-tBf" secondAttribute="trailing" constant="161" id="iYd-Lj-aBS"/>
+                            <constraint firstItem="i5y-7d-ulR" firstAttribute="top" secondItem="0Mb-h9-VOZ" secondAttribute="top" constant="186" id="m0k-dA-F4H"/>
+                            <constraint firstItem="JKc-fb-cZV" firstAttribute="top" secondItem="0Mb-h9-VOZ" secondAttribute="top" id="on4-Ux-DLT"/>
+                            <constraint firstItem="Pkm-pJ-ZC9" firstAttribute="top" secondItem="i5y-7d-ulR" secondAttribute="bottom" constant="19" id="vsN-Mh-9Ek"/>
+                            <constraint firstItem="0Mb-h9-VOZ" firstAttribute="bottom" secondItem="64l-yE-aXT" secondAttribute="bottom" constant="220" id="xR3-cd-BYt"/>
+                            <constraint firstItem="64l-yE-aXT" firstAttribute="baseline" secondItem="L59-A0-tBf" secondAttribute="baseline" id="yTF-ba-rEp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6jm-Pi-7S5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fn-pD-G3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673.91304347826087" y="140.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="246" height="399.66665649414062"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="return.left" catalog="system" width="128" height="101"/>
+        <image name="terra" width="512" height="512"/>
+        <image name="teste1" width="320" height="600"/>
+    </resources>
+</document>
