@@ -94,7 +94,7 @@ extension GameViewController: UICollectionViewDelegate {
           
           cardPlayer.isHidden = false
           
-          selectedCardCpu = cardsCpu[Int.random(in: 0...cardsPlayer.count)]
+          selectedCardCpu = cardsCpu[Int.random(in: 0...cardsPlayer.count - 1)]
           
           labelTopDamageCpu.text = String(selectedCardCpu.damage)
           labelBottomDamageCpu.text = String(selectedCardCpu.damage)
