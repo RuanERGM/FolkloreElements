@@ -31,9 +31,10 @@ class CardGame: Equatable {
         return (lhs.life == rhs.life && lhs.damage == rhs.damage && lhs.element == rhs.element)
     }
     
-    func fight(enemy: CardGame) {
-        let value = enemy.life - self.life
+    func fight(enemy: CardGame) -> Int {
+        let value = enemy.life - self.damage
         enemy.life = (value < 0) ? 0: value
+        return enemy.life
     }
     
     func getElement() -> String {

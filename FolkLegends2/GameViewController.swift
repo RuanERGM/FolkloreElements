@@ -24,6 +24,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var labelTopLife: UILabel!
     @IBOutlet weak var labelBottomLife: UILabel!
     @IBOutlet weak var imagePlayer: UIImageView!
+    @IBOutlet weak var labelTitlePlayer: UILabel!
     
     // cpu card
     
@@ -35,6 +36,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var labelTopLifeCpu: UILabel!
     @IBOutlet weak var labelBottomLifeCpu: UILabel!
     @IBOutlet weak var imageCpu: UIImageView!
+    @IBOutlet weak var labelTitleCpu: UILabel!
+    
     var selectedCardPlayer: CardGame = CardGame()
     var selectedCardCpu: CardGame = CardGame()
     
@@ -51,6 +54,8 @@ class GameViewController: UIViewController {
         
         cardPlayer.isHidden = true
         cardCpu.isHidden = true
+        labelTitlePlayer.isHidden = true
+        labelTitleCpu.isHidden = true
     }
     
 }
@@ -93,6 +98,7 @@ extension GameViewController: UICollectionViewDelegate {
           imagePlayer.image = UIImage(named: selectedCardPlayer.getElement())
           
           cardPlayer.isHidden = false
+          labelTitlePlayer.isHidden = false
           
           selectedCardCpu = cardsCpu[Int.random(in: 0...cardsPlayer.count - 1)]
           
@@ -104,9 +110,19 @@ extension GameViewController: UICollectionViewDelegate {
           
           imageCpu.image = UIImage(named: selectedCardCpu.getElement())
           
-          cardCpu.isHidden = false
+          DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
           
+              self.labelTitleCpu.isHidden = false
+              self.cardCpu.isHidden = false
+              self.deckPlayer.isUserInteractionEnabled = false
+              self.deckPlayer.isOpaque = false
+              
+              let lifeCpu = String(self.selectedCardPlayer.fight(enemy: self.selectedCardCpu))
+              self.labelTopLifeCpu.text = lifeCpu
+              self.labelBottomLifeCpu.text = lifeCpu
+          }
           
+          deckCpu.reloadData()
       }
       
   }
