@@ -230,7 +230,7 @@
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7x-Kk-Q0H">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7x-Kk-Q0H" userLabel="Label Top Life Cpu">
                                         <rect key="frame" x="130" y="8" width="12" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -277,11 +277,16 @@
                         <outlet property="cardPlayer" destination="Wa7-Vo-Vbn" id="bJZ-gr-j89"/>
                         <outlet property="deckCpu" destination="Pqa-VZ-Jyf" id="Bb3-RR-HBt"/>
                         <outlet property="deckPlayer" destination="gz8-O5-XLi" id="szQ-JM-ZSy"/>
+                        <outlet property="imageCpu" destination="Gp8-By-vON" id="Qho-b7-4yb"/>
                         <outlet property="imagePlayer" destination="nHz-DF-9ST" id="1aH-Fy-Qc0"/>
                         <outlet property="labelBottomDamage" destination="bEu-yd-661" id="AUE-hR-vX0"/>
+                        <outlet property="labelBottomDamageCpu" destination="T8O-kq-KdZ" id="qyJ-QF-aru"/>
                         <outlet property="labelBottomLife" destination="A02-WS-P3b" id="mWc-9q-F1j"/>
+                        <outlet property="labelBottomLifeCpu" destination="QlP-te-8M7" id="1LT-Ho-CbH"/>
                         <outlet property="labelTopDamage" destination="T0D-SD-Ggh" id="am9-9Y-vAb"/>
-                        <outlet property="labelTopLife" destination="OQb-Ip-AQZ" id="dB6-rw-Lek"/>
+                        <outlet property="labelTopDamageCpu" destination="kV4-cq-4WE" id="9Kv-xz-beC"/>
+                        <outlet property="labelTopLife" destination="OQb-Ip-AQZ" id="beK-B0-heA"/>
+                        <outlet property="labelTopLifeCpu" destination="v7x-Kk-Q0H" id="Ttx-yS-Ny9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

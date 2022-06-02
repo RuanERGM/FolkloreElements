@@ -187,7 +187,7 @@
         <scene sceneID="8pI-IV-647">
             <objects>
                 <viewController id="EkD-iN-cjs" customClass="MapController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="GUO-XM-PnN">
+                    <view key="view" contentMode="scaleToFill" id="GUO-XM-PnN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -222,9 +222,8 @@
                                     <constraint firstAttribute="height" constant="38" id="VuS-Ee-llv"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVF-Yf-5w4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVF-Yf-5w4">
                                 <rect key="frame" x="39" y="423" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
@@ -235,7 +234,6 @@
                         <viewLayoutGuide key="safeArea" id="4vn-JR-LhI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JDO-e7-Qyz" firstAttribute="trailing" secondItem="4vn-JR-LhI" secondAttribute="trailing" id="0bV-bs-3yB"/>
                             <constraint firstItem="JDO-e7-Qyz" firstAttribute="top" secondItem="SLY-3f-X2J" secondAttribute="bottom" constant="39" id="3wl-nf-d9n"/>
                             <constraint firstItem="JDO-e7-Qyz" firstAttribute="leading" secondItem="4vn-JR-LhI" secondAttribute="leading" constant="4" id="9rb-qi-DwS"/>
                             <constraint firstItem="IBt-fY-79e" firstAttribute="top" secondItem="4vn-JR-LhI" secondAttribute="top" constant="38.5" id="A2E-FK-hcB"/>
@@ -245,12 +243,17 @@
                             <constraint firstItem="Ppt-k0-8YJ" firstAttribute="leading" secondItem="IBt-fY-79e" secondAttribute="trailing" constant="32" id="EP5-ee-DyP"/>
                             <constraint firstItem="JDO-e7-Qyz" firstAttribute="centerY" secondItem="GUO-XM-PnN" secondAttribute="centerY" id="Fdc-Yg-YEW"/>
                             <constraint firstItem="JDO-e7-Qyz" firstAttribute="top" secondItem="Ppt-k0-8YJ" secondAttribute="bottom" constant="43" id="HEz-hC-JYI"/>
-                            <constraint firstItem="Ppt-k0-8YJ" firstAttribute="leading" secondItem="4vn-JR-LhI" secondAttribute="leading" constant="102" id="ItG-kV-1HG"/>
+                            <constraint firstItem="Ppt-k0-8YJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4vn-JR-LhI" secondAttribute="leading" id="ItG-kV-1HG"/>
+                            <constraint firstItem="EVF-Yf-5w4" firstAttribute="leading" secondItem="4vn-JR-LhI" secondAttribute="leading" constant="39" id="KJe-ZF-uBw"/>
+                            <constraint firstItem="EVF-Yf-5w4" firstAttribute="top" secondItem="GUO-XM-PnN" secondAttribute="top" constant="423" id="LTG-Py-kF2"/>
                             <constraint firstItem="JDO-e7-Qyz" firstAttribute="top" secondItem="Ppt-k0-8YJ" secondAttribute="bottom" constant="43" id="NVA-1g-Bx1"/>
                             <constraint firstItem="IBt-fY-79e" firstAttribute="leading" secondItem="SLY-3f-X2J" secondAttribute="trailing" constant="2" id="VMe-9g-Gps"/>
+                            <constraint firstItem="4vn-JR-LhI" firstAttribute="bottom" secondItem="EVF-Yf-5w4" secondAttribute="bottom" constant="359" id="X2x-az-i8K"/>
                             <constraint firstItem="JDO-e7-Qyz" firstAttribute="top" secondItem="IBt-fY-79e" secondAttribute="bottom" constant="38.5" id="fkk-2G-cUd"/>
                             <constraint firstItem="SLY-3f-X2J" firstAttribute="top" secondItem="4vn-JR-LhI" secondAttribute="top" constant="38" id="mYt-Ul-xDc"/>
+                            <constraint firstAttribute="trailing" secondItem="Ppt-k0-8YJ" secondAttribute="trailing" constant="250.5" id="pNx-SR-Wnh"/>
                             <constraint firstItem="IBt-fY-79e" firstAttribute="leading" secondItem="SLY-3f-X2J" secondAttribute="trailing" constant="2" id="s2a-5M-dSh"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EVF-Yf-5w4" secondAttribute="trailing" constant="20" symbolic="YES" id="sfd-CI-ano"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RqP-0m-T9A"/>

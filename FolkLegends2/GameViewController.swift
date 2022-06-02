@@ -30,6 +30,11 @@ class GameViewController: UIViewController {
     var cardsPlayer: [CardGame] = []
     var cardsCpu: [CardGame] = []
     
+    @IBOutlet weak var labelTopDamageCpu: UILabel!
+    @IBOutlet weak var labelBottomDamageCpu: UILabel!
+    @IBOutlet weak var labelTopLifeCpu: UILabel!
+    @IBOutlet weak var labelBottomLifeCpu: UILabel!
+    @IBOutlet weak var imageCpu: UIImageView!
     var selectedCardPlayer: CardGame = CardGame()
     var selectedCardCpu: CardGame = CardGame()
     
@@ -88,6 +93,20 @@ extension GameViewController: UICollectionViewDelegate {
           imagePlayer.image = UIImage(named: selectedCardPlayer.getElement())
           
           cardPlayer.isHidden = false
+          
+          selectedCardCpu = cardsCpu[Int.random(in: 0...cardsPlayer.count)]
+          
+          labelTopDamageCpu.text = String(selectedCardCpu.damage)
+          labelBottomDamageCpu.text = String(selectedCardCpu.damage)
+          
+          labelTopLifeCpu.text = String(selectedCardCpu.life)
+          labelBottomLifeCpu.text = String(selectedCardCpu.life)
+          
+          imageCpu.image = UIImage(named: selectedCardCpu.getElement())
+          
+          cardCpu.isHidden = false
+          
+          
       }
       
   }
