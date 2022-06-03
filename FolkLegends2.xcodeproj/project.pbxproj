@@ -27,9 +27,9 @@
 		9C919FBB2846BEDD00E75495 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FBA2846BEDD00E75495 /* Description.swift */; };
 		9C919FBD2846BF0100E75495 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FBC2846BF0100E75495 /* TableViewController.swift */; };
 		9C919FBF2846C02A00E75495 /* Bestiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C919FBE2846C02A00E75495 /* Bestiary.storyboard */; };
+		9CA7C41B284A49770056E106 /* Victory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA7C41A284A49770056E106 /* Victory.swift */; };
 		9CC290792848F2F800D12263 /* Instuctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC290782848F2F800D12263 /* Instuctions.swift */; };
 		9CC2907B2848F37000D12263 /* Instructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2907A2848F37000D12263 /* Instructions.storyboard */; };
-		9CC2907D2848FD6300D12263 /* Victory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2907C2848FD6300D12263 /* Victory.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +74,9 @@
 		9C919FBA2846BEDD00E75495 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		9C919FBC2846BF0100E75495 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9C919FBE2846C02A00E75495 /* Bestiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bestiary.storyboard; sourceTree = "<group>"; };
+		9CA7C41A284A49770056E106 /* Victory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Victory.swift; sourceTree = "<group>"; };
 		9CC290782848F2F800D12263 /* Instuctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instuctions.swift; sourceTree = "<group>"; };
 		9CC2907A2848F37000D12263 /* Instructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instructions.storyboard; sourceTree = "<group>"; };
-		9CC2907C2848FD6300D12263 /* Victory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Victory.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,7 @@
 		9C919F722846BB5700E75495 = {
 			isa = PBXGroup;
 			children = (
+				9CA7C41A284A49770056E106 /* Victory.swift */,
 				9C919F7D2846BB5700E75495 /* FolkLegends2 */,
 				9C919F942846BB5800E75495 /* FolkLegends2Tests */,
 				9C919F9E2846BB5800E75495 /* FolkLegends2UITests */,
@@ -137,7 +138,6 @@
 				9C919FBC2846BF0100E75495 /* TableViewController.swift */,
 				9C919F802846BB5700E75495 /* SceneDelegate.swift */,
 				9C919F822846BB5700E75495 /* ViewController.swift */,
-				9CC2907C2848FD6300D12263 /* Victory.storyboard */,
 				9C919FBE2846C02A00E75495 /* Bestiary.storyboard */,
 				9C919F842846BB5700E75495 /* Main.storyboard */,
 				9C919F892846BB5800E75495 /* LaunchScreen.storyboard */,
@@ -276,7 +276,6 @@
 				9C919F8B2846BB5800E75495 /* LaunchScreen.storyboard in Resources */,
 				9CC2907B2848F37000D12263 /* Instructions.storyboard in Resources */,
 				9C919FBF2846C02A00E75495 /* Bestiary.storyboard in Resources */,
-				9CC2907D2848FD6300D12263 /* Victory.storyboard in Resources */,
 				9C919F882846BB5800E75495 /* Assets.xcassets in Resources */,
 				8BC266B52847993000B72FBA /* Game.storyboard in Resources */,
 				9C919F862846BB5700E75495 /* Main.storyboard in Resources */,
@@ -314,6 +313,7 @@
 				9C919FBB2846BEDD00E75495 /* Description.swift in Sources */,
 				9CC290792848F2F800D12263 /* Instuctions.swift in Sources */,
 				9C919F7F2846BB5700E75495 /* AppDelegate.swift in Sources */,
+				9CA7C41B284A49770056E106 /* Victory.swift in Sources */,
 				8BC266B7284799B700B72FBA /* GameViewController.swift in Sources */,
 				9C919F812846BB5700E75495 /* SceneDelegate.swift in Sources */,
 				8BC266BB2847B05D00B72FBA /* CardCellGame.swift in Sources */,

@@ -191,14 +191,22 @@ extension GameViewController: UICollectionViewDelegate {
                           self.labelFeedback.text = "Sua vez!"
                           
                           
-                          if self.cardsPlayer.count == 0 {
+                          if self.cardsPlayer.count == 0 && self.cardsCpu.count > 0{
                               self.deckPlayer.isUserInteractionEnabled = false
                               self.labelFeedback.text = "Você perdeu :("
+                              self.performSegue(withIdentifier: "Victory", sender: self)
                               // chamar tela
                           }
-                          if self.cardsCpu.count == 0{
+                          if self.cardsCpu.count == 0 && self.cardsPlayer.count > 0{
                               self.deckPlayer.isUserInteractionEnabled = false
                               self.labelFeedback.text = "Você ganhou :D"
+                              self.performSegue(withIdentifier: "Victory", sender: self)
+                              // chamar tela
+                          }
+                          if self.cardsPlayer.count == 0 && self.cardsCpu.count == 0{
+                              self.deckPlayer.isUserInteractionEnabled = false
+                              self.labelFeedback.text = "Você perdeu :("
+                              self.performSegue(withIdentifier: "Victory", sender: self)
                               // chamar tela
                           }
                       }
