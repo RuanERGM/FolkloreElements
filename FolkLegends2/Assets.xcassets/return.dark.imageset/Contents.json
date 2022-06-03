@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "chave.line.pdf",
+      "filename" : "return.dark-5.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "chave.line-3.pdf",
+      "filename" : "return.light.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -23,12 +23,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "chave.line-6.pdf",
+      "filename" : "return.dark-2.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "chave.line-1.pdf",
+      "filename" : "return.dark-6.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -39,7 +39,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "chave.line-4.pdf",
+      "filename" : "return.light-1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -50,12 +50,12 @@
           "value" : "dark"
         }
       ],
-      "filename" : "chave.line-7.pdf",
+      "filename" : "return.dark-3.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "chave.line-2.pdf",
+      "filename" : "return.dark-7.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -66,7 +66,7 @@
           "value" : "light"
         }
       ],
-      "filename" : "chave.line-5.pdf",
+      "filename" : "return.light-2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -77,7 +77,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "chave.line-8.pdf",
+      "filename" : "return.dark-4.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
