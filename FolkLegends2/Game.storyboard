@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rRs-EV-Q07">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="svb-b1-rGe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -357,9 +357,68 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="m3y-6X-R2K">
+            <objects>
+                <viewController id="svb-b1-rGe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Zt-2G-xzR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sW-qx-l7s">
+                                <rect key="frame" x="0.0" y="513" width="414" height="394"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nome do Personagem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-j2-U28">
+                                <rect key="frame" x="224" y="469" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="djvdfkjvdfjkvjdfvdjkvdkvnjivnifvndfjivjfvfnvdfnvdfjvdfvnjdfvdfvndjdifvndfvfdivdvdfvidfjkvnjdfvdkfvndjvjdvdfv" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-dK-EMA">
+                                <rect key="frame" x="28" y="553" width="358" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="NQ6-MR-F8o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eDh-kf-2be">
+                                <rect key="frame" x="0.0" y="415.5" width="156" height="129"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9B-MJ-l6a">
+                                <rect key="frame" x="293" y="744" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="rRs-EV-Q07" kind="presentation" modalPresentationStyle="fullScreen" id="xE9-Fx-rXh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uoh-Pi-Etm"/>
+                        <constraints>
+                            <constraint firstItem="5sW-qx-l7s" firstAttribute="leading" secondItem="eDh-kf-2be" secondAttribute="leading" id="FGC-El-rEY"/>
+                            <constraint firstItem="Kvs-dK-EMA" firstAttribute="top" secondItem="eDh-kf-2be" secondAttribute="bottom" constant="8" id="LJh-pY-dVk"/>
+                            <constraint firstItem="5sW-qx-l7s" firstAttribute="leading" secondItem="uoh-Pi-Etm" secondAttribute="leading" id="Nrx-mG-O5o"/>
+                            <constraint firstItem="5sW-qx-l7s" firstAttribute="top" secondItem="vJm-j2-U28" secondAttribute="top" id="VaZ-Fb-11y"/>
+                            <constraint firstItem="5sW-qx-l7s" firstAttribute="top" secondItem="uoh-Pi-Etm" secondAttribute="top" constant="469" id="ko1-C9-0xL"/>
+                            <constraint firstItem="Kvs-dK-EMA" firstAttribute="centerX" secondItem="5sW-qx-l7s" secondAttribute="centerX" id="lQn-Uy-Skt"/>
+                            <constraint firstItem="uoh-Pi-Etm" firstAttribute="bottom" secondItem="Kvs-dK-EMA" secondAttribute="bottom" constant="60" id="lVW-nj-7SI"/>
+                            <constraint firstItem="Kvs-dK-EMA" firstAttribute="centerX" secondItem="4Zt-2G-xzR" secondAttribute="centerX" id="nhK-Dr-BZL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="5sW-qx-l7s" secondAttribute="bottom" constant="-45" id="zYu-ka-zq5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRP-83-fFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754" y="80"/>
+        </scene>
     </scenes>
     <resources>
         <image name="agua" width="512" height="512"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -10,7 +10,7 @@
         <!--Victory-->
         <scene sceneID="uM5-1x-0w1">
             <objects>
-                <viewController id="t46-bX-yQK" customClass="Victory" customModule="FolkloreLegends" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t46-bX-yQK" customClass="Victory" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xOg-cf-obg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
