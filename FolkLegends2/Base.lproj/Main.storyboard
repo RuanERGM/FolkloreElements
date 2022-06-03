@@ -25,7 +25,7 @@
         <scene sceneID="K8K-ZE-WPk">
             <objects>
                 <tabBarController id="5ng-fv-xfl" sceneMemberID="viewController">
-                    <tabBar key="tabBar" opaque="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="fill" id="Xgl-9G-K19">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="fill" id="Xgl-9G-K19">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="TabBarColor"/>
@@ -176,7 +176,7 @@
                             <outlet property="delegate" destination="uqa-e7-TJu" id="BQV-lE-9gQ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="door" id="nhA-vk-bLD">
+                    <tabBarItem key="tabBarItem" title="" image="door" selectedImage="door.fill" id="nhA-vk-bLD">
                         <color key="badgeColor" systemColor="systemGreenColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="k0H-Tf-KMq"/>
