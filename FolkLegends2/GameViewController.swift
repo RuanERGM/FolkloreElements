@@ -44,12 +44,14 @@ class GameViewController: UIViewController {
     
     var countCardsPlayer: Int = 0
     var countCardsCpu: Int = 0
+    var doorIndex = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Chave: ", doorIndex)
         performSegue(withIdentifier: "talk", sender: self)
-        cardsPlayer = [CardGame(), CardGame(), CardGame()]
-        cardsCpu = [CardGame(), CardGame(), CardGame()]
+        cardsPlayer = [CardGame()]
+        cardsCpu = [CardGame()]
         
         deckCpu.dataSource = self
         deckPlayer.dataSource = self
@@ -194,7 +196,7 @@ extension GameViewController: UICollectionViewDelegate {
                           if self.cardsPlayer.count == 0 && self.cardsCpu.count > 0{
                               self.deckPlayer.isUserInteractionEnabled = false
                               self.labelFeedback.text = "Você perdeu :("
-                              self.performSegue(withIdentifier: "Victory", sender: self)
+                              self.performSegue(withIdentifier: "Loser", sender: self)
                               // chamar tela
                           }
                           if self.cardsCpu.count == 0 && self.cardsPlayer.count > 0{
@@ -206,7 +208,7 @@ extension GameViewController: UICollectionViewDelegate {
                           if self.cardsPlayer.count == 0 && self.cardsCpu.count == 0{
                               self.deckPlayer.isUserInteractionEnabled = false
                               self.labelFeedback.text = "Você perdeu :("
-                              self.performSegue(withIdentifier: "Victory", sender: self)
+                              self.performSegue(withIdentifier: "Loser", sender: self)
                               // chamar tela
                           }
                       }

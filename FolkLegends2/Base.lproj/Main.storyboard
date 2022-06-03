@@ -143,7 +143,6 @@
                                     <outlet property="CellViewImage" destination="VyN-aV-YHg" id="Sq7-oZ-aRC"/>
                                     <outlet property="backView" destination="a0h-ah-bFc" id="nHN-IE-GZX"/>
                                     <outlet property="frontView" destination="PRN-P0-7bf" id="lRV-xY-swe"/>
-                                    <segue destination="9NY-MF-lbH" kind="presentation" identifier="showdetail" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="drk-8t-TVg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -158,6 +157,7 @@
                     <navigationItem key="navigationItem" id="k0H-Tf-KMq"/>
                     <connections>
                         <outlet property="tableNumbers" destination="t1o-8v-ZP8" id="8Df-Jo-XTL"/>
+                        <segue destination="9NY-MF-lbH" kind="presentation" identifier="showdetail" modalPresentationStyle="fullScreen" id="Yjc-AD-L80"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjL-R3-4bQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
