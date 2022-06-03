@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "door.line.pdf",
+      "filename" : "door.terra@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "door.terra@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "door.terra@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

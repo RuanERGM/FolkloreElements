@@ -28,7 +28,7 @@ class BestiaryViewController : UIViewController {
       Card(
         imageCharacterCard: UIImage(named: "teste1")!,
         imageCharacterDesc: UIImage(named: "teste2")!,
-        locked: true,
+        locked: false,
         nameCharacter: "Surgimento dos Peixes",
         topicInitial: "A caça",
         labelInicial: "Tudo começou com o aparecimento na aldeia de um certo Birá, um índio sedutor, o terror da honra de todos os homens.\nEntão, num belo dia, os índios pediram ao pajé para lançar um feitiço sobre o kaiapó sedutor. Com muita pressão, o pajé fez e Birá tomou uma poção maldita que o transformou em uma anta.",

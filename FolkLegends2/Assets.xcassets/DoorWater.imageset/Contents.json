@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "book.line.pdf",
+      "filename" : "door.agua@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "door.agua@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "door.agua@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

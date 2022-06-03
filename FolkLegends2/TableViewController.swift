@@ -24,7 +24,7 @@ class TableViewController: UITableViewController {
   
   @IBOutlet var tableNumbers: UITableView!
   @IBOutlet weak var keysCounter: UILabel!
-  
+    
   var teste : Int = 0
   var productArray = [Numbers]()
   var selectedCell : Numbers = Numbers()
@@ -35,13 +35,13 @@ class TableViewController: UITableViewController {
     teste += 1
     self.keysCounter.text = "\(teste)"
     
-    let um = Numbers(prNumber: "Histórias da Terra",prImage: "mapa", prLocked: false)
+    let um = Numbers(prNumber: "Histórias da Terra",prImage: "DoorDirt", prLocked: false)
     productArray.append(um)
-    let dois = Numbers(prNumber: "Histórias da Água",prImage: "mapa", prLocked: true)
+    let dois = Numbers(prNumber: "Histórias da Água",prImage: "DoorWater", prLocked: true)
     productArray.append(dois)
-    let tres = Numbers(prNumber: "Histórias do Ar",prImage: "mapa", prLocked: true)
+    let tres = Numbers(prNumber: "Histórias do Ar",prImage: "DoorAir", prLocked: true)
     productArray.append(tres)
-    let quatro = Numbers(prNumber: "Histórias do Fogo",prImage: "mapa", prLocked: true)
+    let quatro = Numbers(prNumber: "Histórias do Fogo",prImage: "DoorFire", prLocked: true)
     productArray.append(quatro)
     
     tableNumbers.dataSource = self
@@ -67,8 +67,8 @@ class TableViewController: UITableViewController {
     {
       cell.backView.layer.cornerRadius = 10.0;
       cell.frontView.roundCorners([.topRight, .bottomRight], radius: 10)
+        cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
     }
-    
     return cell
   }
   
@@ -92,6 +92,7 @@ class tableCell : UITableViewCell
 {
   @IBOutlet weak var backView: UIView!
   @IBOutlet weak var frontView: UIView!
+  @IBOutlet weak var CellViewImage: UIImageView!
 }
 
 extension UIView {
