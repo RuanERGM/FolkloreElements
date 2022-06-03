@@ -47,7 +47,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        performSegue(withIdentifier: "talk", sender: self)
         cardsPlayer = [CardGame(), CardGame(), CardGame()]
         cardsCpu = [CardGame(), CardGame(), CardGame()]
         

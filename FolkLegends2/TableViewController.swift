@@ -23,17 +23,13 @@ class Numbers {
 class TableViewController: UITableViewController {
   
   @IBOutlet var tableNumbers: UITableView!
-  @IBOutlet weak var keysCounter: UILabel!
     
-  var teste : Int = 0
   var productArray = [Numbers]()
   var selectedCell : Numbers = Numbers()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    teste += 1
-    self.keysCounter.text = "\(teste)"
+
     
     let um = Numbers(prNumber: "Histórias da Terra",prImage: "DoorDirt", prLocked: false)
     productArray.append(um)
@@ -68,6 +64,7 @@ class TableViewController: UITableViewController {
       cell.backView.layer.cornerRadius = 10.0;
       cell.frontView.roundCorners([.topRight, .bottomRight], radius: 10)
         cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
+        cell.CellViewImage.layer.cornerRadius = 10.0;
     }
     return cell
   }
@@ -76,13 +73,6 @@ class TableViewController: UITableViewController {
     selectedCell = productArray[indexPath.item]
     if selectedCell.locked == false{
       performSegue(withIdentifier: "showdetail", sender: self)
-    }
-  }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let destination = segue.destination as? MapController {
-      destination.product = productArray[(tableNumbers.indexPathForSelectedRow?.row)!]
-      tableNumbers.deselectRow(at: tableNumbers.indexPathForSelectedRow!, animated: true)
     }
   }
   

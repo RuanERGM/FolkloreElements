@@ -24,7 +24,6 @@
 		9C919FB12846BD0900E75495 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FB02846BD0900E75495 /* DetailViewController.swift */; };
 		9C919FB32846BD1800E75495 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FB22846BD1800E75495 /* Card.swift */; };
 		9C919FB52846BDC700E75495 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FB42846BDC700E75495 /* CardCell.swift */; };
-		9C919FB92846BEBC00E75495 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FB82846BEBC00E75495 /* MapController.swift */; };
 		9C919FBB2846BEDD00E75495 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FBA2846BEDD00E75495 /* Description.swift */; };
 		9C919FBD2846BF0100E75495 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FBC2846BF0100E75495 /* TableViewController.swift */; };
 		9C919FBF2846C02A00E75495 /* Bestiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C919FBE2846C02A00E75495 /* Bestiary.storyboard */; };
@@ -72,7 +71,6 @@
 		9C919FB02846BD0900E75495 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9C919FB22846BD1800E75495 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9C919FB42846BDC700E75495 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		9C919FB82846BEBC00E75495 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		9C919FBA2846BEDD00E75495 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		9C919FBC2846BF0100E75495 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9C919FBE2846C02A00E75495 /* Bestiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bestiary.storyboard; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				9CC290782848F2F800D12263 /* Instuctions.swift */,
 				9C919FB22846BD1800E75495 /* Card.swift */,
 				9C919FBC2846BF0100E75495 /* TableViewController.swift */,
-				9C919FB82846BEBC00E75495 /* MapController.swift */,
 				9C919F802846BB5700E75495 /* SceneDelegate.swift */,
 				9C919F822846BB5700E75495 /* ViewController.swift */,
 				9CC2907C2848FD6300D12263 /* Victory.storyboard */,
@@ -307,7 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C919FB92846BEBC00E75495 /* MapController.swift in Sources */,
 				9C919FB52846BDC700E75495 /* CardCell.swift in Sources */,
 				9C919F832846BB5700E75495 /* ViewController.swift in Sources */,
 				9C919FBD2846BF0100E75495 /* TableViewController.swift in Sources */,
