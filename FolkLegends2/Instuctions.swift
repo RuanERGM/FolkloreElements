@@ -1,10 +1,8 @@
 import UIKit
 
-class Instructions: UIViewController{
+class Instructions:UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
-
-
