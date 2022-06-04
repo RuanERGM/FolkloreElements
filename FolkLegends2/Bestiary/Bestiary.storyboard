@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -105,7 +104,7 @@
                                                 <rect key="frame" x="17" y="392" width="380" height="61"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                                <color key="textColor" name="TintColor"/>
+                                                <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-Hl-fUc">
@@ -113,7 +112,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" name="TintColor"/>
+                                                <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-rl-j5J">
@@ -121,21 +120,21 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" name="TintColor"/>
+                                                <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-pD-2Ii">
                                                 <rect key="frame" x="20" y="1948" width="378" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                                <color key="textColor" name="TintColor"/>
+                                                <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-fI-1BN">
                                                 <rect key="frame" x="18" y="1215" width="378" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                                <color key="textColor" name="TintColor"/>
+                                                <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFZ-C2-N6J">
@@ -143,14 +142,14 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" name="TintColor"/>
+                                                <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-Xf-lQO">
                                                 <rect key="frame" x="20" y="520" width="378" height="55"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                                <color key="textColor" name="TintColor"/>
+                                                <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -172,7 +171,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fwa-kd-qhE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2f8-rk-Kgd" firstAttribute="centerX" secondItem="fwa-kd-qhE" secondAttribute="centerX" id="DVs-Mb-3Ww"/>
                         </constraints>
@@ -199,11 +198,8 @@
         <namedColor name="BackgroundColor">
             <color red="0.95294117647058818" green="0.93333333333333335" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="TintColor">
-            <color red="0.74117647058823533" green="0.5490196078431373" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="FontColor">
+            <color red="0.30196078431372547" green="0.21568627450980393" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
