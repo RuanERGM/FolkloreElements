@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+public var x:Int!
 class GameViewController: UIViewController {
     
     // colections
@@ -49,7 +50,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        x = selectedDoor.number
         for _ in 1 ... selectedDoor.numOfCards {
             cardsPlayer.append(CardGame())
             cardsCpu.append(CardGame())

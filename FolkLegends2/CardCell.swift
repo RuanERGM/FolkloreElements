@@ -8,7 +8,7 @@ class CardCell:UICollectionViewCell {
   func draw(card: Card){
     
     if (card.locked) {
-      imageCharacter.image = UIImage(named: "teste3")
+      imageCharacter.image = UIImage(named: "LockedCard")
     } else {
       imageCharacter.image = card.imageCharacterCard
     }
