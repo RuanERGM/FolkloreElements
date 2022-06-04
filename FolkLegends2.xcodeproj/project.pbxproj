@@ -110,6 +110,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BE39B90284BE91200141A22 /* Bestiary */ = {
+			isa = PBXGroup;
+			children = (
+				9C919FAE2846BCE300E75495 /* BestiaryViewController.swift */,
+				9C919FBE2846C02A00E75495 /* Bestiary.storyboard */,
+				9C919FB22846BD1800E75495 /* Card.swift */,
+				9C919FB42846BDC700E75495 /* CardCell.swift */,
+				9C919FB02846BD0900E75495 /* DetailViewController.swift */,
+			);
+			path = Bestiary;
+			sourceTree = "<group>";
+		};
+		8BE39B91284BE92B00141A22 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				9CA7C41A284A49770056E106 /* Victory.swift */,
+				6686954D284A60B30097585B /* LoseView.swift */,
+				8BC266B42847993000B72FBA /* Game.storyboard */,
+				8BC266B6284799B700B72FBA /* GameViewController.swift */,
+				8BC266B82847A58C00B72FBA /* CardGame.swift */,
+				8BC266BA2847B05D00B72FBA /* CardCellGame.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		8BE39B92284BE95A00141A22 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				9CC2907A2848F37000D12263 /* Instructions.storyboard */,
+				9CC290782848F2F800D12263 /* Instuctions.swift */,
+			);
+			path = Instructions;
+			sourceTree = "<group>";
+		};
+		8BE39B93284BE9AE00141A22 /* Doors */ = {
+			isa = PBXGroup;
+			children = (
+				9C919FBC2846BF0100E75495 /* TableViewController.swift */,
+				9C919F842846BB5700E75495 /* Main.storyboard */,
+				8BCB66A8284AE15C00DB793A /* Numbers.swift */,
+			);
+			path = Doors;
+			sourceTree = "<group>";
+		};
 		9C919F722846BB5700E75495 = {
 			isa = PBXGroup;
 			children = (
@@ -133,28 +177,16 @@
 		9C919F7D2846BB5700E75495 /* FolkLegends2 */ = {
 			isa = PBXGroup;
 			children = (
-				9CA7C41A284A49770056E106 /* Victory.swift */,
-				9C919FB02846BD0900E75495 /* DetailViewController.swift */,
-				9C919FAE2846BCE300E75495 /* BestiaryViewController.swift */,
+				8BE39B93284BE9AE00141A22 /* Doors */,
+				8BE39B92284BE95A00141A22 /* Instructions */,
+				8BE39B91284BE92B00141A22 /* Game */,
+				8BE39B90284BE91200141A22 /* Bestiary */,
 				9C919F7E2846BB5700E75495 /* AppDelegate.swift */,
-				9C919FB42846BDC700E75495 /* CardCell.swift */,
 				9C919FBA2846BEDD00E75495 /* Description.swift */,
-				9CC290782848F2F800D12263 /* Instuctions.swift */,
-				9C919FB22846BD1800E75495 /* Card.swift */,
-				9C919FBC2846BF0100E75495 /* TableViewController.swift */,
 				9C919F802846BB5700E75495 /* SceneDelegate.swift */,
 				9C919F822846BB5700E75495 /* ViewController.swift */,
-				8BC266B6284799B700B72FBA /* GameViewController.swift */,
-				8BC266B82847A58C00B72FBA /* CardGame.swift */,
-				8BC266BA2847B05D00B72FBA /* CardCellGame.swift */,
-				6686954D284A60B30097585B /* LoseView.swift */,
-				8BCB66A8284AE15C00DB793A /* Numbers.swift */,
 				8BCB66AA284AE1D300DB793A /* UserKeys.swift */,
-				9C919FBE2846C02A00E75495 /* Bestiary.storyboard */,
-				9C919F842846BB5700E75495 /* Main.storyboard */,
 				9C919F892846BB5800E75495 /* LaunchScreen.storyboard */,
-				9CC2907A2848F37000D12263 /* Instructions.storyboard */,
-				8BC266B42847993000B72FBA /* Game.storyboard */,
 				9C919F872846BB5800E75495 /* Assets.xcassets */,
 				9C919F8C2846BB5800E75495 /* Info.plist */,
 			);
