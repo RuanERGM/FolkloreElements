@@ -2,24 +2,6 @@
 
 import UIKit
 
-class Numbers {
-    var number : Int?
-    var image : String?
-    var locked: Bool
-    
-    init(prNumber: Int, prImage: String, prLocked: Bool){
-        self.number = prNumber
-        self.image = prImage
-        self.locked = prLocked
-    }
-    
-    init(){
-        self.number = 0
-        self.image = ""
-        self.locked = false
-    }
-}
-
 class TableViewController: UITableViewController {
     
     @IBOutlet var tableNumbers: UITableView!
@@ -31,14 +13,15 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         
-        let um = Numbers(prNumber: 1,prImage: "DoorDirt", prLocked: false)
-        productArray.append(um)
-        let dois = Numbers(prNumber: 2,prImage: "DoorWater", prLocked: false)
-        productArray.append(dois)
-        let tres = Numbers(prNumber: 3,prImage: "DoorAir", prLocked: false)
-        productArray.append(tres)
-        let quatro = Numbers(prNumber: 4,prImage: "DoorFire", prLocked: true)
-        productArray.append(quatro)
+        productArray = [
+            Numbers(prNumber: 1, prImage: "DoorDirt", prId: .terra, prIntro: "Vamos duelar??", prKeyUnlocked: .agua, prNumOfCards: 3),
+            
+            Numbers(prNumber: 2, prImage: "DoorWater", prId: .agua, prIntro: "Vamos duelar??", prKeyUnlocked: .ar, prNumOfCards: 4),
+            
+            Numbers(prNumber: 3, prImage: "DoorAir", prId: .ar, prIntro: "Vamos duelar??", prKeyUnlocked: .fogo, prNumOfCards: 5),
+            
+            Numbers(prNumber: 4, prImage: "DoorFire", prId: .fogo, prIntro: "Vamos duelar??", prKeyUnlocked: .todos, prNumOfCards: 6)
+        ]
         
         tableNumbers.dataSource = self
         tableNumbers.delegate = self
@@ -71,14 +54,14 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCell = productArray[indexPath.item]
-        if selectedCell.locked == false{
+        if UserKeys.allKeys.contains(selectedCell.id) {
             performSegue(withIdentifier: "showdetail", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if let destination = segue.destination as? GameViewController {
-          destination.doorIndex = selectedCell.number!
+          destination.selectedDoor = selectedCell
       }
     }
     
