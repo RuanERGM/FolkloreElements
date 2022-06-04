@@ -211,6 +211,10 @@ extension GameViewController: UICollectionViewDelegate {
                                   UserKeys.allKeys.append(self.selectedDoor.keyUnlocked)
                               }
                               
+                              if UserKeys.allDoor < self.selectedDoor.number{
+                                  UserKeys.allDoor = self.selectedDoor.number
+                              }
+                              
                               self.performSegue(withIdentifier: "Victory", sender: self)
                               // chamar tela
                           }

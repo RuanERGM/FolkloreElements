@@ -14,13 +14,13 @@ class TableViewController: UITableViewController {
         
         
         productArray = [
-            Numbers(prNumber: 1, prImage: "DoorDirt", prId: .terra, prIntro: "Vamos duelar??", prKeyUnlocked: .agua, prNumOfCards: 3),
+            Numbers(prNumber: 1, prImage: "DoorDirt", prId: .terra, prIntro: "Vamos duelar??", prKeyUnlocked: .agua, prNumOfCards: 1),
             
-            Numbers(prNumber: 2, prImage: "DoorWater", prId: .agua, prIntro: "Vamos duelar??", prKeyUnlocked: .ar, prNumOfCards: 4),
+            Numbers(prNumber: 2, prImage: "DoorWater", prId: .agua, prIntro: "Vamos duelar??", prKeyUnlocked: .ar, prNumOfCards: 1),
             
-            Numbers(prNumber: 3, prImage: "DoorAir", prId: .ar, prIntro: "Vamos duelar??", prKeyUnlocked: .fogo, prNumOfCards: 5),
+            Numbers(prNumber: 3, prImage: "DoorAir", prId: .ar, prIntro: "Vamos duelar??", prKeyUnlocked: .fogo, prNumOfCards: 1),
             
-            Numbers(prNumber: 4, prImage: "DoorFire", prId: .fogo, prIntro: "Vamos duelar??", prKeyUnlocked: .todos, prNumOfCards: 6)
+            Numbers(prNumber: 4, prImage: "DoorFire", prId: .fogo, prIntro: "Vamos duelar??", prKeyUnlocked: .todos, prNumOfCards: 1)
         ]
         
         tableNumbers.dataSource = self
