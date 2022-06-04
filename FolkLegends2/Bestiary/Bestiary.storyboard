@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipo 1" translatesAutoresizingMaskIntoConstraints="NO" id="JVS-kt-9V1">
-                                <rect key="frame" x="96" y="44" width="222" height="107"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="107" id="vxn-RR-U6v"/>
-                                </constraints>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-P0-Wr5">
                                 <rect key="frame" x="0.0" y="214" width="414" height="618"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
@@ -59,18 +53,23 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipo 1" translatesAutoresizingMaskIntoConstraints="NO" id="VkT-aX-K0M">
+                                <rect key="frame" x="87" y="64" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ojw-0X-Uxu"/>
+                                    <constraint firstAttribute="height" constant="128" id="ufQ-Np-0aH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LdC-DG-5fy"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gLq-P0-Wr5" firstAttribute="leading" secondItem="LdC-DG-5fy" secondAttribute="leading" id="0Hy-rd-11h"/>
                             <constraint firstItem="LdC-DG-5fy" firstAttribute="bottom" secondItem="gLq-P0-Wr5" secondAttribute="bottom" constant="30" id="1fc-KV-NBY"/>
-                            <constraint firstItem="LdC-DG-5fy" firstAttribute="trailing" secondItem="JVS-kt-9V1" secondAttribute="trailing" constant="96" id="6f3-IQ-WKV"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="JVS-kt-9V1" secondAttribute="bottom" constant="63" id="GcH-bw-ZfU"/>
-                            <constraint firstItem="JVS-kt-9V1" firstAttribute="centerX" secondItem="LdC-DG-5fy" secondAttribute="centerX" id="LSx-46-0zv"/>
-                            <constraint firstItem="LdC-DG-5fy" firstAttribute="bottom" secondItem="JVS-kt-9V1" secondAttribute="bottom" constant="711" id="Ljr-3h-NQ7"/>
-                            <constraint firstItem="JVS-kt-9V1" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" id="afA-at-ZgV"/>
-                            <constraint firstItem="JVS-kt-9V1" firstAttribute="centerX" secondItem="gLq-P0-Wr5" secondAttribute="centerX" id="kjL-hy-JUl"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="170" id="5eF-Ux-VKR"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerX" secondItem="fe4-0a-Xhk" secondAttribute="centerX" id="I8G-bl-ioh"/>
+                            <constraint firstItem="VkT-aX-K0M" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="20" id="k5t-DN-MmV"/>
+                            <constraint firstItem="VkT-aX-K0M" firstAttribute="centerX" secondItem="fe4-0a-Xhk" secondAttribute="centerX" id="r39-hy-VU9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fkh-b0-K3U"/>
@@ -96,68 +95,68 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2f8-rk-Kgd" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2800"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVc-Lt-2wC">
                                                 <rect key="frame" x="8" y="39" width="398" height="321"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do Personagem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9B-Z4-vAk">
-                                                <rect key="frame" x="17" y="392" width="380" height="29"/>
+                                                <rect key="frame" x="17" y="392" width="380" height="61"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-Xf-lQO">
-                                                <rect key="frame" x="19" y="477" width="378" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <color key="textColor" name="TintColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-Hl-fUc">
-                                                <rect key="frame" x="17" y="530" width="381" height="258"/>
+                                                <rect key="frame" x="17" y="592" width="381" height="551"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Um casal de índios pertencente à tribo Maués não possuíam filhos e desejava muito uma criança.\nUm dia, eles pediram a Tupã uma criança para completar sua felicidade. Tupã, o rei dos deuses, lhes atendeu o desejo trazendo a eles um lindo menino, bonito, generoso e bom.</string>
+                                                <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="TintColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-rl-j5J">
-                                                <rect key="frame" x="19" y="841" width="380" height="492"/>
+                                                <rect key="frame" x="18" y="1314" width="380" height="569"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">O tempo passou e Jurupari, o deus da escuridão, sentia uma extrema inveja do menino, da paz e da felicidade que ele transmitia, e decidiu então se livrar dele.\nUm dia o menino foi coletar frutos na floresta e Jurupari para se vingar se transformou em uma serpente venenosa e o mordeu, matando-o instantaneamente.\nA triste notícia espalhou-se rapidamente. Nesse momento, trovões ecoaram na floresta e fortes relâmpagos caíram pela aldeia.</string>
+                                                <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="TintColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-pD-2Ii">
-                                                <rect key="frame" x="19" y="1460" width="378" height="21"/>
+                                                <rect key="frame" x="20" y="1948" width="378" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <color key="textColor" name="TintColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-fI-1BN">
-                                                <rect key="frame" x="19" y="812" width="378" height="21"/>
+                                                <rect key="frame" x="18" y="1215" width="378" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <color key="textColor" name="TintColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFZ-C2-N6J">
-                                                <rect key="frame" x="19" y="1507" width="380" height="485"/>
+                                                <rect key="frame" x="17" y="2033" width="380" height="561"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">A mãe, que chorava em desespero, entendeu que os trovões eram uma mensagem de Tupã, dizendo que ela deveria plantar os olhos da criança e que deles uma nova planta cresceria dando saborosos frutos.\nOs índios obedeceram ao pedido da mãe e plantaram os olhos do menino. Nesse lugar, cresceu o guaraná, cujas sementes são negras e têm um arilo em seu redor, imitando os olhos humanos.</string>
+                                                <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="TintColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-Xf-lQO">
+                                                <rect key="frame" x="20" y="520" width="378" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <color key="textColor" name="TintColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="2000" id="nOg-kT-1zG"/>
+                                            <constraint firstAttribute="height" constant="2800" id="nOg-kT-1zG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -174,6 +173,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fwa-kd-qhE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2f8-rk-Kgd" firstAttribute="centerX" secondItem="fwa-kd-qhE" secondAttribute="centerX" id="DVs-Mb-3Ww"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SwV-Bv-OVl"/>
                     <connections>
@@ -196,6 +198,9 @@
         <image name="logotipo 1" width="1080" height="536"/>
         <namedColor name="BackgroundColor">
             <color red="0.95294117647058818" green="0.93333333333333335" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.74117647058823533" green="0.5490196078431373" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

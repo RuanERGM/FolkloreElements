@@ -12,21 +12,21 @@ class Description: UIViewController{
     super.viewDidLoad()
         
         if (x == 1){
-            Descricao.text = "I am the one born of the earth, the one who has eyes scattered across this earth! My name is Guarana. Now face me"
+            Descricao.text = "Eu sou aquele nascido da terra, aquele que tem os olhos espalhados por esta terra! Meu nome é Guaraná. Agora me enfrente!"
             name.text = "Guaraná"
         }
         
         if (x == 2){
-            Descricao.text = "I am the one who was betrayed and turned into a tapir by those I trusted. Birá is my name, let's fight "
+            Descricao.text = "Eu sou aquele que foi traído e transformado em anta por aqueles em quem confiei. Birá é meu nome, vamos lutar!"
             name.text = "Birá"
         }
         if (x == 3){
-            Descricao.text = "People tremble as they try to pronounce my name. I am the one who wanders in the depths of dreams,If you have the courage try to beat me"
+            Descricao.text = "As pessoas tremem enquanto tentam pronunciar meu nome. Eu sou aquele que vagueia nas profundezas dos sonhos.Se você tiver coragem,tente me vencer..."
             name.text = "Tutu"
         }
         if (x == 4){
-            Descricao.text = "I am the lord of flames, my wings guard the powers of fire. Anyone who tries to take this power will have to face me."
-            name.text = "King Vulture"
+            Descricao.text = "Eu sou o senhor das chamas, minhas asas guardam os poderes do fogo. Qualquer um que tentar tomar esse poder terá que me enfrentar!"
+            name.text = "Urubu-Rei"
         }
     
     
