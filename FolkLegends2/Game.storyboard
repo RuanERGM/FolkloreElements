@@ -183,7 +183,7 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wa7-Vo-Vbn">
-                                <rect key="frame" x="206" y="324" width="151" height="200"/>
+                                <rect key="frame" x="206.5" y="324" width="150" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A02-WS-P3b">
                                         <rect key="frame" x="8" y="171" width="27" height="21"/>
@@ -225,7 +225,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-na-irE">
-                                <rect key="frame" x="48" y="324" width="150" height="200"/>
+                                <rect key="frame" x="48.5" y="324" width="150" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlP-te-8M7">
                                         <rect key="frame" x="8" y="171" width="23" height="21"/>
@@ -315,7 +315,6 @@
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jj8-kn-K9q"/>
                             <constraint firstItem="dJ0-gU-twE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="83" id="mvd-E7-Pxo"/>
                             <constraint firstItem="Wa7-Vo-Vbn" firstAttribute="leading" secondItem="7LV-na-irE" secondAttribute="trailing" constant="8" symbolic="YES" id="qA3-FJ-lgC"/>
-                            <constraint firstItem="7LV-na-irE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="zHi-GX-2xF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nan-x2-sJY" secondAttribute="trailing" constant="20" id="zX8-wN-feD"/>
                         </constraints>
                     </view>
@@ -338,9 +337,9 @@
                         <outlet property="labelTopDamageCpu" destination="kV4-cq-4WE" id="9Kv-xz-beC"/>
                         <outlet property="labelTopLife" destination="OQb-Ip-AQZ" id="beK-B0-heA"/>
                         <outlet property="labelTopLifeCpu" destination="v7x-Kk-Q0H" id="Ttx-yS-Ny9"/>
-                        <segue destination="svb-b1-rGe" kind="presentation" identifier="talk" id="MlZ-gr-pin"/>
                         <segue destination="Iyh-rh-zRo" kind="presentation" identifier="Victory" id="ueA-Gc-RD8"/>
                         <segue destination="hRr-wJ-5kY" kind="presentation" identifier="Loser" id="VcL-ID-a8i"/>
+                        <segue destination="svb-b1-rGe" kind="presentation" identifier="talk" id="uHF-um-akJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -430,10 +429,6 @@
                                             <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="xsE-dk-Mpp"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-jU-WhD">
-                                        <rect key="frame" x="89" y="-73" width="196" height="144"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carta Desbloqueada!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmS-kz-AuQ">
                                         <rect key="frame" x="4" y="79" width="366" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -441,6 +436,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="victory" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-jU-WhD">
+                                        <rect key="frame" x="45" y="-118" width="284" height="189"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="TabBarColor"/>
                             </view>
@@ -477,13 +476,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFg-35-NDn">
                                 <rect key="frame" x="20" y="185" width="374" height="425"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você Perdeu!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4C-0d-Ys1">
-                                        <rect key="frame" x="4" y="84" width="366" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwc-Gu-5YN">
                                         <rect key="frame" x="35" y="333" width="81" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -503,12 +495,19 @@
                                             <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="Sg2-ke-lkk"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="0mD-oj-Xkd">
-                                        <rect key="frame" x="89" y="-68" width="196" height="144"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-AQ-3L2">
+                                        <rect key="frame" x="4" y="155" width="362" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DERROTA" translatesAutoresizingMaskIntoConstraints="NO" id="0mD-oj-Xkd">
+                                        <rect key="frame" x="45" y="-118" width="284" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-AQ-3L2">
-                                        <rect key="frame" x="4" y="131" width="362" height="164"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você Perdeu!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4C-0d-Ys1">
+                                        <rect key="frame" x="4" y="108" width="366" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
@@ -539,12 +538,13 @@
         <segue reference="Sg2-ke-lkk"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Image" width="150.5" height="150.5"/>
+        <image name="DERROTA" width="150.5" height="104.5"/>
         <image name="agua" width="512" height="512"/>
         <image name="door.fill" width="19" height="23"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <image name="return.dark" width="30" height="30"/>
         <image name="teste1" width="320" height="600"/>
+        <image name="victory" width="150.5" height="104.5"/>
         <namedColor name="BackgroundColor">
             <color red="0.95294117647058818" green="0.93333333333333335" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

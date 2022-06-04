@@ -49,8 +49,6 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        performSegue(withIdentifier: "talk", sender: self)
-        
         
         for _ in 1 ... selectedDoor.numOfCards {
             cardsPlayer.append(CardGame())
@@ -75,6 +73,9 @@ class GameViewController: UIViewController {
         countCardsCpu = cardsCpu.count
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        performSegue(withIdentifier: "talk", sender: self)
+    }
 }
 
 extension GameViewController: UICollectionViewDataSource {
