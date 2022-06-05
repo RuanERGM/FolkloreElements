@@ -14,18 +14,19 @@ class TableViewController: UITableViewController {
         
         
         productArray = [
-            Numbers(prNumber: 1, prImage: "DoorDirt", prId: .terra, prIntro: "Vamos duelar??", prKeyUnlocked: .agua, prNumOfCards: 1),
+            Numbers(prNumber: 1, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),
             
-            Numbers(prNumber: 2, prImage: "DoorWater", prId: .agua, prIntro: "Vamos duelar??", prKeyUnlocked: .ar, prNumOfCards: 1),
+            Numbers(prNumber: 2, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 1),
             
-            Numbers(prNumber: 3, prImage: "DoorAir", prId: .ar, prIntro: "Vamos duelar??", prKeyUnlocked: .fogo, prNumOfCards: 1),
+            Numbers(prNumber: 3, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 1),
             
-            Numbers(prNumber: 4, prImage: "DoorFire", prId: .fogo, prIntro: "Vamos duelar??", prKeyUnlocked: .todos, prNumOfCards: 1)
+            Numbers(prNumber: 4, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 1)
         ]
         
         tableNumbers.dataSource = self
         tableNumbers.delegate = self
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -46,7 +47,13 @@ class TableViewController: UITableViewController {
         {
             cell.backView.layer.cornerRadius = 10.0;
             cell.frontView.roundCorners([.topRight, .bottomRight], radius: 10)
-            cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
+            
+            if UserKeys.allDoor + 1 >= self.productArray[indexPath.item].number {
+                cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
+            } else {
+                cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].imageLocked!)
+            }
+            
             cell.CellViewImage.layer.cornerRadius = 10.0;
         }
         return cell

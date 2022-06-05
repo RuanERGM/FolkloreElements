@@ -11,15 +11,15 @@ class Numbers {
     var number : Int!
     var image : String!
     var id: KeyTypes
-    var intro: String
+    var imageLocked: String!
     var keyUnlocked: KeyTypes
     var numOfCards: Int
     
-    init(prNumber: Int, prImage: String, prId: KeyTypes, prIntro: String, prKeyUnlocked: KeyTypes, prNumOfCards: Int){
+    init(prNumber: Int, prImage: String, prId: KeyTypes, prImageLocked: String, prKeyUnlocked: KeyTypes, prNumOfCards: Int){
         self.number = prNumber
         self.image = prImage
         self.id = prId
-        self.intro = prIntro
+        self.imageLocked = prImageLocked
         self.keyUnlocked = prKeyUnlocked
         self.numOfCards = prNumOfCards
     }
@@ -28,7 +28,7 @@ class Numbers {
         self.number = 0
         self.image = ""
         self.id = .vazio
-        self.intro = ""
+        self.imageLocked = ""
         self.keyUnlocked = .vazio
         self.numOfCards = 0
     }
