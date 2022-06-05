@@ -28,16 +28,14 @@
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vença os duelos para liberar as chaves que abrem os próximos níveis assim como as cartas para completar seu bestiário." lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
                                                 <rect key="frame" x="20" y="167" width="374" height="112"/>
-                                                <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-yk-FY3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaves_1" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-yk-FY3">
                                                 <rect key="frame" x="20" y="319" width="374" height="258"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona o jogo ?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-Hg-dV2">
                                                 <rect key="frame" x="20" y="617" width="374" height="37"/>
@@ -45,16 +43,15 @@
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-zW-JQf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-zW-JQf">
                                                 <rect key="frame" x="20" y="694" width="374" height="112"/>
-                                                <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <string key="text">Escolha uma de suas cartas para duelar com a carta do oponente, a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JyP-Oj-RSo">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como funciona 1" translatesAutoresizingMaskIntoConstraints="NO" id="JyP-Oj-RSo">
                                                 <rect key="frame" x="20" y="846" width="374" height="317"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relação elemental :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vm-Bn-7gt">
                                                 <rect key="frame" x="20" y="1203" width="374" height="37"/>
@@ -63,33 +60,32 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQv-BN-KJT">
-                                                <rect key="frame" x="20" y="1280" width="374" height="101.5"/>
-                                                <string key="text">Cada elemento tem uma vantagem e desvantagem em relação a outro, por exemplo, cartas de água dão mais dano em cartas de fogo. O esquema abaixo mostra as vantagens e desvantagens de cada um.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="20" y="1280" width="374" height="119.5"/>
+                                                <string key="text">Cada elemento tem uma vantagem e desvantagem em relação a outro. O esquema abaixo mostra as vantagens e desvantagens de cada um. As cartas de ar por sua vez, não sofrem efeitos.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-ec-RiE">
-                                                <rect key="frame" x="20" y="1421.5" width="374" height="324.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relacao elemental" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-ec-RiE">
+                                                <rect key="frame" x="20" y="1439.5" width="374" height="300.5"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Ahb-Ld-cI4" firstAttribute="top" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="40" id="01q-7r-wxP"/>
+                                            <constraint firstAttribute="bottom" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="400.5" id="0kT-w4-eo6"/>
                                             <constraint firstItem="vEc-yk-FY3" firstAttribute="top" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="40" id="1J7-xV-vb5"/>
                                             <constraint firstAttribute="trailing" secondItem="lG7-Hg-dV2" secondAttribute="trailing" constant="20" id="37A-fL-reX"/>
                                             <constraint firstItem="lG7-Hg-dV2" firstAttribute="top" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="40" id="37w-bW-Ydu"/>
                                             <constraint firstItem="PQv-BN-KJT" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="4Ze-EV-kuN"/>
                                             <constraint firstItem="OXw-wT-poh" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="4dW-5T-aog"/>
                                             <constraint firstAttribute="bottom" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="1673" id="61w-9f-7oX"/>
-                                            <constraint firstAttribute="bottom" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="418.5" id="6ol-hR-iDV"/>
                                             <constraint firstAttribute="trailing" secondItem="OXw-wT-poh" secondAttribute="trailing" constant="20" id="8fD-iV-IoU"/>
+                                            <constraint firstAttribute="bottom" secondItem="cOn-ec-RiE" secondAttribute="bottom" constant="60" id="Awx-rk-zzN"/>
                                             <constraint firstItem="OXw-wT-poh" firstAttribute="top" secondItem="7lb-ds-B15" secondAttribute="top" constant="30" id="COg-7p-PeM"/>
                                             <constraint firstAttribute="trailing" secondItem="PQv-BN-KJT" secondAttribute="trailing" constant="20" id="D44-Oh-6FB"/>
                                             <constraint firstItem="3Vm-Bn-7gt" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="DIh-gr-58a"/>
                                             <constraint firstAttribute="bottom" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="637" id="E0p-0z-uwF"/>
-                                            <constraint firstAttribute="bottom" secondItem="cOn-ec-RiE" secondAttribute="bottom" constant="54" id="EC1-Go-l0C"/>
                                             <constraint firstAttribute="trailing" secondItem="vEc-yk-FY3" secondAttribute="trailing" constant="20" id="HSN-Bx-Yzh"/>
                                             <constraint firstAttribute="trailing" secondItem="3Vm-Bn-7gt" secondAttribute="trailing" constant="20" id="Hp5-U2-nZ6"/>
                                             <constraint firstItem="lUX-zW-JQf" firstAttribute="top" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="40" id="IgV-I8-YQi"/>
@@ -106,8 +102,8 @@
                                             <constraint firstAttribute="bottom" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="994" id="ckb-bF-ekz"/>
                                             <constraint firstAttribute="height" constant="1800" id="gsA-vB-CDa"/>
                                             <constraint firstItem="3Vm-Bn-7gt" firstAttribute="top" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="40" id="iOf-5f-HAK"/>
-                                            <constraint firstItem="cOn-ec-RiE" firstAttribute="top" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="40" id="jGb-dr-hxJ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ahb-Ld-cI4" secondAttribute="trailing" constant="20" id="lXS-CU-iUa"/>
+                                            <constraint firstItem="cOn-ec-RiE" firstAttribute="top" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="40" id="nHf-0S-rFa"/>
                                             <constraint firstAttribute="bottom" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="1521" id="ofY-bH-NGn"/>
                                             <constraint firstItem="lG7-Hg-dV2" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="qID-E7-7Uo"/>
                                             <constraint firstItem="PQv-BN-KJT" firstAttribute="top" secondItem="3Vm-Bn-7gt" secondAttribute="bottom" constant="40" id="rHx-jb-7ak"/>
@@ -140,18 +136,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gw-I6-RSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119" y="-77"/>
-        </scene>
-        <!--Game-->
-        <scene sceneID="PEV-AO-OLt">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Game" id="oaG-hM-bUK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OOm-5o-CcA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="512" y="-664"/>
+            <point key="canvasLocation" x="118.84057971014494" y="-77.008928571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chaves_1" width="150.5" height="200.5"/>
+        <image name="como funciona 1" width="150.5" height="200.5"/>
+        <image name="relacao elemental" width="150.5" height="200.5"/>
         <namedColor name="BackgroundColor">
             <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
