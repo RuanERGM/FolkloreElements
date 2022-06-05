@@ -67,7 +67,9 @@
                             <constraint firstItem="LdC-DG-5fy" firstAttribute="bottom" secondItem="gLq-P0-Wr5" secondAttribute="bottom" constant="30" id="1fc-KV-NBY"/>
                             <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="170" id="5eF-Ux-VKR"/>
                             <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerX" secondItem="fe4-0a-Xhk" secondAttribute="centerX" id="I8G-bl-ioh"/>
+                            <constraint firstItem="VkT-aX-K0M" firstAttribute="leading" secondItem="LdC-DG-5fy" secondAttribute="leading" constant="87" id="K9m-U8-Hab"/>
                             <constraint firstItem="VkT-aX-K0M" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="20" id="k5t-DN-MmV"/>
+                            <constraint firstItem="LdC-DG-5fy" firstAttribute="trailing" secondItem="VkT-aX-K0M" secondAttribute="trailing" constant="87" id="nze-Qu-Ahg"/>
                             <constraint firstItem="VkT-aX-K0M" firstAttribute="centerX" secondItem="fe4-0a-Xhk" secondAttribute="centerX" id="r39-hy-VU9"/>
                         </constraints>
                     </view>
@@ -89,65 +91,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P0F-CW-y4A">
-                                <rect key="frame" x="0.0" y="20" width="414" height="788"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0F-CW-y4A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2f8-rk-Kgd" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2800"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IVc-Lt-2wC">
-                                                <rect key="frame" x="8" y="39" width="398" height="321"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IVc-Lt-2wC">
+                                                <rect key="frame" x="20" y="39" width="374" height="321"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do Personagem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9B-Z4-vAk">
-                                                <rect key="frame" x="17" y="392" width="380" height="61"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Personagem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9B-Z4-vAk">
+                                                <rect key="frame" x="20" y="400" width="374" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-Hl-fUc">
-                                                <rect key="frame" x="17" y="592" width="381" height="551"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-Hl-fUc">
+                                                <rect key="frame" x="20" y="595" width="374" height="548"/>
+                                                <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles! Porém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes. Quando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-rl-j5J">
-                                                <rect key="frame" x="18" y="1314" width="380" height="569"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-rl-j5J">
+                                                <rect key="frame" x="20" y="1273.5" width="374" height="609.5"/>
+                                                <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!Porém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes. Quando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-pD-2Ii">
-                                                <rect key="frame" x="20" y="1948" width="378" height="49"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-pD-2Ii">
+                                                <rect key="frame" x="20" y="1903" width="374" height="94"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-fI-1BN">
-                                                <rect key="frame" x="18" y="1215" width="378" height="47"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-fI-1BN">
+                                                <rect key="frame" x="20" y="1163" width="374" height="90.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFZ-C2-N6J">
-                                                <rect key="frame" x="17" y="2033" width="380" height="561"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles!\nPorém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes.\nQuando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFZ-C2-N6J">
+                                                <rect key="frame" x="20" y="2017" width="374" height="577"/>
+                                                <mutableString key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles! Porém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes. Quando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-Xf-lQO">
-                                                <rect key="frame" x="20" y="520" width="378" height="55"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-Xf-lQO">
+                                                <rect key="frame" x="20" y="493" width="374" height="82"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
@@ -155,7 +148,39 @@
                                         </subviews>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7pF-fI-1BN" secondAttribute="trailing" constant="20" id="0Gn-xh-NOd"/>
+                                            <constraint firstItem="S5I-rl-j5J" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="0wX-UY-yLf"/>
+                                            <constraint firstItem="7pF-fI-1BN" firstAttribute="top" secondItem="M2k-Hl-fUc" secondAttribute="bottom" constant="20" id="22x-AJ-Dls"/>
+                                            <constraint firstItem="eFZ-C2-N6J" firstAttribute="top" secondItem="l10-pD-2Ii" secondAttribute="bottom" constant="20" id="39N-Vd-R92"/>
+                                            <constraint firstItem="7pF-fI-1BN" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="3aW-2i-Sn3"/>
+                                            <constraint firstItem="l10-pD-2Ii" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="4of-AW-hcg"/>
+                                            <constraint firstAttribute="trailing" secondItem="l10-pD-2Ii" secondAttribute="trailing" constant="20" id="7Tk-LN-xrj"/>
+                                            <constraint firstItem="IVc-Lt-2wC" firstAttribute="top" secondItem="2f8-rk-Kgd" secondAttribute="top" constant="39" id="Bdo-qj-BCP"/>
+                                            <constraint firstAttribute="bottom" secondItem="S5I-rl-j5J" secondAttribute="bottom" constant="917" id="CIn-kx-TXs"/>
+                                            <constraint firstItem="l10-pD-2Ii" firstAttribute="top" secondItem="S5I-rl-j5J" secondAttribute="bottom" constant="20" id="Enn-uR-xf0"/>
+                                            <constraint firstAttribute="trailing" secondItem="S5I-rl-j5J" secondAttribute="trailing" constant="20" id="Gw6-N6-spw"/>
+                                            <constraint firstItem="M2k-Hl-fUc" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="HKg-5D-pOF"/>
+                                            <constraint firstAttribute="trailing" secondItem="M2k-Hl-fUc" secondAttribute="trailing" constant="20" id="HnA-gL-YS7"/>
+                                            <constraint firstAttribute="bottom" secondItem="C9B-Z4-vAk" secondAttribute="bottom" constant="2347" id="LX3-E0-wZg"/>
+                                            <constraint firstAttribute="bottom" secondItem="IVc-Lt-2wC" secondAttribute="bottom" constant="2440" id="OdV-Sh-x9h"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vsw-Xf-lQO" secondAttribute="bottom" constant="2225" id="Uuq-FR-fj7"/>
+                                            <constraint firstAttribute="trailing" secondItem="eFZ-C2-N6J" secondAttribute="trailing" constant="20" id="cMj-gU-h76"/>
+                                            <constraint firstItem="S5I-rl-j5J" firstAttribute="top" secondItem="7pF-fI-1BN" secondAttribute="bottom" constant="20" id="eUJ-tX-cR0"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vsw-Xf-lQO" secondAttribute="trailing" constant="20" id="ebc-vZ-ImJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="l10-pD-2Ii" secondAttribute="bottom" constant="803" id="ekz-Ir-992"/>
+                                            <constraint firstItem="M2k-Hl-fUc" firstAttribute="top" secondItem="Vsw-Xf-lQO" secondAttribute="bottom" constant="20" id="fE2-Jr-Itz"/>
+                                            <constraint firstAttribute="bottom" secondItem="7pF-fI-1BN" secondAttribute="bottom" constant="1546.5" id="h0x-zg-4CZ"/>
+                                            <constraint firstItem="Vsw-Xf-lQO" firstAttribute="top" secondItem="C9B-Z4-vAk" secondAttribute="bottom" constant="40" id="h7R-D8-6XR"/>
+                                            <constraint firstItem="IVc-Lt-2wC" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="hc2-3f-NNM"/>
+                                            <constraint firstAttribute="bottom" secondItem="eFZ-C2-N6J" secondAttribute="bottom" constant="206" id="mQi-c1-1wf"/>
+                                            <constraint firstAttribute="trailing" secondItem="IVc-Lt-2wC" secondAttribute="trailing" constant="20" id="nLm-TH-gh7"/>
                                             <constraint firstAttribute="height" constant="2800" id="nOg-kT-1zG"/>
+                                            <constraint firstItem="eFZ-C2-N6J" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="og5-4h-NEE"/>
+                                            <constraint firstAttribute="trailing" secondItem="C9B-Z4-vAk" secondAttribute="trailing" constant="20" id="qZc-X5-gtQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="M2k-Hl-fUc" secondAttribute="bottom" constant="1657" id="qo3-lu-m29"/>
+                                            <constraint firstItem="C9B-Z4-vAk" firstAttribute="top" secondItem="IVc-Lt-2wC" secondAttribute="bottom" constant="40" id="sL8-TM-Np5"/>
+                                            <constraint firstItem="C9B-Z4-vAk" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="vv2-FB-fnd"/>
+                                            <constraint firstItem="Vsw-Xf-lQO" firstAttribute="leading" secondItem="2f8-rk-Kgd" secondAttribute="leading" constant="20" id="yxl-al-h08"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -174,6 +199,10 @@
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2f8-rk-Kgd" firstAttribute="centerX" secondItem="fwa-kd-qhE" secondAttribute="centerX" id="DVs-Mb-3Ww"/>
+                            <constraint firstItem="P0F-CW-y4A" firstAttribute="trailing" secondItem="fwa-kd-qhE" secondAttribute="trailing" id="ICm-M8-Oga"/>
+                            <constraint firstItem="P0F-CW-y4A" firstAttribute="leading" secondItem="fwa-kd-qhE" secondAttribute="leading" id="SaX-ez-wUG"/>
+                            <constraint firstItem="P0F-CW-y4A" firstAttribute="top" secondItem="xOp-4d-bjb" secondAttribute="top" id="tnG-9S-6n3"/>
+                            <constraint firstItem="fwa-kd-qhE" firstAttribute="bottom" secondItem="P0F-CW-y4A" secondAttribute="bottom" id="vTP-wi-5hF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SwV-Bv-OVl"/>
