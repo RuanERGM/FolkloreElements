@@ -22,21 +22,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lb-ds-B15">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-oD-PpD">
-                                                <rect key="frame" x="20" y="20" width="39.5" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="back.dark"/>
-                                                <connections>
-                                                    <segue destination="oaG-hM-bUK" kind="presentation" modalPresentationStyle="fullScreen" id="Pl5-9a-Gp2"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetivo do jogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-wT-poh">
-                                                <rect key="frame" x="20" y="90" width="374" height="37"/>
+                                                <rect key="frame" x="20" y="30" width="374" height="97"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
                                                 <rect key="frame" x="20" y="167" width="374" height="112"/>
                                                 <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -53,7 +45,7 @@
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-zW-JQf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-zW-JQf">
                                                 <rect key="frame" x="20" y="694" width="374" height="112"/>
                                                 <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -70,7 +62,7 @@
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQv-BN-KJT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQv-BN-KJT">
                                                 <rect key="frame" x="20" y="1280" width="374" height="101.5"/>
                                                 <string key="text">Cada elemento tem uma vantagem e desvantagem em relação a outro, por exemplo, cartas de água dão mais dano em cartas de fogo. O esquema abaixo mostra as vantagens e desvantagens de cada um.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -93,8 +85,8 @@
                                             <constraint firstAttribute="bottom" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="1673" id="61w-9f-7oX"/>
                                             <constraint firstAttribute="bottom" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="418.5" id="6ol-hR-iDV"/>
                                             <constraint firstAttribute="trailing" secondItem="OXw-wT-poh" secondAttribute="trailing" constant="20" id="8fD-iV-IoU"/>
+                                            <constraint firstItem="OXw-wT-poh" firstAttribute="top" secondItem="7lb-ds-B15" secondAttribute="top" constant="30" id="COg-7p-PeM"/>
                                             <constraint firstAttribute="trailing" secondItem="PQv-BN-KJT" secondAttribute="trailing" constant="20" id="D44-Oh-6FB"/>
-                                            <constraint firstItem="OXw-wT-poh" firstAttribute="top" secondItem="SKA-oD-PpD" secondAttribute="bottom" constant="40" id="DC8-vd-kLz"/>
                                             <constraint firstItem="3Vm-Bn-7gt" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="DIh-gr-58a"/>
                                             <constraint firstAttribute="bottom" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="637" id="E0p-0z-uwF"/>
                                             <constraint firstAttribute="bottom" secondItem="cOn-ec-RiE" secondAttribute="bottom" constant="54" id="EC1-Go-l0C"/>
@@ -112,10 +104,7 @@
                                             <constraint firstItem="vEc-yk-FY3" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="cMV-ba-TTQ"/>
                                             <constraint firstItem="cOn-ec-RiE" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="chy-dr-54F"/>
                                             <constraint firstAttribute="bottom" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="994" id="ckb-bF-ekz"/>
-                                            <constraint firstItem="SKA-oD-PpD" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="d2K-zB-Z17"/>
-                                            <constraint firstItem="SKA-oD-PpD" firstAttribute="top" secondItem="7lb-ds-B15" secondAttribute="top" constant="20" id="gPM-dc-aaK"/>
                                             <constraint firstAttribute="height" constant="1800" id="gsA-vB-CDa"/>
-                                            <constraint firstAttribute="bottom" secondItem="SKA-oD-PpD" secondAttribute="bottom" constant="1750" id="hJP-gV-AR9"/>
                                             <constraint firstItem="3Vm-Bn-7gt" firstAttribute="top" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="40" id="iOf-5f-HAK"/>
                                             <constraint firstItem="cOn-ec-RiE" firstAttribute="top" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="40" id="jGb-dr-hxJ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ahb-Ld-cI4" secondAttribute="trailing" constant="20" id="lXS-CU-iUa"/>
@@ -163,7 +152,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back.dark" width="15.5" height="15.5"/>
         <namedColor name="BackgroundColor">
             <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

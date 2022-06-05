@@ -301,7 +301,7 @@
                                     <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Hug-dN-LiB" kind="presentation" modalPresentationStyle="fullScreen" id="ERu-ka-fNE"/>
+                                    <segue destination="Hug-dN-LiB" kind="presentation" modalPresentationStyle="automatic" id="ERu-ka-fNE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nan-x2-sJY">
@@ -462,7 +462,7 @@
                                         <rect key="frame" x="270" y="333" width="81" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="door.fill" title=" ">
+                                        <buttonConfiguration key="configuration" style="filled" image="door.game.brown" title=" ">
                                             <color key="baseBackgroundColor" name="BackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -476,7 +476,7 @@
                                         <color key="textColor" name="BackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="victory" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-jU-WhD">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-jU-WhD">
                                         <rect key="frame" x="45" y="-118" width="284" height="189"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -494,6 +494,7 @@
                     </view>
                     <connections>
                         <outlet property="cardUnloked" destination="RqZ-IR-2rf" id="BOy-TH-gsl"/>
+                        <segue destination="Y6W-OH-hqX" kind="presentation" identifier="showGame" modalPresentationStyle="fullScreen" id="olh-ab-cxQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsn-fJ-CRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -531,7 +532,7 @@
                                         <rect key="frame" x="270" y="333" width="81" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="door.fill" title=" ">
+                                        <buttonConfiguration key="configuration" style="filled" image="door.game.brown" title=" ">
                                             <color key="baseBackgroundColor" name="BackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -545,7 +546,7 @@
                                         <color key="textColor" name="BackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DERROTA" translatesAutoresizingMaskIntoConstraints="NO" id="0mD-oj-Xkd">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="0mD-oj-Xkd">
                                         <rect key="frame" x="45" y="-118" width="284" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -570,6 +571,7 @@
                     </view>
                     <connections>
                         <outlet property="labelLoser" destination="Iy2-AQ-3L2" id="2c9-E4-vDt"/>
+                        <segue destination="Y6W-OH-hqX" kind="presentation" identifier="showGame" modalPresentationStyle="fullScreen" id="UUr-NH-6i6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W11-Ef-OQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -579,21 +581,22 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="xsE-dk-Mpp"/>
+        <segue reference="olh-ab-cxQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AGUA - MAIOR" width="150.5" height="200.5"/>
         <image name="AR - MAIOR" width="150.5" height="200.5"/>
         <image name="Board" width="428.5" height="926.5"/>
-        <image name="DERROTA" width="150.5" height="104.5"/>
+        <image name="Derrota" width="150.5" height="104.5"/>
         <image name="TERRA - MAIOR" width="150.5" height="200.5"/>
+        <image name="Vitória" width="150.5" height="104.5"/>
         <image name="ar" width="512" height="512"/>
         <image name="ataque" width="150.5" height="150.5"/>
         <image name="back.dark" width="15.5" height="15.5"/>
         <image name="card.bahira" width="320.5" height="600.5"/>
-        <image name="door.fill" width="19" height="23"/>
+        <image name="door.game.brown" width="30.5" height="30.5"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="return.dark" width="30" height="30"/>
-        <image name="victory" width="150.5" height="104.5"/>
+        <image name="return.dark" width="30.5" height="30.5"/>
         <image name="vida" width="150.5" height="150.5"/>
         <namedColor name="BackgroundColor">
             <color red="0.95294117647058818" green="0.93333333333333335" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

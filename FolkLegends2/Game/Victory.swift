@@ -4,6 +4,18 @@ class Victory: UIViewController{
     
     @IBOutlet weak var cardUnloked: UIImageView!
     
+    var selectedDoor = Numbers()
+    
+    @IBAction func returnGame(_ sender: Any) {
+        self.performSegue(withIdentifier: "showGame", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if let destination = segue.destination as? GameViewController {
+          destination.selectedDoor = self.selectedDoor
+      }
+    }
+    
     func getCardUnloked() -> String {
         switch UserKeys.allDoor {
         case 1:

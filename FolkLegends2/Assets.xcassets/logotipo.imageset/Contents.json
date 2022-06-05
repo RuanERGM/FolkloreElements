@@ -28,6 +28,7 @@
       "scale" : "1x"
     },
     {
+      "filename" : "logotipo 1-1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -38,6 +39,7 @@
           "value" : "light"
         }
       ],
+      "filename" : "logotipo - brown-1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -48,10 +50,12 @@
           "value" : "dark"
         }
       ],
+      "filename" : "logotipo - white-1.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "logotipo 1-2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -62,6 +66,7 @@
           "value" : "light"
         }
       ],
+      "filename" : "logotipo - brown-2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -72,6 +77,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "logotipo - white-2.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
