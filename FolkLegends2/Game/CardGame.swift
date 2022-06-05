@@ -12,6 +12,7 @@ class CardGame: Equatable {
     var life: Int
     var damage: Int
     var element: CardElement
+        
     
     init(life: Int, damage: Int, element: CardElement){
         self.life = (life < 1 || life > 10) ? 1 : life
@@ -30,18 +31,39 @@ class CardGame: Equatable {
         return (lhs.life == rhs.life && lhs.damage == rhs.damage && lhs.element == rhs.element)
     }
     
+    func getWeakness(elementF: CardElement) -> CardElement {
+        switch elementF{
+        case .agua:
+            return .terra
+        case .terra:
+            return .fogo
+        case .fogo:
+            return .agua
+        default:
+            return .vazio
+        }
+    }
+    
     func fight(enemy: CardGame) -> Int {
-        let newEnemyLife = enemy.life - self.damage
+        var newEnemyLife = 0
+        if getWeakness(elementF: enemy.element) == self.element{
+            newEnemyLife = enemy.life - (self.damage + self.damage/5) // 20% a mais de dano
+        } else {
+            newEnemyLife = enemy.life - self.damage
+        }
         enemy.life = (newEnemyLife < 0) ? 0: newEnemyLife
         return enemy.life
     }
     
     func counterattack(enemy: CardGame) -> Int {
         var newPlayerLife = 0
-        if self.element != enemy.element {
+        
+        if getWeakness(elementF: self.element) == enemy.element{
+            newPlayerLife = self.life - (enemy.damage + enemy.damage/5) // 20%
+        } else {
             newPlayerLife = self.life - enemy.damage
-            self.life = (newPlayerLife < 0) ? 0: newPlayerLife
         }
+        self.life = (newPlayerLife < 0) ? 0: newPlayerLife
         return self.life
     }
     
@@ -55,10 +77,12 @@ class CardGame: Equatable {
             return "fogo"
         case .ar:
             return "ar"
+        case .vazio:
+            return "vazio"
         }
     }
 }
 
 enum CardElement {
-    case agua, terra, fogo, ar
+    case agua, terra, fogo, ar, vazio
 }

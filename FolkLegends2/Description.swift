@@ -20,7 +20,7 @@ class Description: UIViewController{
         if (x == 2){
             Descricao.text = "Eu sou aquele que foi traído e transformado em anta por aqueles em quem confiei. Birá é meu nome, vamos lutar!"
             name.text = "Birá"
-            foto.image = UIImage(named: "Peixes")
+            foto.image = UIImage(named: "Bira")
         }
         if (x == 3){
             Descricao.text = "As pessoas tremem enquanto tentam pronunciar meu nome. Eu sou aquele que vagueia nas profundezas dos sonhos.Se você tiver coragem,tente me vencer..."
