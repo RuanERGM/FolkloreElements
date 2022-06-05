@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N7G-5O-PeZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="okz-TG-bSi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,159 +8,150 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="i6c-Jo-Vnd">
-            <objects>
-                <navigationController id="N7G-5O-PeZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9KF-mY-48x">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="eRA-mo-XJU" kind="relationship" relationship="rootViewController" id="zLk-iC-KHe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tE0-cX-aHY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-728" y="48"/>
-        </scene>
         <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <scene sceneID="p1s-sC-NTb">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                <viewController id="okz-TG-bSi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t1O-WV-FJZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOK-aS-61R">
-                                <rect key="frame" x="20" y="212" width="374" height="112"/>
-                                <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" name="FontColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag2-vT-ecs">
-                                <rect key="frame" x="20" y="781" width="374" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="next"/>
-                                <connections>
-                                    <segue destination="VtW-eO-c8p" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Dgp-Kr-n6W"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4td-BS-0hZ">
-                                <rect key="frame" x="20" y="74" width="54" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="return.dark">
-                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="oaG-hM-bUK" kind="presentation" modalPresentationStyle="fullScreen" id="azp-Sh-Oc9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona o jogo ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsh-mZ-DHL">
-                                <rect key="frame" x="20" y="145" width="374" height="37"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" name="FontColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hKb-H1-PwS">
-                                <rect key="frame" x="20" y="400" width="374" height="290"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpN-uZ-Woa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lb-ds-B15">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-oD-PpD">
+                                                <rect key="frame" x="20" y="20" width="40" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="back.dark"/>
+                                                <connections>
+                                                    <segue destination="oaG-hM-bUK" kind="presentation" modalPresentationStyle="fullScreen" id="Pl5-9a-Gp2"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetivo do jogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-wT-poh">
+                                                <rect key="frame" x="20" y="90" width="374" height="37"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
+                                                <rect key="frame" x="20" y="167" width="374" height="112"/>
+                                                <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-yk-FY3">
+                                                <rect key="frame" x="20" y="319" width="374" height="258"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona o jogo ?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-Hg-dV2">
+                                                <rect key="frame" x="20" y="617" width="374" height="37"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-zW-JQf">
+                                                <rect key="frame" x="20" y="694" width="374" height="112"/>
+                                                <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JyP-Oj-RSo">
+                                                <rect key="frame" x="20" y="846" width="374" height="317"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relação elemental :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vm-Bn-7gt">
+                                                <rect key="frame" x="20" y="1203" width="374" height="37"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQv-BN-KJT">
+                                                <rect key="frame" x="20" y="1280" width="374" height="101.5"/>
+                                                <string key="text">Cada elemento tem uma vantagem e desvantagem em relação a outro, por exemplo, cartas de água dão mais dano em cartas de fogo. O esquema abaixo mostra as vantagens e desvantagens de cada um.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-ec-RiE">
+                                                <rect key="frame" x="20" y="1421.5" width="374" height="324.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Ahb-Ld-cI4" firstAttribute="top" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="40" id="01q-7r-wxP"/>
+                                            <constraint firstItem="vEc-yk-FY3" firstAttribute="top" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="40" id="1J7-xV-vb5"/>
+                                            <constraint firstAttribute="trailing" secondItem="lG7-Hg-dV2" secondAttribute="trailing" constant="20" id="37A-fL-reX"/>
+                                            <constraint firstItem="lG7-Hg-dV2" firstAttribute="top" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="40" id="37w-bW-Ydu"/>
+                                            <constraint firstItem="PQv-BN-KJT" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="4Ze-EV-kuN"/>
+                                            <constraint firstItem="OXw-wT-poh" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="4dW-5T-aog"/>
+                                            <constraint firstAttribute="bottom" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="1673" id="61w-9f-7oX"/>
+                                            <constraint firstAttribute="bottom" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="418.5" id="6ol-hR-iDV"/>
+                                            <constraint firstAttribute="trailing" secondItem="OXw-wT-poh" secondAttribute="trailing" constant="20" id="8fD-iV-IoU"/>
+                                            <constraint firstAttribute="trailing" secondItem="PQv-BN-KJT" secondAttribute="trailing" constant="20" id="D44-Oh-6FB"/>
+                                            <constraint firstItem="OXw-wT-poh" firstAttribute="top" secondItem="SKA-oD-PpD" secondAttribute="bottom" constant="40" id="DC8-vd-kLz"/>
+                                            <constraint firstItem="3Vm-Bn-7gt" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="DIh-gr-58a"/>
+                                            <constraint firstAttribute="bottom" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="637" id="E0p-0z-uwF"/>
+                                            <constraint firstAttribute="bottom" secondItem="cOn-ec-RiE" secondAttribute="bottom" constant="54" id="EC1-Go-l0C"/>
+                                            <constraint firstAttribute="trailing" secondItem="vEc-yk-FY3" secondAttribute="trailing" constant="20" id="HSN-Bx-Yzh"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Vm-Bn-7gt" secondAttribute="trailing" constant="20" id="Hp5-U2-nZ6"/>
+                                            <constraint firstItem="lUX-zW-JQf" firstAttribute="top" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="40" id="IgV-I8-YQi"/>
+                                            <constraint firstItem="JyP-Oj-RSo" firstAttribute="top" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="40" id="Mbr-Wa-x74"/>
+                                            <constraint firstAttribute="trailing" secondItem="lUX-zW-JQf" secondAttribute="trailing" constant="20" id="MoN-Th-sCV"/>
+                                            <constraint firstAttribute="bottom" secondItem="3Vm-Bn-7gt" secondAttribute="bottom" constant="560" id="Mrp-Hg-pUT"/>
+                                            <constraint firstAttribute="trailing" secondItem="JyP-Oj-RSo" secondAttribute="trailing" constant="20" id="OkM-Xi-Jcq"/>
+                                            <constraint firstAttribute="bottom" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="1223" id="Wdg-rv-MCB"/>
+                                            <constraint firstItem="JyP-Oj-RSo" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="Yrw-ML-Y5X"/>
+                                            <constraint firstAttribute="trailing" secondItem="cOn-ec-RiE" secondAttribute="trailing" constant="20" id="Z5B-q9-XZf"/>
+                                            <constraint firstItem="lUX-zW-JQf" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="ZuB-KH-7fx"/>
+                                            <constraint firstItem="vEc-yk-FY3" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="cMV-ba-TTQ"/>
+                                            <constraint firstItem="cOn-ec-RiE" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="chy-dr-54F"/>
+                                            <constraint firstAttribute="bottom" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="994" id="ckb-bF-ekz"/>
+                                            <constraint firstItem="SKA-oD-PpD" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="d2K-zB-Z17"/>
+                                            <constraint firstItem="SKA-oD-PpD" firstAttribute="top" secondItem="7lb-ds-B15" secondAttribute="top" constant="20" id="gPM-dc-aaK"/>
+                                            <constraint firstAttribute="height" constant="1800" id="gsA-vB-CDa"/>
+                                            <constraint firstAttribute="bottom" secondItem="SKA-oD-PpD" secondAttribute="bottom" constant="1750" id="hJP-gV-AR9"/>
+                                            <constraint firstItem="3Vm-Bn-7gt" firstAttribute="top" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="40" id="iOf-5f-HAK"/>
+                                            <constraint firstItem="cOn-ec-RiE" firstAttribute="top" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="40" id="jGb-dr-hxJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ahb-Ld-cI4" secondAttribute="trailing" constant="20" id="lXS-CU-iUa"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="1521" id="ofY-bH-NGn"/>
+                                            <constraint firstItem="lG7-Hg-dV2" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="qID-E7-7Uo"/>
+                                            <constraint firstItem="PQv-BN-KJT" firstAttribute="top" secondItem="3Vm-Bn-7gt" secondAttribute="bottom" constant="40" id="rHx-jb-7ak"/>
+                                            <constraint firstItem="Ahb-Ld-cI4" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="rm6-wJ-zF0"/>
+                                            <constraint firstAttribute="bottom" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="1146" id="xsi-dG-6E3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7lb-ds-B15" firstAttribute="width" secondItem="eNK-em-RdP" secondAttribute="width" id="0uz-gq-qAZ"/>
+                                    <constraint firstItem="7lb-ds-B15" firstAttribute="trailing" secondItem="rIV-HA-4Mu" secondAttribute="trailing" id="DyE-Ba-fw3"/>
+                                    <constraint firstItem="7lb-ds-B15" firstAttribute="leading" secondItem="rIV-HA-4Mu" secondAttribute="leading" id="U4k-JS-hUd"/>
+                                    <constraint firstItem="7lb-ds-B15" firstAttribute="top" secondItem="rIV-HA-4Mu" secondAttribute="top" id="fou-yx-Owq"/>
+                                    <constraint firstItem="7lb-ds-B15" firstAttribute="bottom" secondItem="rIV-HA-4Mu" secondAttribute="bottom" id="tyM-mE-bOz"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rIV-HA-4Mu"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="eNK-em-RdP"/>
+                            </scrollView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <viewLayoutGuide key="safeArea" id="FUt-lb-HQE"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IOK-aS-61R" firstAttribute="top" secondItem="Lsh-mZ-DHL" secondAttribute="bottom" constant="30" id="3aW-eu-tr7"/>
-                            <constraint firstItem="Lsh-mZ-DHL" firstAttribute="top" secondItem="4td-BS-0hZ" secondAttribute="bottom" constant="27" id="6xX-fc-WeH"/>
-                            <constraint firstItem="4td-BS-0hZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="8Fq-9r-kHY"/>
-                            <constraint firstItem="Ag2-vT-ecs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Cc6-kb-zil"/>
-                            <constraint firstItem="Lsh-mZ-DHL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="HCd-Jt-Eoo"/>
-                            <constraint firstItem="IOK-aS-61R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="LCw-WF-8sz"/>
-                            <constraint firstItem="hKb-H1-PwS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Mqd-dA-mSd"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hKb-H1-PwS" secondAttribute="trailing" constant="20" id="WQm-uA-OAx"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IOK-aS-61R" secondAttribute="trailing" constant="20" id="XOn-4s-Uzn"/>
-                            <constraint firstItem="Ag2-vT-ecs" firstAttribute="top" secondItem="hKb-H1-PwS" secondAttribute="bottom" constant="91" id="aCv-7q-cBE"/>
-                            <constraint firstItem="4td-BS-0hZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="iYC-FI-351"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ag2-vT-ecs" secondAttribute="bottom" constant="50" id="meN-Cc-njG"/>
-                            <constraint firstItem="hKb-H1-PwS" firstAttribute="top" secondItem="IOK-aS-61R" secondAttribute="bottom" constant="76" id="wxp-Bv-ISy"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Lsh-mZ-DHL" secondAttribute="trailing" constant="20" id="xHb-pO-iwY"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ag2-vT-ecs" secondAttribute="trailing" constant="20" id="xlW-cy-wvJ"/>
+                            <constraint firstItem="GpN-uZ-Woa" firstAttribute="bottom" secondItem="FUt-lb-HQE" secondAttribute="bottom" id="DtJ-Mr-r3d"/>
+                            <constraint firstItem="GpN-uZ-Woa" firstAttribute="leading" secondItem="FUt-lb-HQE" secondAttribute="leading" id="UeF-Ca-IC4"/>
+                            <constraint firstItem="GpN-uZ-Woa" firstAttribute="top" secondItem="FUt-lb-HQE" secondAttribute="top" id="WDl-Iu-d9C"/>
+                            <constraint firstItem="GpN-uZ-Woa" firstAttribute="trailing" secondItem="FUt-lb-HQE" secondAttribute="trailing" id="a1S-dw-gx9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NO3-bC-d8O"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0gw-I6-RSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950.72463768115949" y="47.544642857142854"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="0fR-m5-KfF">
-            <objects>
-                <viewController id="VtW-eO-c8p" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="S3k-O0-1lB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relação elemental :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLJ-KS-v2N">
-                                <rect key="frame" x="20" y="142" width="374" height="37"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" name="FontColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luj-5O-34f">
-                                <rect key="frame" x="20" y="209" width="374" height="101.5"/>
-                                <string key="text">Cada elemento tem uma vantagem e desvantagem em relação a outro, por exemplo, cartas de água dão mais dano em cartas de fogo. O esquema abaixo mostra as vantagens e desvantagens de cada um.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="FontColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-KY-SOt">
-                                <rect key="frame" x="20" y="781" width="374" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="next"/>
-                                <connections>
-                                    <segue destination="eRA-mo-XJU" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="x6j-Q2-kcF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWu-Kj-4q6">
-                                <rect key="frame" x="20" y="71" width="54" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="return.dark">
-                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="oaG-hM-bUK" kind="presentation" modalPresentationStyle="fullScreen" id="cLb-Mn-sBO"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CbI-mN-Gsx">
-                                <rect key="frame" x="20" y="400" width="374" height="290"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Tgt-br-lcb"/>
-                        <color key="backgroundColor" name="BackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="dLJ-KS-v2N" firstAttribute="leading" secondItem="Tgt-br-lcb" secondAttribute="leading" constant="20" id="7nj-vr-3rQ"/>
-                            <constraint firstItem="WWu-Kj-4q6" firstAttribute="top" secondItem="Tgt-br-lcb" secondAttribute="top" constant="27" id="DG8-58-Ptj"/>
-                            <constraint firstItem="IRa-KY-SOt" firstAttribute="top" secondItem="CbI-mN-Gsx" secondAttribute="bottom" constant="91" id="EA1-5p-AU6"/>
-                            <constraint firstItem="dLJ-KS-v2N" firstAttribute="top" secondItem="WWu-Kj-4q6" secondAttribute="bottom" constant="27" id="F6k-eB-Spb"/>
-                            <constraint firstItem="Tgt-br-lcb" firstAttribute="trailing" secondItem="IRa-KY-SOt" secondAttribute="trailing" constant="20" id="HAE-0y-jAH"/>
-                            <constraint firstItem="WWu-Kj-4q6" firstAttribute="leading" secondItem="Tgt-br-lcb" secondAttribute="leading" constant="20" id="He7-Ay-eXt"/>
-                            <constraint firstItem="Luj-5O-34f" firstAttribute="leading" secondItem="Tgt-br-lcb" secondAttribute="leading" constant="20" id="Klj-iv-qxX"/>
-                            <constraint firstItem="Tgt-br-lcb" firstAttribute="bottom" secondItem="IRa-KY-SOt" secondAttribute="bottom" constant="50" id="MNX-YD-aIZ"/>
-                            <constraint firstItem="IRa-KY-SOt" firstAttribute="leading" secondItem="Tgt-br-lcb" secondAttribute="leading" constant="20" id="Zy5-9Y-Xgq"/>
-                            <constraint firstItem="Tgt-br-lcb" firstAttribute="trailing" secondItem="dLJ-KS-v2N" secondAttribute="trailing" constant="20" id="bHH-qv-292"/>
-                            <constraint firstItem="CbI-mN-Gsx" firstAttribute="leading" secondItem="Tgt-br-lcb" secondAttribute="leading" constant="20" id="kKF-xB-8kj"/>
-                            <constraint firstItem="Tgt-br-lcb" firstAttribute="trailing" secondItem="CbI-mN-Gsx" secondAttribute="trailing" constant="20" id="otn-Bt-u59"/>
-                            <constraint firstItem="Luj-5O-34f" firstAttribute="top" secondItem="dLJ-KS-v2N" secondAttribute="bottom" constant="30" id="stG-Bz-clg"/>
-                            <constraint firstItem="CbI-mN-Gsx" firstAttribute="top" secondItem="Luj-5O-34f" secondAttribute="bottom" constant="89.5" id="wbi-XF-GdL"/>
-                            <constraint firstItem="Tgt-br-lcb" firstAttribute="trailing" secondItem="Luj-5O-34f" secondAttribute="trailing" constant="20" id="wud-4q-lMn"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="iOR-VJ-M7z"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yFZ-jE-v85" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1747.826086956522" y="47.544642857142854"/>
+            <point key="canvasLocation" x="119" y="-77"/>
         </scene>
         <!--Game-->
         <scene sceneID="PEV-AO-OLt">
@@ -170,88 +161,14 @@
             </objects>
             <point key="canvasLocation" x="512" y="-664"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nhq-xb-uNJ">
-            <objects>
-                <viewController id="eRA-mo-XJU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W0F-A3-030">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQw-Fa-vYe">
-                                <rect key="frame" x="20" y="212" width="374" height="112"/>
-                                <string key="text">Você deve escolher uma de suas cartas para duelar com a carta do oponente, onde a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. É necessário ter atenção aos elementos de cada carta pois eles possuem vantagens e desvantagens entre si.</string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" name="FontColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xMu-2N-aCP">
-                                <rect key="frame" x="20" y="400" width="370" height="290"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-2M-9eo">
-                                <rect key="frame" x="20" y="781" width="374" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
-                                <connections>
-                                    <segue destination="Y6W-OH-hqX" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="tuh-dr-t1g"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gon-6F-Idp">
-                                <rect key="frame" x="20" y="74" width="54" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="return.dark">
-                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="oaG-hM-bUK" kind="presentation" modalPresentationStyle="fullScreen" id="0pO-Lh-IpB"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetivo do jogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHn-ej-NCo">
-                                <rect key="frame" x="20" y="145" width="374" height="37"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" name="FontColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="iOK-Zg-Zcq"/>
-                        <color key="backgroundColor" name="BackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="gon-6F-Idp" firstAttribute="leading" secondItem="iOK-Zg-Zcq" secondAttribute="leading" constant="20" id="92F-6L-0Y9"/>
-                            <constraint firstItem="iOK-Zg-Zcq" firstAttribute="trailing" secondItem="OTD-2M-9eo" secondAttribute="trailing" constant="20" id="CMA-J1-eYV"/>
-                            <constraint firstItem="iOK-Zg-Zcq" firstAttribute="trailing" secondItem="xMu-2N-aCP" secondAttribute="trailing" constant="24" id="J8V-ej-Uci"/>
-                            <constraint firstItem="gon-6F-Idp" firstAttribute="top" secondItem="iOK-Zg-Zcq" secondAttribute="top" constant="30" id="KYk-B7-xMw"/>
-                            <constraint firstItem="IHn-ej-NCo" firstAttribute="leading" secondItem="iOK-Zg-Zcq" secondAttribute="leading" constant="20" id="LFd-Rv-q81"/>
-                            <constraint firstItem="OTD-2M-9eo" firstAttribute="leading" secondItem="iOK-Zg-Zcq" secondAttribute="leading" constant="20" id="OF5-U3-eum"/>
-                            <constraint firstItem="IHn-ej-NCo" firstAttribute="top" secondItem="gon-6F-Idp" secondAttribute="bottom" constant="27" id="Pgz-sk-Uhw"/>
-                            <constraint firstItem="xMu-2N-aCP" firstAttribute="leading" secondItem="iOK-Zg-Zcq" secondAttribute="leading" constant="20" id="Q8E-tV-fau"/>
-                            <constraint firstItem="iOK-Zg-Zcq" firstAttribute="trailing" secondItem="IHn-ej-NCo" secondAttribute="trailing" constant="20" id="QVL-2A-HMD"/>
-                            <constraint firstItem="iOK-Zg-Zcq" firstAttribute="trailing" secondItem="KQw-Fa-vYe" secondAttribute="trailing" constant="20" id="Uzt-CM-vR7"/>
-                            <constraint firstItem="OTD-2M-9eo" firstAttribute="bottom" secondItem="iOK-Zg-Zcq" secondAttribute="bottom" constant="-50" id="XKy-Eh-Now"/>
-                            <constraint firstItem="OTD-2M-9eo" firstAttribute="top" secondItem="xMu-2N-aCP" secondAttribute="bottom" constant="91" id="YZW-lq-kWP"/>
-                            <constraint firstItem="xMu-2N-aCP" firstAttribute="top" secondItem="KQw-Fa-vYe" secondAttribute="bottom" constant="76" id="fVU-RL-cZv"/>
-                            <constraint firstItem="KQw-Fa-vYe" firstAttribute="top" secondItem="IHn-ej-NCo" secondAttribute="bottom" constant="30" id="jM0-Lf-rE4"/>
-                            <constraint firstItem="KQw-Fa-vYe" firstAttribute="leading" secondItem="iOK-Zg-Zcq" secondAttribute="leading" constant="20" id="yUu-4i-Z1T"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ik8-t7-FJD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lS2-kA-o7p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="98.550724637681171" y="47.544642857142854"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="tuh-dr-t1g"/>
-        <segue reference="x6j-Q2-kcF"/>
-        <segue reference="0pO-Lh-IpB"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="return.dark" width="30" height="30"/>
+        <image name="back.dark" width="15.5" height="15.5"/>
         <namedColor name="BackgroundColor">
-            <color red="0.95294117647058818" green="0.93333333333333335" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
-            <color red="0.30196078431372547" green="0.21568627450980393" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

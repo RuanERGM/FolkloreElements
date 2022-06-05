@@ -196,10 +196,10 @@
     <resources>
         <image name="logotipo" width="1080" height="536"/>
         <namedColor name="BackgroundColor">
-            <color red="0.95294117647058818" green="0.93333333333333335" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
-            <color red="0.30196078431372547" green="0.21568627450980393" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
