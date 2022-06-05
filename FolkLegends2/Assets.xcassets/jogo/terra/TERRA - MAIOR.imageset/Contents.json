@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "card.back - MENOR.png",
+      "filename" : "TERRA - MAIOR.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "card.back - MENOR@2x.png",
+      "filename" : "TERRA - MAIOR@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "card.back - MENOR @3x.png",
+      "filename" : "TERRA - MAIOR@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

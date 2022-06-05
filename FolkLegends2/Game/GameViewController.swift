@@ -20,17 +20,13 @@ class GameViewController: UIViewController {
     @IBOutlet weak var cardPlayer: UIView!
     
     // player card
-    @IBOutlet weak var labelTopDamage: UILabel!
     @IBOutlet weak var labelBottomDamage: UILabel!
-    @IBOutlet weak var labelTopLife: UILabel!
     @IBOutlet weak var labelBottomLife: UILabel!
     @IBOutlet weak var imagePlayer: UIImageView!
     @IBOutlet weak var labelTitlePlayer: UILabel!
     
     // cpu card
-    @IBOutlet weak var labelTopDamageCpu: UILabel!
     @IBOutlet weak var labelBottomDamageCpu: UILabel!
-    @IBOutlet weak var labelTopLifeCpu: UILabel!
     @IBOutlet weak var labelBottomLifeCpu: UILabel!
     @IBOutlet weak var imageCpu: UIImageView!
     @IBOutlet weak var labelTitleCpu: UILabel!
@@ -115,10 +111,8 @@ extension GameViewController: UICollectionViewDelegate {
           
           selectedCardPlayer = cardsPlayer[indexPath.item]
         
-          labelTopDamage.text = String(selectedCardPlayer.damage)
           labelBottomDamage.text = String(selectedCardPlayer.damage)
           
-          labelTopLife.text = String(selectedCardPlayer.life)
           labelBottomLife.text = String(selectedCardPlayer.life)
           
           imagePlayer.image = UIImage(named: selectedCardPlayer.getElement())
@@ -138,10 +132,8 @@ extension GameViewController: UICollectionViewDelegate {
               
               self.selectedCardCpu = self.cardsCpu[indexCpu]
               
-              self.labelTopDamageCpu.text = String(self.selectedCardCpu.damage)
               self.labelBottomDamageCpu.text = String(self.selectedCardCpu.damage)
               
-              self.labelTopLifeCpu.text = String(self.selectedCardCpu.life)
               self.labelBottomLifeCpu.text = String(self.selectedCardCpu.life)
               
               self.imageCpu.image = UIImage(named: self.selectedCardCpu.getElement())
@@ -162,14 +154,12 @@ extension GameViewController: UICollectionViewDelegate {
                   
                   // Atualizando valores de vida da cpu
                   
-                  self.labelTopLifeCpu.text = lifeCpu
                   self.labelBottomLifeCpu.text = lifeCpu
                   self.deckCpu.reloadData()
              
                   DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                       
                       // Atualizando valores de vida do player
-                      self.labelTopLife.text = lifePlayer
                       self.labelBottomLife.text = lifePlayer
                       self.deckPlayer.reloadData()
                   

@@ -70,15 +70,15 @@ class CardGame: Equatable {
     func getElement() -> String {
         switch element {
         case .agua:
-            return "agua"
+            return "AGUA - MAIOR"
         case .terra:
-            return "terra"
+            return "TERRA - MAIOR"
         case .fogo:
-            return "fogo"
+            return "FOGO - MAIOR"
         case .ar:
-            return "ar"
+            return "AR - MAIOR"
         case .vazio:
-            return "vazio"
+            return "card.back - MAIOR"
         }
     }
 }
