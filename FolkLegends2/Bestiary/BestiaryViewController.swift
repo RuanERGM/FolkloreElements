@@ -16,7 +16,7 @@ class BestiaryViewController : UIViewController {
       Card(
         imageCharacterCard: UIImage(named: "card.guarana")!,
         imageCharacterDesc: UIImage(named: "hist.guarana")!,
-        locked: false,
+        locked: true,
         nameCharacter: "Guaraná",
         
         topicInitial: "Pedido",
@@ -33,7 +33,7 @@ class BestiaryViewController : UIViewController {
       Card(
         imageCharacterCard: UIImage(named: "card.peixe")!,
         imageCharacterDesc: UIImage(named: "hist.peixe")!,
-        locked: false,
+        locked: true,
         nameCharacter: "Surgimento dos Peixes",
         
         topicInitial: "A caça",
@@ -49,7 +49,7 @@ class BestiaryViewController : UIViewController {
       Card(
         imageCharacterCard: UIImage(named: "card.tutu")!,
         imageCharacterDesc: UIImage(named: "hist.tutu")!,
-        locked: false,
+        locked: true,
         nameCharacter: "Tutu",
         
         topicInitial: "Parentesco",
@@ -66,7 +66,7 @@ class BestiaryViewController : UIViewController {
       Card(
         imageCharacterCard: UIImage(named: "card.bahira")!,
         imageCharacterDesc: UIImage(named: "hist.bahira")!,
-        locked: false,
+        locked: true,
         nameCharacter: "Bahira e o Rapto do fogo",
         
         topicInitial: "Posse",

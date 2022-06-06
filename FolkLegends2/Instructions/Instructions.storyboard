@@ -29,22 +29,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vença os duelos para liberar as chaves que abrem os próximos níveis assim como as cartas para completar seu bestiário." lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
-                                                <rect key="frame" x="20" y="167" width="374" height="112"/>
+                                                <rect key="frame" x="20" y="147" width="374" height="132"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaves_1" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-yk-FY3">
-                                                <rect key="frame" x="20" y="319" width="374" height="258"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona o jogo ?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-Hg-dV2">
-                                                <rect key="frame" x="20" y="617" width="374" height="37"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona o jogo?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-Hg-dV2">
+                                                <rect key="frame" x="20" y="585" width="374" height="101"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-zW-JQf">
-                                                <rect key="frame" x="20" y="694" width="374" height="112"/>
+                                                <rect key="frame" x="20" y="694" width="374" height="144"/>
                                                 <string key="text">Escolha uma de suas cartas para duelar com a carta do oponente, a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
@@ -69,12 +66,15 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relacao elemental" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-ec-RiE">
                                                 <rect key="frame" x="20" y="1439.5" width="374" height="300.5"/>
                                             </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaves_1" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-yk-FY3">
+                                                <rect key="frame" x="20" y="287" width="374" height="258"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="Ahb-Ld-cI4" firstAttribute="top" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="40" id="01q-7r-wxP"/>
+                                            <constraint firstItem="Ahb-Ld-cI4" firstAttribute="top" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="20" id="01q-7r-wxP"/>
                                             <constraint firstAttribute="bottom" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="400.5" id="0kT-w4-eo6"/>
-                                            <constraint firstItem="vEc-yk-FY3" firstAttribute="top" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="40" id="1J7-xV-vb5"/>
+                                            <constraint firstItem="vEc-yk-FY3" firstAttribute="top" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="8" id="1J7-xV-vb5"/>
                                             <constraint firstAttribute="trailing" secondItem="lG7-Hg-dV2" secondAttribute="trailing" constant="20" id="37A-fL-reX"/>
                                             <constraint firstItem="lG7-Hg-dV2" firstAttribute="top" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="40" id="37w-bW-Ydu"/>
                                             <constraint firstItem="PQv-BN-KJT" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="4Ze-EV-kuN"/>
@@ -88,18 +88,18 @@
                                             <constraint firstAttribute="bottom" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="637" id="E0p-0z-uwF"/>
                                             <constraint firstAttribute="trailing" secondItem="vEc-yk-FY3" secondAttribute="trailing" constant="20" id="HSN-Bx-Yzh"/>
                                             <constraint firstAttribute="trailing" secondItem="3Vm-Bn-7gt" secondAttribute="trailing" constant="20" id="Hp5-U2-nZ6"/>
-                                            <constraint firstItem="lUX-zW-JQf" firstAttribute="top" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="40" id="IgV-I8-YQi"/>
-                                            <constraint firstItem="JyP-Oj-RSo" firstAttribute="top" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="40" id="Mbr-Wa-x74"/>
+                                            <constraint firstItem="lUX-zW-JQf" firstAttribute="top" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="8" id="IgV-I8-YQi"/>
+                                            <constraint firstItem="JyP-Oj-RSo" firstAttribute="top" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="8" id="Mbr-Wa-x74"/>
                                             <constraint firstAttribute="trailing" secondItem="lUX-zW-JQf" secondAttribute="trailing" constant="20" id="MoN-Th-sCV"/>
                                             <constraint firstAttribute="bottom" secondItem="3Vm-Bn-7gt" secondAttribute="bottom" constant="560" id="Mrp-Hg-pUT"/>
                                             <constraint firstAttribute="trailing" secondItem="JyP-Oj-RSo" secondAttribute="trailing" constant="20" id="OkM-Xi-Jcq"/>
-                                            <constraint firstAttribute="bottom" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="1223" id="Wdg-rv-MCB"/>
+                                            <constraint firstAttribute="bottom" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="1255" id="Wdg-rv-MCB"/>
                                             <constraint firstItem="JyP-Oj-RSo" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="Yrw-ML-Y5X"/>
                                             <constraint firstAttribute="trailing" secondItem="cOn-ec-RiE" secondAttribute="trailing" constant="20" id="Z5B-q9-XZf"/>
                                             <constraint firstItem="lUX-zW-JQf" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="ZuB-KH-7fx"/>
                                             <constraint firstItem="vEc-yk-FY3" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="cMV-ba-TTQ"/>
                                             <constraint firstItem="cOn-ec-RiE" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="chy-dr-54F"/>
-                                            <constraint firstAttribute="bottom" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="994" id="ckb-bF-ekz"/>
+                                            <constraint firstAttribute="bottom" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="962" id="ckb-bF-ekz"/>
                                             <constraint firstAttribute="height" constant="1800" id="gsA-vB-CDa"/>
                                             <constraint firstItem="3Vm-Bn-7gt" firstAttribute="top" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="40" id="iOf-5f-HAK"/>
                                             <constraint firstAttribute="trailing" secondItem="Ahb-Ld-cI4" secondAttribute="trailing" constant="20" id="lXS-CU-iUa"/>
@@ -108,7 +108,7 @@
                                             <constraint firstItem="lG7-Hg-dV2" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="qID-E7-7Uo"/>
                                             <constraint firstItem="PQv-BN-KJT" firstAttribute="top" secondItem="3Vm-Bn-7gt" secondAttribute="bottom" constant="40" id="rHx-jb-7ak"/>
                                             <constraint firstItem="Ahb-Ld-cI4" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="rm6-wJ-zF0"/>
-                                            <constraint firstAttribute="bottom" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="1146" id="xsi-dG-6E3"/>
+                                            <constraint firstAttribute="bottom" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="1114" id="xsi-dG-6E3"/>
                                         </constraints>
                                     </view>
                                 </subviews>

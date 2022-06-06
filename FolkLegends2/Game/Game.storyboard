@@ -390,44 +390,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sW-qx-l7s">
-                                <rect key="frame" x="0.0" y="513" width="414" height="329"/>
+                                <rect key="frame" x="0.0" y="421" width="414" height="421"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-dK-EMA">
-                                <rect key="frame" x="20" y="619" width="374" height="146"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eu sou aquele nascido da terra, aquele que tem os olhos espalhados por ela toda! Meu nome é Guaraná. Agora me enfrente!" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-dK-EMA">
+                                <rect key="frame" x="20" y="744" width="374" height="55"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" name="FontColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJm-j2-U28">
-                                <rect key="frame" x="172" y="537" width="222" height="33"/>
+                                <rect key="frame" x="200.5" y="641" width="193.5" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" name="FontColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ar" translatesAutoresizingMaskIntoConstraints="NO" id="uFN-bv-YNw">
-                                <rect key="frame" x="20" y="520" width="132" height="81"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bira" translatesAutoresizingMaskIntoConstraints="NO" id="uFN-bv-YNw">
+                                <rect key="frame" x="30" y="593.5" width="130.5" height="130.5"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uoh-Pi-Etm"/>
                         <constraints>
                             <constraint firstItem="uoh-Pi-Etm" firstAttribute="trailing" secondItem="vJm-j2-U28" secondAttribute="trailing" constant="20" id="1ND-5E-DRx"/>
-                            <constraint firstItem="vJm-j2-U28" firstAttribute="leading" secondItem="uFN-bv-YNw" secondAttribute="trailing" constant="20" id="8rp-Gb-3sZ"/>
-                            <constraint firstItem="uoh-Pi-Etm" firstAttribute="bottom" secondItem="vJm-j2-U28" secondAttribute="bottom" constant="272" id="OnB-sg-6A0"/>
+                            <constraint firstItem="Kvs-dK-EMA" firstAttribute="top" secondItem="vJm-j2-U28" secondAttribute="bottom" constant="70" id="4kv-y3-Gjn"/>
+                            <constraint firstItem="Kvs-dK-EMA" firstAttribute="top" secondItem="uFN-bv-YNw" secondAttribute="bottom" constant="20" id="6CQ-Ge-btX"/>
+                            <constraint firstItem="5sW-qx-l7s" firstAttribute="height" secondItem="4Zt-2G-xzR" secondAttribute="height" multiplier="1:2" id="BMN-nh-8UG"/>
+                            <constraint firstItem="vJm-j2-U28" firstAttribute="leading" secondItem="uFN-bv-YNw" secondAttribute="trailing" constant="40" id="BOE-kE-E0f"/>
+                            <constraint firstItem="uFN-bv-YNw" firstAttribute="width" secondItem="5sW-qx-l7s" secondAttribute="width" multiplier="0.315217" id="Iq7-Ke-nml"/>
                             <constraint firstItem="Kvs-dK-EMA" firstAttribute="leading" secondItem="uoh-Pi-Etm" secondAttribute="leading" constant="20" id="PM7-Xl-PsY"/>
-                            <constraint firstAttribute="trailing" secondItem="uFN-bv-YNw" secondAttribute="trailing" constant="262" id="Z2d-dP-SLG"/>
-                            <constraint firstItem="5sW-qx-l7s" firstAttribute="top" secondItem="4Zt-2G-xzR" secondAttribute="top" constant="513" id="d1Y-6A-plu"/>
-                            <constraint firstItem="Kvs-dK-EMA" firstAttribute="top" secondItem="uoh-Pi-Etm" secondAttribute="top" constant="575" id="dxq-vH-O0M"/>
+                            <constraint firstItem="uFN-bv-YNw" firstAttribute="leading" secondItem="uoh-Pi-Etm" secondAttribute="leading" constant="30" id="W65-BO-Dov"/>
                             <constraint firstItem="uoh-Pi-Etm" firstAttribute="trailing" secondItem="5sW-qx-l7s" secondAttribute="trailing" id="ei8-yb-bvc"/>
-                            <constraint firstItem="vJm-j2-U28" firstAttribute="top" secondItem="uoh-Pi-Etm" secondAttribute="top" constant="493" id="fbl-WJ-2u2"/>
                             <constraint firstItem="uoh-Pi-Etm" firstAttribute="trailing" secondItem="Kvs-dK-EMA" secondAttribute="trailing" constant="20" id="j2t-UF-5cn"/>
-                            <constraint firstItem="uFN-bv-YNw" firstAttribute="top" secondItem="4Zt-2G-xzR" secondAttribute="topMargin" constant="476" id="jYm-Tm-AmM"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Kvs-dK-EMA" secondAttribute="bottom" constant="43" id="oqg-KC-mJo"/>
                             <constraint firstItem="5sW-qx-l7s" firstAttribute="leading" secondItem="uoh-Pi-Etm" secondAttribute="leading" id="pDA-Qe-eCh"/>
                             <constraint firstItem="uoh-Pi-Etm" firstAttribute="bottom" secondItem="5sW-qx-l7s" secondAttribute="bottom" id="qAD-dB-6ys"/>
                             <constraint firstAttribute="bottom" secondItem="5sW-qx-l7s" secondAttribute="bottom" id="wOp-I2-4c8"/>
-                            <constraint firstItem="uoh-Pi-Etm" firstAttribute="bottom" secondItem="uFN-bv-YNw" secondAttribute="bottom" constant="241" id="xhH-Xv-ipb"/>
-                            <constraint firstItem="uFN-bv-YNw" firstAttribute="leading" secondItem="uoh-Pi-Etm" secondAttribute="leading" constant="20" id="yA5-Cc-fAX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -591,11 +588,11 @@
     <resources>
         <image name="AGUA - MAIOR" width="150.5" height="200.5"/>
         <image name="AR - MAIOR" width="150.5" height="200.5"/>
+        <image name="Bira" width="130.5" height="130.5"/>
         <image name="Board" width="428.5" height="926.5"/>
         <image name="Derrota" width="150.5" height="104.5"/>
         <image name="TERRA - MAIOR" width="150.5" height="200.5"/>
         <image name="Vitória" width="150.5" height="104.5"/>
-        <image name="ar" width="512" height="512"/>
         <image name="ataque" width="150.5" height="150.5"/>
         <image name="back.dark" width="15.5" height="15.5"/>
         <image name="card.bahira" width="320.5" height="600.5"/>
