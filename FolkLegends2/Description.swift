@@ -12,7 +12,7 @@ class Description: UIViewController{
     super.viewDidLoad()
         
         if (x == 1){
-            Descricao.text = "Eu sou aquele nascido da terra, aquele que tem os olhos espalhados por esta terra! Meu nome é Guaraná. Agora me enfrente!"
+            Descricao.text = "Eu sou aquele nascido da terra, aquele que tem os olhos espalhados por ela toda! Meu nome é Guaraná. Agora me enfrente!"
             name.text = "Guaraná"
             foto.image = UIImage(named: "Guarana")
         }
@@ -23,7 +23,7 @@ class Description: UIViewController{
             foto.image = UIImage(named: "Bira")
         }
         if (x == 3){
-            Descricao.text = "As pessoas tremem enquanto tentam pronunciar meu nome. Eu sou aquele que vagueia nas profundezas dos sonhos.Se você tiver coragem,tente me vencer..."
+            Descricao.text = "As pessoas tremem enquanto tentam pronunciar meu nome. Eu sou aquele que vagueia nas profundezas dos seus sonhos.Se você tiver coragem, tente me vencer..."
             name.text = "Tutu"
             foto.image = UIImage(named: "Tutu")
         }

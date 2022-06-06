@@ -6,12 +6,30 @@ class TableViewController: UITableViewController {
     
     @IBOutlet var tableNumbers: UITableView!
     
+    @IBOutlet weak var currentKey: UIImageView!
+    
     var productArray = [Numbers]()
     var selectedCell : Numbers = Numbers()
+    
+    func getKey() -> String {
+        switch (UserKeys.allDoor){
+        case 0:
+            return "chave.terra"
+        case 1:
+            return "chave.agua"
+        case 2:
+            return "chave.ar"
+        case 3:
+            return "chave.fogo"
+        default:
+            return "chave.terra"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        currentKey.image = UIImage(named: getKey())
         
         productArray = [
             Numbers(prNumber: 1, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),

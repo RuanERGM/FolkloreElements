@@ -166,6 +166,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="k0H-Tf-KMq"/>
                     <connections>
+                        <outlet property="currentKey" destination="ZJU-YF-YXY" id="VBW-V9-eyf"/>
                         <outlet property="tableNumbers" destination="t1o-8v-ZP8" id="8Df-Jo-XTL"/>
                         <segue destination="9NY-MF-lbH" kind="presentation" identifier="showdetail" modalPresentationStyle="fullScreen" id="Yjc-AD-L80"/>
                     </connections>
