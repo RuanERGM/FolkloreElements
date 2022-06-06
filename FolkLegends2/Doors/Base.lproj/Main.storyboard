@@ -113,12 +113,17 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRN-P0-7bf">
                                                     <rect key="frame" x="10" y="0.0" width="364" height="112"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VyN-aV-YHg">
-                                                            <rect key="frame" x="-23" y="0.0" width="409" height="159"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VyN-aV-YHg">
+                                                            <rect key="frame" x="-22.5" y="0.0" width="409" height="112"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="VyN-aV-YHg" firstAttribute="centerX" secondItem="PRN-P0-7bf" secondAttribute="centerX" id="9SA-Z7-m7y"/>
+                                                        <constraint firstItem="VyN-aV-YHg" firstAttribute="top" relation="lessThanOrEqual" secondItem="PRN-P0-7bf" secondAttribute="top" id="DyP-6E-fl4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="VyN-aV-YHg" secondAttribute="bottom" id="VcB-iG-efd"/>
+                                                        <constraint firstItem="VyN-aV-YHg" firstAttribute="top" secondItem="PRN-P0-7bf" secondAttribute="top" id="xDd-AT-sTx"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" name="BackgroundColor"/>
@@ -133,12 +138,17 @@
                                     <color key="backgroundColor" name="BackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="a0h-ah-bFc" firstAttribute="leading" secondItem="a8A-uW-EJD" secondAttribute="leading" constant="20" id="OFA-nU-vLU"/>
+                                        <constraint firstItem="a0h-ah-bFc" firstAttribute="height" secondItem="a8A-uW-EJD" secondAttribute="height" multiplier="0.736842" id="Vp7-1V-esP"/>
                                         <constraint firstAttribute="bottom" secondItem="a0h-ah-bFc" secondAttribute="bottom" constant="20" id="Vs9-ft-oRz"/>
+                                        <constraint firstItem="a0h-ah-bFc" firstAttribute="width" secondItem="a8A-uW-EJD" secondAttribute="width" multiplier="0.903382" id="X0N-dO-jFf"/>
                                         <constraint firstAttribute="trailing" secondItem="a0h-ah-bFc" secondAttribute="trailing" constant="20" id="aGU-Vt-9ee"/>
                                         <constraint firstItem="a0h-ah-bFc" firstAttribute="top" secondItem="a8A-uW-EJD" secondAttribute="top" constant="20" id="ak5-vc-PpO"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="VyN-aV-YHg" firstAttribute="width" secondItem="Rnl-HJ-KOH" secondAttribute="width" multiplier="0.987923" id="hBy-mr-13v"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="CellViewImage" destination="VyN-aV-YHg" id="Sq7-oZ-aRC"/>
                                     <outlet property="backView" destination="a0h-ah-bFc" id="nHN-IE-GZX"/>
