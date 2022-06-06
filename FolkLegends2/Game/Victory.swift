@@ -3,7 +3,6 @@ import UIKit
 class Victory: UIViewController{
     
     @IBOutlet weak var cardUnloked: UIImageView!
-    
     var selectedDoor = Numbers()
     
     @IBAction func returnGame(_ sender: Any) {

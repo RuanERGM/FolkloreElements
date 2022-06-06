@@ -18,7 +18,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRR-0E-fDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="-122"/>
+            <point key="canvasLocation" x="-312" y="505"/>
         </scene>
         <!--Game-->
         <scene sceneID="s0d-6b-0kx">
@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-Ch-z2X">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-Ch-z2X">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-VZ-Jyf">
@@ -364,9 +364,9 @@
                         <outlet property="labelFeedback" destination="nan-x2-sJY" id="bqB-Wl-Abf"/>
                         <outlet property="labelTitleCpu" destination="dJ0-gU-twE" id="sk2-hW-nMH"/>
                         <outlet property="labelTitlePlayer" destination="tiE-e0-ZAH" id="fTP-z1-7lI"/>
-                        <segue destination="Iyh-rh-zRo" kind="presentation" identifier="Victory" id="ueA-Gc-RD8"/>
-                        <segue destination="hRr-wJ-5kY" kind="presentation" identifier="Loser" id="VcL-ID-a8i"/>
                         <segue destination="svb-b1-rGe" kind="presentation" identifier="talk" id="uHF-um-akJ"/>
+                        <segue destination="Q2L-yC-m6u" kind="presentation" identifier="Victory" id="68A-Kk-4Vb"/>
+                        <segue destination="ZSZ-8k-sKP" kind="presentation" identifier="Loser" id="vP3-Q2-6aH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -437,176 +437,160 @@
             </objects>
             <point key="canvasLocation" x="1624.6376811594205" y="79.6875"/>
         </scene>
-        <!--Victory-->
-        <scene sceneID="4e1-eG-I3q">
-            <objects>
-                <viewController id="Iyh-rh-zRo" customClass="Victory" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wGl-DZ-Tbb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTA-pX-iI1">
-                                <rect key="frame" x="20" y="180" width="374" height="425"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card.bahira" translatesAutoresizingMaskIntoConstraints="NO" id="RqZ-IR-2rf">
-                                        <rect key="frame" x="81" y="146" width="213" height="162"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqt-vB-Qo3">
-                                        <rect key="frame" x="35" y="333" width="81" height="73"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="return.dark" title=" ">
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-k4-RJV">
-                                        <rect key="frame" x="270" y="333" width="81" height="73"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="door.game.brown" title=" ">
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="xsE-dk-Mpp"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carta Desbloqueada!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmS-kz-AuQ">
-                                        <rect key="frame" x="4" y="79" width="366" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <color key="textColor" name="BackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-jU-WhD">
-                                        <rect key="frame" x="45" y="-118" width="284" height="189"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" name="TabBarColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="nLQ-rI-hHf"/>
-                        <constraints>
-                            <constraint firstItem="GTA-pX-iI1" firstAttribute="centerY" secondItem="nLQ-rI-hHf" secondAttribute="centerY" constant="-50.5" id="GVd-hE-3vX"/>
-                            <constraint firstItem="GTA-pX-iI1" firstAttribute="leading" secondItem="wGl-DZ-Tbb" secondAttribute="leadingMargin" id="Q0A-qW-BYK"/>
-                            <constraint firstItem="GTA-pX-iI1" firstAttribute="top" secondItem="nLQ-rI-hHf" secondAttribute="top" constant="136" id="TaL-gN-VNg"/>
-                            <constraint firstItem="GTA-pX-iI1" firstAttribute="centerX" secondItem="nLQ-rI-hHf" secondAttribute="centerX" id="vrd-WW-H4a"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="cardUnloked" destination="RqZ-IR-2rf" id="BOy-TH-gsl"/>
-                        <segue destination="Y6W-OH-hqX" kind="presentation" identifier="showGame" modalPresentationStyle="fullScreen" id="olh-ab-cxQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rsn-fJ-CRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="839.73214285714278"/>
-        </scene>
         <!--Main-->
         <scene sceneID="mjG-t3-QyZ">
             <objects>
                 <viewControllerPlaceholder storyboardName="Main" id="KbY-1F-zPR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3j-6o-rbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="420" y="1256"/>
+            <point key="canvasLocation" x="467" y="1341"/>
         </scene>
-        <!--Lose View-->
-        <scene sceneID="QsU-xI-76U">
+        <!--Victory-->
+        <scene sceneID="SAR-E3-c0V">
             <objects>
-                <viewController id="hRr-wJ-5kY" customClass="LoseView" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="S1Q-sv-Ed9">
+                <viewController id="Q2L-yC-m6u" customClass="Victory" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sBd-hg-7au">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFg-35-NDn">
-                                <rect key="frame" x="20" y="185" width="374" height="425"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhZ-Rt-zW2">
+                                <rect key="frame" x="57" y="271" width="300" height="404"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwc-Gu-5YN">
-                                        <rect key="frame" x="35" y="333" width="81" height="73"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="card.bahira" translatesAutoresizingMaskIntoConstraints="NO" id="nHk-Cw-sO5">
+                                        <rect key="frame" x="-10" y="101" width="320.5" height="203"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-eS-wlw">
+                                        <rect key="frame" x="20" y="339.5" width="260" height="44.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="return.dark" title=" ">
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaR-9m-Uln">
-                                        <rect key="frame" x="270" y="333" width="81" height="73"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="door.game.brown" title=" ">
-                                            <color key="baseBackgroundColor" name="BackgroundColor"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="Sg2-ke-lkk"/>
+                                            <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="Gmu-dW-W3G"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iy2-AQ-3L2">
-                                        <rect key="frame" x="4" y="155" width="362" height="140"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <color key="textColor" name="BackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="0mD-oj-Xkd">
-                                        <rect key="frame" x="45" y="-118" width="284" height="207"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você Perdeu!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4C-0d-Ys1">
-                                        <rect key="frame" x="4" y="108" width="366" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <color key="textColor" name="BackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" name="TabBarColor"/>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="nHk-Cw-sO5" firstAttribute="top" secondItem="IhZ-Rt-zW2" secondAttribute="top" constant="101" id="2PF-MJ-L7T"/>
+                                    <constraint firstAttribute="trailing" secondItem="qcd-eS-wlw" secondAttribute="trailing" constant="20" id="60Q-cd-exS"/>
+                                    <constraint firstItem="nHk-Cw-sO5" firstAttribute="width" secondItem="IhZ-Rt-zW2" secondAttribute="width" multiplier="1.06833" id="Hlu-5S-q2c"/>
+                                    <constraint firstItem="qcd-eS-wlw" firstAttribute="leading" secondItem="IhZ-Rt-zW2" secondAttribute="leading" constant="20" id="R8z-9w-Hkh"/>
+                                    <constraint firstAttribute="bottom" secondItem="qcd-eS-wlw" secondAttribute="bottom" constant="20" id="c5M-h2-8Es"/>
+                                    <constraint firstItem="nHk-Cw-sO5" firstAttribute="centerX" secondItem="IhZ-Rt-zW2" secondAttribute="centerX" id="fI4-X4-nQO"/>
+                                    <constraint firstAttribute="bottom" secondItem="nHk-Cw-sO5" secondAttribute="bottom" constant="100" id="rQE-mg-Lu8"/>
+                                </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-K6-IYr">
+                                <rect key="frame" x="20" y="182" width="374" height="137.5"/>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="PPJ-J7-FXC"/>
+                        <viewLayoutGuide key="safeArea" id="Hzl-I3-F1y"/>
                         <constraints>
-                            <constraint firstItem="TFg-35-NDn" firstAttribute="top" secondItem="PPJ-J7-FXC" secondAttribute="top" constant="141" id="8b6-a9-T82"/>
-                            <constraint firstItem="TFg-35-NDn" firstAttribute="centerX" secondItem="PPJ-J7-FXC" secondAttribute="centerX" id="AeH-9b-GOy"/>
-                            <constraint firstItem="TFg-35-NDn" firstAttribute="leading" secondItem="S1Q-sv-Ed9" secondAttribute="leadingMargin" id="MKF-xa-KSf"/>
-                            <constraint firstItem="TFg-35-NDn" firstAttribute="centerY" secondItem="PPJ-J7-FXC" secondAttribute="centerY" constant="-45.5" id="RxO-k2-MSo"/>
+                            <constraint firstItem="V5G-K6-IYr" firstAttribute="centerX" secondItem="IhZ-Rt-zW2" secondAttribute="centerX" id="4ff-Xg-byy"/>
+                            <constraint firstItem="IhZ-Rt-zW2" firstAttribute="leading" secondItem="Hzl-I3-F1y" secondAttribute="leading" constant="57" id="AfB-nJ-eM0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="IhZ-Rt-zW2" secondAttribute="bottom" constant="167" id="HIz-9W-LzP"/>
+                            <constraint firstItem="IhZ-Rt-zW2" firstAttribute="centerX" secondItem="Hzl-I3-F1y" secondAttribute="centerX" id="Hs9-mk-lOu"/>
+                            <constraint firstItem="V5G-K6-IYr" firstAttribute="width" secondItem="IhZ-Rt-zW2" secondAttribute="width" multiplier="1.24667" id="QpD-nd-wjv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="V5G-K6-IYr" secondAttribute="bottom" constant="522.5" id="T5m-AI-6CK"/>
+                            <constraint firstItem="Hzl-I3-F1y" firstAttribute="trailing" secondItem="IhZ-Rt-zW2" secondAttribute="trailing" constant="57" id="ZSx-fh-Kgf"/>
+                            <constraint firstItem="IhZ-Rt-zW2" firstAttribute="width" secondItem="sBd-hg-7au" secondAttribute="width" multiplier="0.724638" id="let-VU-s9k"/>
+                            <constraint firstItem="Hzl-I3-F1y" firstAttribute="trailing" secondItem="V5G-K6-IYr" secondAttribute="trailing" constant="20" id="ndE-7M-530"/>
+                            <constraint firstItem="V5G-K6-IYr" firstAttribute="top" secondItem="sBd-hg-7au" secondAttribute="topMargin" constant="138" id="vCO-IQ-rcQ"/>
+                            <constraint firstItem="V5G-K6-IYr" firstAttribute="leading" secondItem="Hzl-I3-F1y" secondAttribute="leading" constant="20" id="w6q-wE-DB2"/>
+                            <constraint firstItem="IhZ-Rt-zW2" firstAttribute="top" secondItem="Hzl-I3-F1y" secondAttribute="top" constant="227" id="xhl-2O-yXP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="labelLoser" destination="Iy2-AQ-3L2" id="2c9-E4-vDt"/>
-                        <segue destination="Y6W-OH-hqX" kind="presentation" identifier="showGame" modalPresentationStyle="fullScreen" id="UUr-NH-6i6"/>
+                        <outlet property="cardUnloked" destination="nHk-Cw-sO5" id="juf-H3-ABG"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W11-Ef-OQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQ6-x4-PNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.69565217391312" y="839.73214285714278"/>
+            <point key="canvasLocation" x="466.66666666666669" y="875.89285714285711"/>
+        </scene>
+        <!--Lose View-->
+        <scene sceneID="60Y-IE-nfZ">
+            <objects>
+                <viewController id="ZSZ-8k-sKP" customClass="LoseView" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cyy-nk-R7j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
+                                <rect key="frame" x="57" y="271" width="300" height="404"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rV-8YZ">
+                                        <rect key="frame" x="20" y="339" width="260" height="45"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="5ZU-gv-XYT"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LockedCard" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
+                                        <rect key="frame" x="75" y="108" width="150.5" height="201"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dmg-XI-qDf" firstAttribute="width" secondItem="Y0I-5Q-oYC" secondAttribute="width" multiplier="0.501667" id="2bD-Pe-Bzd"/>
+                                    <constraint firstAttribute="bottom" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="95" id="8lt-5e-bT9"/>
+                                    <constraint firstItem="dmg-XI-qDf" firstAttribute="centerX" secondItem="Y0I-5Q-oYC" secondAttribute="centerX" id="Bl2-zX-tu4"/>
+                                    <constraint firstAttribute="trailing" secondItem="o2W-rV-8YZ" secondAttribute="trailing" constant="20" id="KqQ-NJ-5lv"/>
+                                    <constraint firstItem="dmg-XI-qDf" firstAttribute="top" secondItem="Y0I-5Q-oYC" secondAttribute="top" constant="108" id="Wdo-sQ-mIW"/>
+                                    <constraint firstItem="o2W-rV-8YZ" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="20" id="ih3-sr-JH8"/>
+                                    <constraint firstAttribute="bottom" secondItem="o2W-rV-8YZ" secondAttribute="bottom" constant="20" id="qpe-M8-HGD"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-zF-nZR">
+                                <rect key="frame" x="20" y="182" width="374" height="139"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bui-fP-Hai"/>
+                        <constraints>
+                            <constraint firstItem="bui-fP-Hai" firstAttribute="bottom" secondItem="ZV8-zF-nZR" secondAttribute="bottom" constant="521" id="7Fh-dD-s6n"/>
+                            <constraint firstItem="ZV8-zF-nZR" firstAttribute="top" secondItem="bui-fP-Hai" secondAttribute="top" constant="138" id="Bex-qL-pqR"/>
+                            <constraint firstItem="bui-fP-Hai" firstAttribute="trailing" secondItem="ZV8-zF-nZR" secondAttribute="trailing" constant="20" id="Bw2-kB-u77"/>
+                            <constraint firstItem="Y0I-5Q-oYC" firstAttribute="width" secondItem="Cyy-nk-R7j" secondAttribute="width" multiplier="0.724638" id="Dkh-hx-J0p"/>
+                            <constraint firstItem="bui-fP-Hai" firstAttribute="bottom" secondItem="Y0I-5Q-oYC" secondAttribute="bottom" constant="167" id="NM5-D2-v6u"/>
+                            <constraint firstItem="ZV8-zF-nZR" firstAttribute="centerX" secondItem="Y0I-5Q-oYC" secondAttribute="centerX" id="V5j-GF-e9Y"/>
+                            <constraint firstItem="Y0I-5Q-oYC" firstAttribute="centerX" secondItem="bui-fP-Hai" secondAttribute="centerX" id="b21-KY-gpS"/>
+                            <constraint firstItem="Y0I-5Q-oYC" firstAttribute="top" secondItem="bui-fP-Hai" secondAttribute="top" constant="227" id="bfF-cF-u3R"/>
+                            <constraint firstItem="ZV8-zF-nZR" firstAttribute="leading" secondItem="bui-fP-Hai" secondAttribute="leading" constant="20" id="q4a-kP-CFt"/>
+                            <constraint firstItem="ZV8-zF-nZR" firstAttribute="width" secondItem="Y0I-5Q-oYC" secondAttribute="width" multiplier="1.24667" id="zoK-CU-p9f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gv-zB-XPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1272" y="876"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xsE-dk-Mpp"/>
-        <segue reference="olh-ab-cxQ"/>
+        <segue reference="5ZU-gv-XYT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AGUA - MAIOR" width="150.5" height="200.5"/>
         <image name="AR - MAIOR" width="150.5" height="200.5"/>
         <image name="Bira" width="130.5" height="130.5"/>
-        <image name="Board" width="428.5" height="926.5"/>
         <image name="Derrota" width="150.5" height="104.5"/>
+        <image name="LockedCard" width="150.5" height="200.5"/>
         <image name="TERRA - MAIOR" width="150.5" height="200.5"/>
         <image name="Vitória" width="150.5" height="104.5"/>
         <image name="ataque" width="150.5" height="150.5"/>
         <image name="back.dark" width="15.5" height="15.5"/>
+        <image name="board" width="428.5" height="926.5"/>
         <image name="card.bahira" width="320.5" height="600.5"/>
         <image name="door.game.brown" width="30.5" height="30.5"/>
         <image name="quest.brown" width="30.5" height="30.5"/>
-        <image name="return.dark" width="30.5" height="30.5"/>
         <image name="vida" width="150.5" height="150.5"/>
         <namedColor name="BackgroundColor">
             <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
-            <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TabBarColor">
             <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="placeholderTextColor">
