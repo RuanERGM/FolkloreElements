@@ -167,7 +167,7 @@ extension GameViewController: UICollectionViewDelegate {
               
               let lifePlayer = String(self.selectedCardPlayer.counterattack(enemy: self.selectedCardCpu))
               
-              DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+              DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                   
                   // Atualizando valores de vida da cpu
                   
@@ -181,7 +181,7 @@ extension GameViewController: UICollectionViewDelegate {
                       self.deckPlayer.reloadData()
                   
                   
-                      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                      DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                       
                           if (Int(lifeCpu)! < 1) {
                               self.cardsCpu.remove(at: indexCpu)

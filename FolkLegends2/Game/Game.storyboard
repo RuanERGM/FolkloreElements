@@ -309,7 +309,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRA-Tu-iwS">
-                                <rect key="frame" x="9" y="33" width="55" height="45"/>
+                                <rect key="frame" x="9" y="33" width="54.5" height="44.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="back.dark"/>
                                 <connections>
@@ -457,7 +457,7 @@
                                 <rect key="frame" x="57" y="271" width="300" height="404"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="card.bahira" translatesAutoresizingMaskIntoConstraints="NO" id="nHk-Cw-sO5">
-                                        <rect key="frame" x="-10" y="101" width="320.5" height="203"/>
+                                        <rect key="frame" x="-10" y="101" width="320" height="203"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-eS-wlw">
                                         <rect key="frame" x="20" y="339.5" width="260" height="44.5"/>
