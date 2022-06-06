@@ -18,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipo" translatesAutoresizingMaskIntoConstraints="NO" id="VkT-aX-K0M">
-                                <rect key="frame" x="126.5" y="72.5" width="161" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Ojw-0X-Uxu"/>
-                                </constraints>
-                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-P0-Wr5">
-                                <rect key="frame" x="0.0" y="184" width="414" height="648"/>
+                                <rect key="frame" x="0.0" y="59" width="414" height="788"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="boM-6P-rar">
                                     <size key="itemSize" width="320" height="600"/>
@@ -35,23 +29,18 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCell" id="0Li-Mx-FvA" customClass="CardCell" customModule="FolkLegends2" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="24" width="320" height="600"/>
+                                        <rect key="frame" x="30" y="94" width="320" height="600"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4qf-BE-ghP">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-ak-wXf">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-ak-wXf">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="TeY-ak-wXf" secondAttribute="trailing" id="0mm-Nw-pLw"/>
-                                                <constraint firstItem="TeY-ak-wXf" firstAttribute="leading" secondItem="4qf-BE-ghP" secondAttribute="leading" id="Bpt-hy-kab"/>
-                                                <constraint firstAttribute="bottom" secondItem="TeY-ak-wXf" secondAttribute="bottom" id="MXp-ri-Rof"/>
-                                                <constraint firstItem="TeY-ak-wXf" firstAttribute="top" secondItem="4qf-BE-ghP" secondAttribute="top" id="Tm9-n6-Cq5"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="imageCharacter" destination="TeY-ak-wXf" id="RQc-O1-Bov"/>
@@ -63,13 +52,11 @@
                         <viewLayoutGuide key="safeArea" id="LdC-DG-5fy"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="leading" secondItem="LdC-DG-5fy" secondAttribute="leading" id="0Hy-rd-11h"/>
-                            <constraint firstItem="LdC-DG-5fy" firstAttribute="bottom" secondItem="gLq-P0-Wr5" secondAttribute="bottom" constant="30" id="1fc-KV-NBY"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="140" id="5eF-Ux-VKR"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerX" secondItem="fe4-0a-Xhk" secondAttribute="centerX" id="I8G-bl-ioh"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="firstBaseline" secondItem="VkT-aX-K0M" secondAttribute="baseline" constant="26" id="VYm-5z-eKA"/>
-                            <constraint firstItem="VkT-aX-K0M" firstAttribute="centerX" secondItem="LdC-DG-5fy" secondAttribute="centerX" id="gNx-7f-LZ1"/>
-                            <constraint firstItem="VkT-aX-K0M" firstAttribute="top" secondItem="fe4-0a-Xhk" secondAttribute="top" constant="73" id="jsL-ul-gd5"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="width" secondItem="fe4-0a-Xhk" secondAttribute="height" multiplier="207:448" id="DLG-EK-9PC"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="15" id="TJp-Xf-LDR"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerY" secondItem="LdC-DG-5fy" secondAttribute="centerY" id="guD-0X-B7f"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerX" secondItem="LdC-DG-5fy" secondAttribute="centerX" id="t9W-pl-c6i"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerY" secondItem="LdC-DG-5fy" secondAttribute="centerY" id="uFp-hH-IW1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fkh-b0-K3U"/>
@@ -213,7 +200,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logotipo" width="1080" height="536"/>
         <namedColor name="BackgroundColor">
             <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
