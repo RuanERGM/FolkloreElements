@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-Ch-z2X">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-Ch-z2X">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-VZ-Jyf">
@@ -591,13 +591,13 @@
     <resources>
         <image name="AGUA - MAIOR" width="150.5" height="200.5"/>
         <image name="AR - MAIOR" width="150.5" height="200.5"/>
+        <image name="Board" width="428.5" height="926.5"/>
         <image name="Derrota" width="150.5" height="104.5"/>
         <image name="TERRA - MAIOR" width="150.5" height="200.5"/>
         <image name="Vitória" width="150.5" height="104.5"/>
         <image name="ar" width="512" height="512"/>
         <image name="ataque" width="150.5" height="150.5"/>
         <image name="back.dark" width="15.5" height="15.5"/>
-        <image name="board" width="428.5" height="926.5"/>
         <image name="card.bahira" width="320.5" height="600.5"/>
         <image name="door.game.brown" width="30.5" height="30.5"/>
         <image name="quest.brown" width="30.5" height="30.5"/>

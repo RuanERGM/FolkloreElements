@@ -18,9 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipo" translatesAutoresizingMaskIntoConstraints="NO" id="VkT-aX-K0M">
+                                <rect key="frame" x="127" y="64" width="160" height="164"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-P0-Wr5">
-                                <rect key="frame" x="0.0" y="59" width="414" height="788"/>
+                                <rect key="frame" x="0.0" y="236" width="414" height="660"/>
                                 <color key="backgroundColor" name="BackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="660" id="0gL-31-RY0"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="boM-6P-rar">
                                     <size key="itemSize" width="320" height="600"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -29,7 +35,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardCell" id="0Li-Mx-FvA" customClass="CardCell" customModule="FolkLegends2" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="94" width="320" height="600"/>
+                                        <rect key="frame" x="30" y="30" width="320" height="600"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4qf-BE-ghP">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
@@ -52,11 +58,13 @@
                         <viewLayoutGuide key="safeArea" id="LdC-DG-5fy"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="width" secondItem="fe4-0a-Xhk" secondAttribute="height" multiplier="207:448" id="DLG-EK-9PC"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="15" id="TJp-Xf-LDR"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerY" secondItem="LdC-DG-5fy" secondAttribute="centerY" id="guD-0X-B7f"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerX" secondItem="LdC-DG-5fy" secondAttribute="centerX" id="t9W-pl-c6i"/>
-                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="centerY" secondItem="LdC-DG-5fy" secondAttribute="centerY" id="uFp-hH-IW1"/>
+                            <constraint firstItem="VkT-aX-K0M" firstAttribute="leading" secondItem="LdC-DG-5fy" secondAttribute="leading" constant="127" id="5Te-gd-da5"/>
+                            <constraint firstAttribute="bottom" secondItem="gLq-P0-Wr5" secondAttribute="bottom" id="MkN-PV-BL6"/>
+                            <constraint firstItem="LdC-DG-5fy" firstAttribute="trailing" secondItem="VkT-aX-K0M" secondAttribute="trailing" constant="127" id="aF2-Px-ARy"/>
+                            <constraint firstAttribute="trailing" secondItem="gLq-P0-Wr5" secondAttribute="trailing" id="bP1-Zd-gru"/>
+                            <constraint firstItem="VkT-aX-K0M" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="20" id="bum-l4-yZF"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="leading" secondItem="fe4-0a-Xhk" secondAttribute="leading" id="xv8-rE-Nsp"/>
+                            <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="VkT-aX-K0M" secondAttribute="bottom" constant="8" id="ynE-hY-xSS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fkh-b0-K3U"/>
@@ -200,6 +208,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logotipo" width="1080" height="536"/>
         <namedColor name="BackgroundColor">
             <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
