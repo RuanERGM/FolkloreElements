@@ -8,6 +8,7 @@ class Description: UIViewController{
     @IBOutlet weak var foto: UIImageView!
     @IBOutlet weak var Descricao: UILabel!
     
+    @IBOutlet var Description: UIView!
     override func viewDidLoad() {
     super.viewDidLoad()
         
