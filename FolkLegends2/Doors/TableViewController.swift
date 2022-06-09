@@ -64,7 +64,7 @@ class TableViewController: UITableViewController {
         DispatchQueue.main.async
         {
             cell.backView.layer.cornerRadius = 10.0;
-            cell.frontView.roundCorners([.topRight, .bottomRight], radius: 10)
+            cell.frontView.roundCorners([.topRight, .bottomRight, .topLeft, .bottomLeft], radius: 10)
             
             if UserKeys.allDoor + 1 >= self.productArray[indexPath.item].number {
                 cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
