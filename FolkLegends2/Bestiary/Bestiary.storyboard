@@ -47,6 +47,12 @@
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="imageCharacter" destination="TeY-ak-wXf" id="RQc-O1-Bov"/>
@@ -100,10 +106,22 @@
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-Xf-lQO">
+                                                <rect key="frame" x="20" y="628.5" width="374" height="38.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2k-Hl-fUc">
                                                 <rect key="frame" x="20" y="687" width="374" height="544.5"/>
                                                 <string key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles! Porém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes. Quando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-fI-1BN">
+                                                <rect key="frame" x="20" y="1251.5" width="374" height="38.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -114,14 +132,8 @@
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-pD-2Ii">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l10-pD-2Ii">
                                                 <rect key="frame" x="20" y="1874.5" width="374" height="41"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                <color key="textColor" name="FontColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-fI-1BN">
-                                                <rect key="frame" x="20" y="1251.5" width="374" height="38.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
@@ -130,12 +142,6 @@
                                                 <rect key="frame" x="20" y="1935.5" width="374" height="544.5"/>
                                                 <string key="text">No dia seguinte os homens foram caçar. Graças a Tupã não havia mais Birá para aproveitar-se da ausência deles! Porém as mulheres com pinturas corporais das mais diversas (pintas, riscas, manchas de todas as cores) se reuniram e decidiram fugir e pular no rio. Após o pulo, transformaram-se em peixes. Quando os homens retornaram a aldeia, ficaram extremamente desolados com a notícia de terem perdido a esposa e seus colegas da aldeia. Loucos e tristes, cometeram sua ultima tolice: ao invés de se atirarem ao rio, foram para a mata onde se transformaram em macacos, cutias e toda espécie de animais silvestres.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" name="FontColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-Xf-lQO">
-                                                <rect key="frame" x="20" y="628.5" width="374" height="38.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
