@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,6 +56,12 @@
                                                         <constraint firstAttribute="height" constant="200" id="cmL-9j-MQD"/>
                                                         <constraint firstAttribute="width" constant="150" id="yKQ-Y5-o2u"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ataque" translatesAutoresizingMaskIntoConstraints="NO" id="O3x-xB-a1V">
                                                     <rect key="frame" x="0.0" y="154" width="50" height="46"/>
@@ -87,7 +92,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                                             <constraints>
                                                 <constraint firstItem="rhM-gi-cvj" firstAttribute="baseline" secondItem="ei1-55-s6E" secondAttribute="baseline" id="71Q-LP-gz5"/>
                                                 <constraint firstItem="ei1-55-s6E" firstAttribute="centerY" secondItem="O3x-xB-a1V" secondAttribute="centerY" id="Cbb-SC-WrL"/>
@@ -105,7 +109,6 @@
                                                 <constraint firstItem="Jep-3M-AVZ" firstAttribute="leading" secondItem="O3x-xB-a1V" secondAttribute="trailing" constant="54" id="za8-wY-jk2"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                         <connections>
                                             <outlet property="bottomValueDamage" destination="ei1-55-s6E" id="uP5-P2-3Ca"/>
                                             <outlet property="bottomValueLife" destination="rhM-gi-cvj" id="DAR-dh-5LY"/>
@@ -140,6 +143,12 @@
                                                         <constraint firstAttribute="height" constant="200" id="XXT-Ng-jP7"/>
                                                         <constraint firstAttribute="width" constant="150" id="kV1-Xp-ptq"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ataque" translatesAutoresizingMaskIntoConstraints="NO" id="dF7-BE-uza">
                                                     <rect key="frame" x="0.0" y="154" width="50" height="46"/>
@@ -164,7 +173,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                                             <constraints>
                                                 <constraint firstItem="FlQ-nM-iXJ" firstAttribute="centerY" secondItem="fIM-Xj-WmI" secondAttribute="centerY" id="31a-y9-rWw"/>
                                                 <constraint firstItem="dF7-BE-uza" firstAttribute="leading" secondItem="YoR-Ll-ocW" secondAttribute="leading" id="3Sd-LD-sqV"/>
@@ -184,7 +192,6 @@
                                                 <constraint firstItem="dF7-BE-uza" firstAttribute="bottom" secondItem="FlQ-nM-iXJ" secondAttribute="bottom" id="wqT-VY-lyO"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                         <connections>
                                             <outlet property="bottomValueDamage" destination="mud-ag-ImP" id="WBi-aE-gFV"/>
                                             <outlet property="bottomValueLife" destination="fIM-Xj-WmI" id="eux-wi-oE1"/>
@@ -199,6 +206,12 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AR - MAIOR" translatesAutoresizingMaskIntoConstraints="NO" id="nHz-DF-9ST">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vida" translatesAutoresizingMaskIntoConstraints="NO" id="pyr-hs-jiO">
                                         <rect key="frame" x="104" y="154" width="46" height="46"/>
@@ -223,7 +236,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="gkS-bp-b52"/>
                                     <constraint firstAttribute="width" constant="150" id="nAR-5P-apI"/>
@@ -234,6 +246,12 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AGUA - MAIOR" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-By-vON">
                                         <rect key="frame" x="-0.33333333333334281" y="0.0" width="151" height="200"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vida" translatesAutoresizingMaskIntoConstraints="NO" id="IsU-ll-IwG">
                                         <rect key="frame" x="103" y="154" width="46" height="46"/>
@@ -258,7 +276,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                 <constraints>
                                     <constraint firstItem="T8O-kq-KdZ" firstAttribute="leading" secondItem="7LV-na-irE" secondAttribute="leading" constant="13" id="2Gr-PL-RCX"/>
                                     <constraint firstItem="QlP-te-8M7" firstAttribute="centerX" secondItem="IsU-ll-IwG" secondAttribute="centerX" id="2dc-UK-ZEr"/>
@@ -479,6 +496,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Xd7-wA-hBf"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-eS-wlw">
                                         <rect key="frame" x="105" y="337" width="66" height="45"/>
@@ -559,6 +582,12 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LockedCard" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
                                         <rect key="frame" x="63.666666666666686" y="98.999999999999972" width="149" height="200.00000000000003"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="BackgroundColor"/>
@@ -593,7 +622,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gmu-dW-W3G"/>
+        <segue reference="5ZU-gv-XYT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AGUA - MAIOR" width="150.33332824707031" height="200.33332824707031"/>
@@ -617,11 +646,5 @@
         <namedColor name="FontColor">
             <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="placeholderTextColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemFillColor">
-            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

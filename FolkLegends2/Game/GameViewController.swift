@@ -73,23 +73,7 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         performSegue(withIdentifier: "talk", sender: self)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let identifier = segue.identifier {
-//            switch identifier {
-//            case "Victory":
-//                if let destination = segue.destination as? Victory {
-//                    destination.selectedDoor = self.selectedDoor
-//                }
-//            case "Loser":
-//                if let destination = segue.destination as? LoseView {
-//                    destination.selectedDoor = self.selectedDoor
-//                }
-//            default:
-//                return
-//            }
-//        }
-//    }
+
 }
 
 extension GameViewController: UICollectionViewDataSource {

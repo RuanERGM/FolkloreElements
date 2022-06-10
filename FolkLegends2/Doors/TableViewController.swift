@@ -35,13 +35,13 @@ class TableViewController: UITableViewController {
         currentKey.image = UIImage(named: getKey())
         
         productArray = [
-            Numbers(prNumber: 1, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 3),
+            Numbers(prNumber: 1, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),
             
-            Numbers(prNumber: 2, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 4),
+            Numbers(prNumber: 2, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 1),
             
-            Numbers(prNumber: 3, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 5),
+            Numbers(prNumber: 3, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 1),
             
-            Numbers(prNumber: 4, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 6)
+            Numbers(prNumber: 4, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 1)
         ]
         
         tableNumbers.dataSource = self
