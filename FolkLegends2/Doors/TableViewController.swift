@@ -6,7 +6,10 @@ class TableViewController: UITableViewController {
     
     @IBOutlet var tableNumbers: UITableView!
     
+//    @IBOutlet weak var currentKey: UIImageView!
+    
     @IBOutlet weak var currentKey: UIImageView!
+    
     
     var productArray = [Numbers]()
     var selectedCell : Numbers = Numbers()

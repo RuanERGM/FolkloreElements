@@ -279,13 +279,13 @@
                                     <constraint firstItem="Gp8-By-vON" firstAttribute="centerX" secondItem="7LV-na-irE" secondAttribute="centerX" id="o3L-6M-VVP"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiE-e0-ZAH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiE-e0-ZAH">
                                 <rect key="frame" x="207" y="294" width="126" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Inimigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ0-gU-twE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Inimigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ0-gU-twE">
                                 <rect key="frame" x="49" y="295" width="126" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -302,7 +302,7 @@
                                     <segue destination="Hug-dN-LiB" kind="presentation" modalPresentationStyle="automatic" id="ERu-ka-fNE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nan-x2-sJY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nan-x2-sJY">
                                 <rect key="frame" x="20" y="544" width="350" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -423,11 +423,15 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uoh-Pi-Etm"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="agx-8e-Dep" firstAttribute="leading" secondItem="uoh-Pi-Etm" secondAttribute="leading" id="KF0-3j-v6e"/>
                             <constraint firstItem="uoh-Pi-Etm" firstAttribute="trailing" secondItem="agx-8e-Dep" secondAttribute="trailing" id="MoX-lO-XIy"/>
                             <constraint firstAttribute="bottom" secondItem="agx-8e-Dep" secondAttribute="bottom" id="Wsh-Wj-FdV"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ohc-B7-IOH" appends="YES" id="Let-Ed-U6A"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="Descricao" destination="Kvs-dK-EMA" id="GvE-g5-Q9P"/>
@@ -437,6 +441,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRP-83-fFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ohc-B7-IOH">
+                    <connections>
+                        <action selector="Gestor:" destination="svb-b1-rGe" id="ZBd-8s-3fJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1624.6153846153845" y="79.620853080568722"/>
         </scene>
@@ -584,7 +593,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5ZU-gv-XYT"/>
+        <segue reference="Gmu-dW-W3G"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AGUA - MAIOR" width="150.33332824707031" height="200.33332824707031"/>

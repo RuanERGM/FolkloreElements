@@ -37,4 +37,7 @@ class Description: UIViewController{
     
     
   }
+    @IBAction func Gestor(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
