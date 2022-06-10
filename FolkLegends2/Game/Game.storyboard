@@ -644,7 +644,7 @@
             <color red="0.95300000905990601" green="0.90600001811981201" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
-            <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23137254901960785" green="0.16078431372549021" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
