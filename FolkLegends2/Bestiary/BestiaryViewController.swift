@@ -79,9 +79,10 @@ class BestiaryViewController : UIViewController {
         labelEnd: "Como última missão, precisava entregar o fogo para os índios e ao ver uma cobra passar na beira do rio, apanhou-a e colocou o tição de fogo nas suas costas, ela começou a nadar mas acabou sucumbindo no meio de sua jornada. O mesmo aconteceu com o camarão e a saracura.\n\nAté que o mensageiro ideal apareceu, o sapo-cururu, que tinha o hábito de ingerir brasas, pensando tratar-se de vaga-lumes. Desta vez tudo correu bem e o fogo foi entregue aos índios.",
         idDoor: 4),
     ]
-      print(cards.count)
+      let defaults = UserDefaults.standard
+      let portas: Int = defaults.integer(forKey: "Porta")
       for i in 0 ... cards.count - 1 {
-          if cards[i].idDoor <= UserKeys.allDoor{
+          if cards[i].idDoor <= portas {
               cards[i].locked = false
           }
       }

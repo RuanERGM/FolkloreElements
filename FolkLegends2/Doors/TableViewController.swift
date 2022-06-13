@@ -31,17 +31,18 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         currentKey.image = UIImage(named: getKey())
         
         productArray = [
-            Numbers(prNumber: 1, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),
+            Numbers(prNumber: 0, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),
             
-            Numbers(prNumber: 2, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 1),
+            Numbers(prNumber: 1, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 1),
             
-            Numbers(prNumber: 3, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 1),
+            Numbers(prNumber: 2, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 1),
             
-            Numbers(prNumber: 4, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 1)
+            Numbers(prNumber: 3, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 1)
         ]
         
         tableNumbers.dataSource = self
@@ -68,8 +69,9 @@ class TableViewController: UITableViewController {
         {
             cell.backView.layer.cornerRadius = 10.0;
             cell.frontView.roundCorners([.topRight, .bottomRight, .topLeft, .bottomLeft], radius: 10)
-            
-            if UserKeys.allDoor + 1 >= self.productArray[indexPath.item].number {
+            let defaults = UserDefaults.standard
+            let portas: Int = defaults.integer(forKey: "Porta")
+            if portas >= self.productArray[indexPath.item].number  {
                 cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
             } else {
                 cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].imageLocked!)
@@ -82,7 +84,11 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCell = productArray[indexPath.item]
-        if UserKeys.allKeys.contains(selectedCell.id) {
+        let defaults = UserDefaults.standard
+        let portas: Int = defaults.integer(forKey: "Porta")
+        print("portas: ", portas)
+        print("number: ", selectedCell.number!)
+        if portas >= selectedCell.number {
             performSegue(withIdentifier: "showdetail", sender: self)
         }
     }

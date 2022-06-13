@@ -52,6 +52,7 @@ class GameViewController: UIViewController {
             cardsCpu.append(CardGame())
         }
         
+        
         deckCpu.dataSource = self
         deckPlayer.dataSource = self
         
@@ -109,7 +110,7 @@ extension GameViewController: UICollectionViewDelegate {
       if collectionView == deckPlayer {
           
           // Desenhando no meio da tela a carta player que foi clicada
-          
+        
           selectedCardPlayer = cardsPlayer[indexPath.item]
         
           labelBottomDamage.text = String(selectedCardPlayer.damage)
@@ -202,10 +203,13 @@ extension GameViewController: UICollectionViewDelegate {
                               
                               if !UserKeys.allKeys.contains(self.selectedDoor.keyUnlocked){
                                   UserKeys.allKeys.append(self.selectedDoor.keyUnlocked)
+    
                               }
                               
-                              if UserKeys.allDoor < self.selectedDoor.number{
-                                  UserKeys.allDoor = self.selectedDoor.number
+                              if UserKeys.allDoor <= self.selectedDoor.number{
+                                  UserKeys.allDoor = self.selectedDoor.number + 1
+                                  print("alldoor: ", UserKeys.allDoor)
+                                  UserDefaults.standard.set(UserKeys.allDoor, forKey: "Porta")
                               }
                               
                               self.performSegue(withIdentifier: "Victory", sender: self)
