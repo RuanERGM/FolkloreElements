@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-public var x:Int!
+public var x:Int = 100
+public var y:Int = 100
 class GameViewController: UIViewController {
     
     // colections
@@ -47,6 +48,8 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         x = selectedDoor.number
+        y = selectedDoor.numOfCards
+        
         for _ in 1 ... selectedDoor.numOfCards {
             cardsPlayer.append(CardGame())
             cardsCpu.append(CardGame())
@@ -74,7 +77,7 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         performSegue(withIdentifier: "talk", sender: self)
     }
-
+   
 }
 
 extension GameViewController: UICollectionViewDataSource {
@@ -221,10 +224,10 @@ extension GameViewController: UICollectionViewDelegate {
                               self.performSegue(withIdentifier: "Loser", sender: self)
                               // chamar tela
                           }
-                          
-                          
+                      
                           
                       }
+                      
                       
                       
                       

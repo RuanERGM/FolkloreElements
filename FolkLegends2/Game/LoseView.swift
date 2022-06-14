@@ -15,8 +15,9 @@ class LoseView: UIViewController {
     
     var selectedDoor = Numbers()
     
-    @IBAction func returnGame(_ sender: Any) {
-        self.performSegue(withIdentifier: "showGame", sender: self)
+    
+    @IBAction func ReturnGame(_ sender: UIButton) {
+        performSegue(withIdentifier: "show", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

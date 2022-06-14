@@ -504,13 +504,24 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-eS-wlw">
-                                        <rect key="frame" x="105" y="337" width="66" height="45"/>
+                                        <rect key="frame" x="171.66666666666666" y="337" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
-                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" name="TintColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="Gmu-dW-W3G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuS-OG-zvA">
+                                        <rect key="frame" x="50" y="337" width="55" height="45"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="return.dark">
+                                            <color key="baseBackgroundColor" name="TintColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ReturnGame:" destination="Q2L-yC-m6u" eventType="touchUpInside" id="j95-Tl-o1T"/>
+                                            <segue destination="Y6W-OH-hqX" kind="presentation" identifier="retornar" modalPresentationStyle="fullScreen" id="j8o-0O-KIO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -518,14 +529,16 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="lb1-V5-Zhf" secondAttribute="trailing" constant="8" id="30i-vZ-E7i"/>
                                     <constraint firstAttribute="bottom" secondItem="qcd-eS-wlw" secondAttribute="bottom" constant="20" id="5Y0-RS-Wif"/>
-                                    <constraint firstItem="qcd-eS-wlw" firstAttribute="leading" secondItem="IhZ-Rt-zW2" secondAttribute="leading" constant="105" id="IfF-GV-ZIy"/>
+                                    <constraint firstItem="CuS-OG-zvA" firstAttribute="top" secondItem="nHk-Cw-sO5" secondAttribute="bottom" constant="38" id="JP9-eu-MUj"/>
                                     <constraint firstItem="nHk-Cw-sO5" firstAttribute="leading" secondItem="IhZ-Rt-zW2" secondAttribute="leading" constant="83.5" id="Lep-up-hk1"/>
                                     <constraint firstItem="lb1-V5-Zhf" firstAttribute="leading" secondItem="IhZ-Rt-zW2" secondAttribute="leading" constant="8" id="N74-Sb-6gd"/>
                                     <constraint firstItem="qcd-eS-wlw" firstAttribute="top" secondItem="nHk-Cw-sO5" secondAttribute="bottom" constant="38" id="b91-A3-GsK"/>
                                     <constraint firstItem="lb1-V5-Zhf" firstAttribute="top" secondItem="IhZ-Rt-zW2" secondAttribute="top" constant="50" id="dVf-4I-1uQ"/>
                                     <constraint firstAttribute="trailing" secondItem="nHk-Cw-sO5" secondAttribute="trailing" constant="83.5" id="gVb-eg-t18"/>
+                                    <constraint firstAttribute="bottom" secondItem="CuS-OG-zvA" secondAttribute="bottom" constant="20" id="n8D-r0-N2S"/>
                                     <constraint firstItem="nHk-Cw-sO5" firstAttribute="top" secondItem="IhZ-Rt-zW2" secondAttribute="top" constant="99" id="nNu-Vb-IfW"/>
-                                    <constraint firstAttribute="trailing" secondItem="qcd-eS-wlw" secondAttribute="trailing" constant="105" id="w8m-Az-Yxh"/>
+                                    <constraint firstItem="CuS-OG-zvA" firstAttribute="leading" secondItem="IhZ-Rt-zW2" secondAttribute="leading" constant="50" id="tG9-uR-mrv"/>
+                                    <constraint firstAttribute="trailing" secondItem="qcd-eS-wlw" secondAttribute="trailing" constant="50" id="w8m-Az-Yxh"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-K6-IYr">
@@ -565,10 +578,10 @@
                                 <rect key="frame" x="57" y="232.33333333333337" width="276" height="403"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rV-8YZ">
-                                        <rect key="frame" x="105" y="338" width="66" height="45"/>
+                                        <rect key="frame" x="171.66666666666666" y="338" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
-                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" name="TintColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="5ZU-gv-XYT"/>
@@ -589,19 +602,33 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-dn-EF6">
+                                        <rect key="frame" x="50" y="337" width="55" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="return.dark">
+                                            <color key="baseBackgroundColor" name="TintColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ReturnGame:" destination="ZSZ-8k-sKP" eventType="touchUpInside" id="LZ8-rp-gKu"/>
+                                            <action selector="return:" destination="ZSZ-8k-sKP" eventType="touchUpInside" id="huA-jP-T13"/>
+                                            <segue destination="Y6W-OH-hqX" kind="presentation" identifier="show" modalPresentationStyle="fullScreen" id="yrt-Ta-Nvz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cCj-dn-EF6" secondAttribute="bottom" constant="20" id="1C4-6U-9nM"/>
                                     <constraint firstAttribute="trailing" secondItem="dmg-XI-qDf" secondAttribute="trailing" constant="63.5" id="4nj-Wt-XOU"/>
                                     <constraint firstItem="TNz-SC-fLx" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="28" id="4rt-Ve-hQc"/>
-                                    <constraint firstItem="o2W-rV-8YZ" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="105" id="5lG-H8-Axv"/>
+                                    <constraint firstItem="cCj-dn-EF6" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="50" id="7Yj-LF-sGz"/>
                                     <constraint firstItem="o2W-rV-8YZ" firstAttribute="top" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="39" id="HTN-yF-Tam"/>
                                     <constraint firstItem="TNz-SC-fLx" firstAttribute="top" secondItem="Y0I-5Q-oYC" secondAttribute="top" constant="50" id="Mga-Ks-dkq"/>
                                     <constraint firstItem="dmg-XI-qDf" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="63.5" id="VA7-HJ-KVu"/>
+                                    <constraint firstItem="cCj-dn-EF6" firstAttribute="top" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="38" id="ZpV-rG-8ZM"/>
                                     <constraint firstItem="dmg-XI-qDf" firstAttribute="top" secondItem="Y0I-5Q-oYC" secondAttribute="top" constant="99" id="doB-bY-XJp"/>
                                     <constraint firstAttribute="bottom" secondItem="o2W-rV-8YZ" secondAttribute="bottom" constant="20" id="efM-H6-hZA"/>
                                     <constraint firstAttribute="trailing" secondItem="TNz-SC-fLx" secondAttribute="trailing" constant="28" id="vMF-FI-H8L"/>
-                                    <constraint firstAttribute="trailing" secondItem="o2W-rV-8YZ" secondAttribute="trailing" constant="105" id="wWB-Qb-4hW"/>
+                                    <constraint firstAttribute="trailing" secondItem="o2W-rV-8YZ" secondAttribute="trailing" constant="50" id="wWB-Qb-4hW"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -623,6 +650,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5ZU-gv-XYT"/>
+        <segue reference="j8o-0O-KIO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AGUA - MAIOR" width="150.33332824707031" height="200.33332824707031"/>
@@ -639,12 +667,16 @@
         <image name="card.bahira" width="320.33334350585938" height="600.33331298828125"/>
         <image name="door.game.brown" width="30.333333969116211" height="30.333333969116211"/>
         <image name="quest.brown" width="30.333333969116211" height="30.333333969116211"/>
+        <image name="return.dark" width="30.333333969116211" height="30.333333969116211"/>
         <image name="vida" width="150.33332824707031" height="150.33332824707031"/>
         <namedColor name="BackgroundColor">
             <color red="0.95300000905990601" green="0.90600001811981201" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
             <color red="0.23100000619888306" green="0.16099999845027924" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TintColor">
+            <color red="0.74099999666213989" green="0.54900002479553223" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

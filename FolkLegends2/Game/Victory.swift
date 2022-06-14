@@ -5,11 +5,17 @@ class Victory: UIViewController{
     @IBOutlet weak var cardUnloked: UIImageView!
     var selectedDoor = Numbers()
     
-    @IBAction func returnGame(_ sender: Any) {
-        self.performSegue(withIdentifier: "showGame", sender: self)
+    
+    @IBAction func ReturnGame(_ sender: Any) {
+        
+        performSegue(withIdentifier: "retornar", sender: self)
+        
+        
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      selectedDoor.numOfCards = y
       if let destination = segue.destination as? GameViewController {
           destination.selectedDoor = self.selectedDoor
       }
