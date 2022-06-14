@@ -131,19 +131,19 @@ extension GameViewController: UICollectionViewDelegate {
           
           let indexCpu = Int.random(in: 0...cardsCpu.count - 1)
           
+          // Desenhando no meio da tela a carta cpu que foi clicada
+          
+          self.deckCpu.cellForItem(at: IndexPath(row: indexCpu, section: 0))?.alpha = 0
+          
+          self.selectedCardCpu = self.cardsCpu[indexCpu]
+          
+          self.labelBottomDamageCpu.text = String(self.selectedCardCpu.damage)
+          
+          self.labelBottomLifeCpu.text = String(self.selectedCardCpu.life)
+          
+          self.imageCpu.image = UIImage(named: self.selectedCardCpu.getElement())
+          
           DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-              
-              // Desenhando no meio da tela a carta cpu que foi clicada
-              
-              self.deckCpu.cellForItem(at: IndexPath(row: indexCpu, section: 0))?.alpha = 0
-              
-              self.selectedCardCpu = self.cardsCpu[indexCpu]
-              
-              self.labelBottomDamageCpu.text = String(self.selectedCardCpu.damage)
-              
-              self.labelBottomLifeCpu.text = String(self.selectedCardCpu.life)
-              
-              self.imageCpu.image = UIImage(named: self.selectedCardCpu.getElement())
               
               self.labelTitleCpu.isHidden = false
               self.cardCpu.isHidden = false
