@@ -115,7 +115,8 @@ extension GameViewController: UICollectionViewDelegate {
       if collectionView == deckPlayer {
           
           // Desenhando no meio da tela a carta player que foi clicada
-        
+          deckPlayer.cellForItem(at: indexPath)!.alpha = 0
+          
           selectedCardPlayer = cardsPlayer[indexPath.item]
         
           labelBottomDamage.text = String(selectedCardPlayer.damage)
@@ -124,18 +125,17 @@ extension GameViewController: UICollectionViewDelegate {
           
           imagePlayer.image = UIImage(named: selectedCardPlayer.getElement())
           
-          cardPlayer.isHidden = false
-          labelTitlePlayer.isHidden = false
-          
         
           deckPlayer.isUserInteractionEnabled = false
-          labelFeedback.text = "Aguarde o oponente..."
+          labelFeedback.text = "Cartas selecionadas.. 3.. 2.. 1.."
           
           let indexCpu = Int.random(in: 0...cardsCpu.count - 1)
           
           DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
               
               // Desenhando no meio da tela a carta cpu que foi clicada
+              
+              self.deckCpu.cellForItem(at: IndexPath(row: indexCpu, section: 0))?.alpha = 0
               
               self.selectedCardCpu = self.cardsCpu[indexCpu]
               
@@ -147,6 +147,9 @@ extension GameViewController: UICollectionViewDelegate {
               
               self.labelTitleCpu.isHidden = false
               self.cardCpu.isHidden = false
+              
+              self.cardPlayer.isHidden = false
+              self.labelTitlePlayer.isHidden = false
               
               // Ataque
               
@@ -162,13 +165,11 @@ extension GameViewController: UICollectionViewDelegate {
                   // Atualizando valores de vida da cpu
                   
                   self.labelBottomLifeCpu.text = lifeCpu
-                  self.deckCpu.reloadData()
              
                   DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                       
                       // Atualizando valores de vida do player
                       self.labelBottomLife.text = lifePlayer
-                      self.deckPlayer.reloadData()
                   
                   
                       DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -195,6 +196,8 @@ extension GameViewController: UICollectionViewDelegate {
                           self.deckPlayer.isUserInteractionEnabled = true
                           self.labelFeedback.text = "Sua vez!"
                           
+                          self.deckPlayer.cellForItem(at: indexPath)?.alpha = 1
+                          self.deckCpu.cellForItem(at: IndexPath(row: indexCpu, section: 0))?.alpha = 1
                           
                           if self.cardsPlayer.count == 0 && self.cardsCpu.count > 0{
                               self.deckPlayer.isUserInteractionEnabled = false

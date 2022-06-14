@@ -36,7 +36,7 @@ class TableViewController: UITableViewController {
         currentKey.image = UIImage(named: getKey())
         
         productArray = [
-            Numbers(prNumber: 0, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),
+            Numbers(prNumber: 0, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 3),
             
             Numbers(prNumber: 1, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 2),
             
