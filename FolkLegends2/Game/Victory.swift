@@ -15,7 +15,9 @@ class Victory: UIViewController{
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      selectedDoor.numOfCards = y
+        selectedDoor.numOfCards = y
+        selectedDoor.number = fase
+        
       if let destination = segue.destination as? GameViewController {
           destination.selectedDoor = self.selectedDoor
       }

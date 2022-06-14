@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public var x:Int = 100
+public var fase:Int = 0
 public var y:Int = 100
 class GameViewController: UIViewController {
     
@@ -47,8 +47,10 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        x = selectedDoor.number
+        fase = selectedDoor.number
         y = selectedDoor.numOfCards
+        print("Y:",y)
+        print("x:",fase)
         
         for _ in 1 ... selectedDoor.numOfCards {
             cardsPlayer.append(CardGame())
