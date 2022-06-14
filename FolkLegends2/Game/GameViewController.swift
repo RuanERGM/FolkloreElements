@@ -69,7 +69,6 @@ class GameViewController: UIViewController {
         labelTitleCpu.isHidden = true
         labelFeedback.text = "Sua vez!"
         
-        
         deckPlayer.isUserInteractionEnabled = true
         
         countCardsPlayer = cardsPlayer.count
@@ -97,13 +96,13 @@ extension GameViewController: UICollectionViewDataSource {
         if collectionView == deckCpu {
             let cell: CardCellGame = deckCpu.dequeueReusableCell(withReuseIdentifier: "cardCellCpu", for: indexPath) as! CardCellGame
         
-            cell.draw(cardGame: cardsCpu[indexPath.item])
+            cell.drawCpu(cardGame: cardsCpu[indexPath.item])
             return cell
         }
         else {
             let cell: CardCellGame = deckPlayer.dequeueReusableCell(withReuseIdentifier: "cardCellPlayer", for: indexPath) as! CardCellGame
         
-            cell.draw(cardGame: cardsPlayer[indexPath.item])
+            cell.drawUser(cardGame: cardsPlayer[indexPath.item])
             return cell
         }
     }
@@ -142,7 +141,6 @@ extension GameViewController: UICollectionViewDelegate {
           self.labelBottomLifeCpu.text = String(self.selectedCardCpu.life)
           
           self.imageCpu.image = UIImage(named: self.selectedCardCpu.getElement())
-          
           DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
               
               self.labelTitleCpu.isHidden = false

@@ -16,11 +16,19 @@ class CardCellGame: UICollectionViewCell {
    
     @IBOutlet weak var element: UIImageView!
     
-    func draw(cardGame: CardGame) {
+    func drawUser(cardGame: CardGame) {
         bottomValueDamage.text  = String(cardGame.damage)
         
         bottomValueLife.text = String(cardGame.life)
         
         element.image = UIImage(named: cardGame.getElement())
+    }
+    
+    func drawCpu(cardGame: CardGame) {
+        bottomValueDamage.text  = String(cardGame.damage)
+        
+        bottomValueLife.text = String(cardGame.life)
+        
+        element.image = UIImage(named: "cardBack")
     }
 }
