@@ -15,12 +15,12 @@ class LoseView: UIViewController {
     
     var selectedDoor = Numbers()
     
-    
     @IBAction func ReturnGame(_ sender: UIButton) {
         performSegue(withIdentifier: "show", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      selectedDoor.numOfCards = y
       if let destination = segue.destination as? GameViewController {
           destination.selectedDoor = self.selectedDoor
       }

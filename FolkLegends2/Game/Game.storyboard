@@ -610,7 +610,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="ReturnGame:" destination="ZSZ-8k-sKP" eventType="touchUpInside" id="LZ8-rp-gKu"/>
-                                            <action selector="return:" destination="ZSZ-8k-sKP" eventType="touchUpInside" id="huA-jP-T13"/>
                                             <segue destination="Y6W-OH-hqX" kind="presentation" identifier="show" modalPresentationStyle="fullScreen" id="yrt-Ta-Nvz"/>
                                         </connections>
                                     </button>
@@ -650,7 +649,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5ZU-gv-XYT"/>
-        <segue reference="j8o-0O-KIO"/>
+        <segue reference="yrt-Ta-Nvz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AGUA - MAIOR" width="150.33332824707031" height="200.33332824707031"/>
