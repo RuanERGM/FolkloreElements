@@ -6,16 +6,18 @@ class TableViewController: UITableViewController {
     
     @IBOutlet var tableNumbers: UITableView!
     
-//    @IBOutlet weak var currentKey: UIImageView!
-    
     @IBOutlet weak var currentKey: UIImageView!
-    
-    
+        
     var productArray = [Numbers]()
     var selectedCell : Numbers = Numbers()
     
+    public var portas: Int = 0
+    
     func getKey() -> String {
-        switch (UserKeys.allDoor){
+        let defaults = UserDefaults.standard
+        portas = defaults.integer(forKey: "Porta")
+        
+        switch (portas){
         case 0:
             return "chave.terra"
         case 1:
@@ -69,9 +71,11 @@ class TableViewController: UITableViewController {
         {
             cell.backView.layer.cornerRadius = 10.0;
             cell.frontView.roundCorners([.topRight, .bottomRight, .topLeft, .bottomLeft], radius: 10)
+            
             let defaults = UserDefaults.standard
-            let portas: Int = defaults.integer(forKey: "Porta")
-            if portas >= self.productArray[indexPath.item].number  {
+            self.portas = defaults.integer(forKey: "Porta")
+            
+            if self.portas >= self.productArray[indexPath.item].number  {
                 cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
             } else {
                 cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].imageLocked!)
@@ -84,11 +88,11 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCell = productArray[indexPath.item]
+        
         let defaults = UserDefaults.standard
-        let portas: Int = defaults.integer(forKey: "Porta")
-        print("portas: ", portas)
-        print("number: ", selectedCell.number!)
-        if portas >= selectedCell.number {
+        self.portas = defaults.integer(forKey: "Porta")
+        
+        if self.portas >= selectedCell.number {
             performSegue(withIdentifier: "showdetail", sender: self)
         }
     }

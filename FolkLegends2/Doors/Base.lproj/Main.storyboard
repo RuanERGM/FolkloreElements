@@ -150,7 +150,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chave.ar" translatesAutoresizingMaskIntoConstraints="NO" id="FCo-fe-Eje">
-                                        <rect key="frame" x="0.0" y="0.0" width="65" height="33"/>
+                                        <rect key="frame" x="8" y="-24" width="110" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -220,7 +220,7 @@
     <resources>
         <image name="book" width="24" height="23"/>
         <image name="book.fill" width="23" height="23"/>
-        <image name="chave.ar" width="30.5" height="30.5"/>
+        <image name="chave.ar" width="120.5" height="43.5"/>
         <image name="door" width="19" height="23"/>
         <image name="door.fill" width="19" height="23"/>
         <image name="quest.brown" width="30.5" height="30.5"/>
@@ -228,7 +228,7 @@
             <color red="0.95300000905990601" green="0.90600001811981201" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TabBarColor">
-            <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23100000619888306" green="0.16099999845027924" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TintColor">
             <color red="0.74099999666213989" green="0.54900002479553223" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
