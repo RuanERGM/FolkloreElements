@@ -34,7 +34,6 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
         currentKey.image = UIImage(named: getKey())
         
         productArray = [
@@ -46,7 +45,9 @@ class TableViewController: UITableViewController {
             
             Numbers(prNumber: 3, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 4)
         ]
-        
+        self.tableNumbers.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tableNumbers.backgroundView = UIImageView(image: UIImage(named: "background 1"))
+        tableNumbers.backgroundView?.contentMode = .scaleAspectFill
         tableNumbers.dataSource = self
         tableNumbers.delegate = self
     }

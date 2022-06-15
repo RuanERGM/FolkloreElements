@@ -73,12 +73,11 @@
         <scene sceneID="ZBV-FK-0vF">
             <objects>
                 <tableViewController id="uqa-e7-TJu" customClass="TableViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="t1o-8v-ZP8">
+                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="t1o-8v-ZP8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <color key="separatorColor" name="BackgroundColor"/>
-                        <color key="sectionIndexBackgroundColor" name="BackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="152" id="Rnl-HJ-KOH" customClass="tableCell" customModule="FolkLegends2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="152"/>
@@ -106,7 +105,6 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" name="BackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="PRN-P0-7bf" firstAttribute="leading" secondItem="a0h-ah-bFc" secondAttribute="leading" id="GTP-3u-NgL"/>
                                                 <constraint firstItem="PRN-P0-7bf" firstAttribute="top" secondItem="a0h-ah-bFc" secondAttribute="top" id="dTe-n1-smG"/>
@@ -115,7 +113,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" name="BackgroundColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="a0h-ah-bFc" firstAttribute="leading" secondItem="a8A-uW-EJD" secondAttribute="leading" constant="20" id="OFA-nU-vLU"/>
                                         <constraint firstAttribute="bottom" secondItem="a0h-ah-bFc" secondAttribute="bottom" constant="20" id="Vs9-ft-oRz"/>
@@ -123,7 +121,7 @@
                                         <constraint firstItem="a0h-ah-bFc" firstAttribute="top" secondItem="a8A-uW-EJD" secondAttribute="top" constant="20" id="ak5-vc-PpO"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="VyN-aV-YHg" firstAttribute="width" secondItem="Rnl-HJ-KOH" secondAttribute="width" id="hBy-mr-13v"/>
                                 </constraints>
