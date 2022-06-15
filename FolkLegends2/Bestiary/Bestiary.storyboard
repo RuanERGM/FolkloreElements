@@ -18,12 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background 1" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-Iu-3ef">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipo" translatesAutoresizingMaskIntoConstraints="NO" id="VkT-aX-K0M">
                                 <rect key="frame" x="130" y="52" width="154" height="176"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gLq-P0-Wr5">
                                 <rect key="frame" x="0.0" y="236" width="414" height="660"/>
-                                <color key="backgroundColor" name="BackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="660" id="0gL-31-RY0"/>
                                 </constraints>
@@ -64,11 +67,15 @@
                         <viewLayoutGuide key="safeArea" id="LdC-DG-5fy"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hhr-Iu-3ef" firstAttribute="leading" secondItem="LdC-DG-5fy" secondAttribute="leading" id="5Jl-Ie-b1r"/>
                             <constraint firstItem="VkT-aX-K0M" firstAttribute="leading" secondItem="LdC-DG-5fy" secondAttribute="leading" constant="130" id="5Te-gd-da5"/>
+                            <constraint firstItem="hhr-Iu-3ef" firstAttribute="trailing" secondItem="LdC-DG-5fy" secondAttribute="trailing" id="8m1-DA-Dm2"/>
                             <constraint firstAttribute="bottom" secondItem="gLq-P0-Wr5" secondAttribute="bottom" id="MkN-PV-BL6"/>
                             <constraint firstItem="LdC-DG-5fy" firstAttribute="trailing" secondItem="VkT-aX-K0M" secondAttribute="trailing" constant="130" id="aF2-Px-ARy"/>
                             <constraint firstAttribute="trailing" secondItem="gLq-P0-Wr5" secondAttribute="trailing" id="bP1-Zd-gru"/>
+                            <constraint firstAttribute="bottom" secondItem="hhr-Iu-3ef" secondAttribute="bottom" id="bdY-ty-QuL"/>
                             <constraint firstItem="VkT-aX-K0M" firstAttribute="top" secondItem="LdC-DG-5fy" secondAttribute="top" constant="8" id="bum-l4-yZF"/>
+                            <constraint firstItem="hhr-Iu-3ef" firstAttribute="top" secondItem="fe4-0a-Xhk" secondAttribute="top" id="pQX-Rr-Ogw"/>
                             <constraint firstItem="gLq-P0-Wr5" firstAttribute="leading" secondItem="fe4-0a-Xhk" secondAttribute="leading" id="xv8-rE-Nsp"/>
                             <constraint firstItem="gLq-P0-Wr5" firstAttribute="top" secondItem="VkT-aX-K0M" secondAttribute="bottom" constant="8" id="ynE-hY-xSS"/>
                         </constraints>
@@ -214,12 +221,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background 1" width="428.5" height="926.5"/>
         <image name="logotipo" width="1080" height="536"/>
         <namedColor name="BackgroundColor">
-            <color red="0.95300000905990601" green="0.93300002813339233" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.90600001811981201" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FontColor">
-            <color red="0.30199998617172241" green="0.21600000560283661" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23100000619888306" green="0.16099999845027924" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

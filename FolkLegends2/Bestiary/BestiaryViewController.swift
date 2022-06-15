@@ -11,7 +11,7 @@ class BestiaryViewController : UIViewController {
     super.viewDidLoad()
     deck.dataSource = self
     deck.delegate = self
-    
+      
     cards = [
       Card(
         imageCharacterCard: UIImage(named: "card.guarana")!,
@@ -119,3 +119,4 @@ extension BestiaryViewController: UICollectionViewDelegate {
   }
 }
  
+
