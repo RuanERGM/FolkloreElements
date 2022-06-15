@@ -144,7 +144,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="e8A-Sg-E7N">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="GQ9-dC-G3Y">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="GQ9-dC-G3Y">
                             <view key="customView" contentMode="scaleToFill" id="WrO-x7-ucB">
                                 <rect key="frame" x="20" y="5.5" width="65" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -156,7 +156,7 @@
                                 </subviews>
                             </view>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="c7M-Da-A4g">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="c7M-Da-A4g">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rH3-VH-b8v">
                                 <rect key="frame" x="339.5" y="0.0" width="54.5" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
