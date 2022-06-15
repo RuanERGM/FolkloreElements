@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Vitória.png",
+      "filename" : "Vitória.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Vitória@2x.png",
+      "filename" : "Vitória@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Vitória@3x.png",
+      "filename" : "Vitória@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
