@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -176,6 +177,7 @@
                         <outlet property="currentKey" destination="FCo-fe-Eje" id="wIf-ju-hbm"/>
                         <outlet property="tableNumbers" destination="t1o-8v-ZP8" id="8Df-Jo-XTL"/>
                         <segue destination="9NY-MF-lbH" kind="presentation" identifier="showdetail" modalPresentationStyle="fullScreen" id="Yjc-AD-L80"/>
+                        <segue destination="Jqp-y8-a0k" kind="presentation" identifier="Hist" id="byO-Nk-OwV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjL-R3-4bQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -189,6 +191,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kmh-a7-8tL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2749" y="-114"/>
+        </scene>
+        <!--Historia-->
+        <scene sceneID="ytY-Mw-F21">
+            <objects>
+                <viewController id="Jqp-y8-a0k" customClass="Historia" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fen-1N-6nl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RR-Jt-8IB">
+                                <rect key="frame" x="20" y="221" width="374" height="401"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drv-WQ-QTr">
+                                        <rect key="frame" x="20" y="116" width="334" height="169"/>
+                                        <string key="text">Você chegou aqui nesse santuário guiado pela força da natureza e das criaturas que nela habitam, as mesmas que tiraram do seu rumo comum de humano - uma excursão pela Amazônia - para lhe contar suas histórias.
+Você verá grandes portas com desenhos de elementos na frente ( Terra, Água, Ar e Fogo) e junto a eles há um “Bestiário” com uma mensagem: complete com as cartas que faltam para voltar pra casa!
+</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="TintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Drv-WQ-QTr" secondAttribute="trailing" constant="20" id="Erp-pD-ULW"/>
+                                    <constraint firstItem="Drv-WQ-QTr" firstAttribute="top" secondItem="8RR-Jt-8IB" secondAttribute="top" constant="116" id="Ue3-T0-y9i"/>
+                                    <constraint firstItem="Drv-WQ-QTr" firstAttribute="leading" secondItem="8RR-Jt-8IB" secondAttribute="leading" constant="20" id="csT-KB-0N8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Drv-WQ-QTr" secondAttribute="bottom" constant="116" id="p8R-cW-Pze"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i20-YF-Rks"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="i20-YF-Rks" firstAttribute="bottom" secondItem="8RR-Jt-8IB" secondAttribute="bottom" constant="220" id="0a2-hQ-VEe"/>
+                            <constraint firstItem="8RR-Jt-8IB" firstAttribute="top" secondItem="i20-YF-Rks" secondAttribute="top" constant="177" id="FVI-TX-v7t"/>
+                            <constraint firstItem="8RR-Jt-8IB" firstAttribute="leading" secondItem="i20-YF-Rks" secondAttribute="leading" constant="20" id="GwV-a7-jtw"/>
+                            <constraint firstItem="i20-YF-Rks" firstAttribute="trailing" secondItem="8RR-Jt-8IB" secondAttribute="trailing" constant="20" id="fPc-tf-gZu"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6QX-vu-G6l" appends="YES" id="vkQ-NW-d42"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNC-ZY-tcz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6QX-vu-G6l">
+                    <connections>
+                        <action selector="Gesture:" destination="Jqp-y8-a0k" id="XdY-1D-iX2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3408.6956521739135" y="-115.17857142857142"/>
         </scene>
         <!--Bestiary-->
         <scene sceneID="L9I-C4-qB9">

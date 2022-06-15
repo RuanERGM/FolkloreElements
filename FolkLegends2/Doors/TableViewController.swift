@@ -51,7 +51,16 @@ class TableViewController: UITableViewController {
         tableNumbers.dataSource = self
         tableNumbers.delegate = self
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = UserDefaults.standard
+        control = defaults.bool(forKey: "History")
+
+        if(control == false){
+            performSegue(withIdentifier: "Hist", sender: self)
+        }
+   
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
