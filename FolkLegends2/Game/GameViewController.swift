@@ -126,7 +126,7 @@ extension GameViewController: UICollectionViewDelegate {
           
         
           deckPlayer.isUserInteractionEnabled = false
-          labelFeedback.text = "Cartas selecionadas.. 3.. 2.. 1.."
+          labelFeedback.text = "Cartas selecionadas!\n3.. 2.. 1.."
           
           let indexCpu = Int.random(in: 0...cardsCpu.count - 1)
           
@@ -141,6 +141,7 @@ extension GameViewController: UICollectionViewDelegate {
           self.labelBottomLifeCpu.text = String(self.selectedCardCpu.life)
           
           self.imageCpu.image = UIImage(named: self.selectedCardCpu.getElement())
+          
           DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
               
               self.labelTitleCpu.isHidden = false
@@ -148,6 +149,8 @@ extension GameViewController: UICollectionViewDelegate {
               
               self.cardPlayer.isHidden = false
               self.labelTitlePlayer.isHidden = false
+              
+              self.labelFeedback.text = "Duelo!"
               
               // Ataque
               
