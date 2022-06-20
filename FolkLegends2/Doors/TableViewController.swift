@@ -27,7 +27,7 @@ class TableViewController: UITableViewController {
         case 3:
             return "chave.fogo"
         default:
-            return "chave.terra"
+            return "chave.fogo"
         }
     }
     
