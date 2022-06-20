@@ -16,7 +16,7 @@ class Victory: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         selectedDoor.numOfCards = y
-        selectedDoor.number = fase
+        
         
       if let destination = segue.destination as? GameViewController {
           destination.selectedDoor = self.selectedDoor
@@ -24,14 +24,14 @@ class Victory: UIViewController{
     }
     
     func getCardUnloked() -> String {
-        switch UserKeys.allDoor {
-        case 1:
+        switch CardControl {
+        case 0:
             return "card.guarana"
-        case 2:
+        case 1:
             return "card.peixe"
-        case 3:
+        case 2:
             return "card.tutu"
-        case 4:
+        case 3:
             return "card.bahira"
         default:
             return "bes.card.back"

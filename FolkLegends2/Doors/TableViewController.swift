@@ -1,6 +1,8 @@
 
 
 import UIKit
+public var CardControl:Int = 0
+public var portas: Int = 0
 
 class TableViewController: UITableViewController {
     
@@ -11,7 +13,7 @@ class TableViewController: UITableViewController {
     var productArray = [Numbers]()
     var selectedCell : Numbers = Numbers()
     
-    public var portas: Int = 0
+    
     
     func getKey() -> String {
         let defaults = UserDefaults.standard
@@ -39,11 +41,11 @@ class TableViewController: UITableViewController {
         productArray = [
             Numbers(prNumber: 0, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),
             
-            Numbers(prNumber: 1, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 2),
+            Numbers(prNumber: 1, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 1),
             
-            Numbers(prNumber: 2, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 3),
+            Numbers(prNumber: 2, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 1),
             
-            Numbers(prNumber: 3, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 4)
+            Numbers(prNumber: 3, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 1)
         ]
         self.tableNumbers.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableNumbers.backgroundView = UIImageView(image: UIImage(named: "background 1"))
@@ -83,9 +85,9 @@ class TableViewController: UITableViewController {
             cell.frontView.roundCorners([.topRight, .bottomRight, .topLeft, .bottomLeft], radius: 10)
             
             let defaults = UserDefaults.standard
-            self.portas = defaults.integer(forKey: "Porta")
+            portas = defaults.integer(forKey: "Porta")
             
-            if self.portas >= self.productArray[indexPath.item].number  {
+            if portas >= self.productArray[indexPath.item].number  {
                 cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
             } else {
                 cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].imageLocked!)
@@ -100,16 +102,19 @@ class TableViewController: UITableViewController {
         selectedCell = productArray[indexPath.item]
         
         let defaults = UserDefaults.standard
-        self.portas = defaults.integer(forKey: "Porta")
+        portas = defaults.integer(forKey: "Porta")
         
-        if self.portas >= selectedCell.number {
+        if portas >= selectedCell.number {
             performSegue(withIdentifier: "showdetail", sender: self)
+            
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if let destination = segue.destination as? GameViewController {
           destination.selectedDoor = selectedCell
+          CardControl = selectedCell.number
+          
       }
     }
     

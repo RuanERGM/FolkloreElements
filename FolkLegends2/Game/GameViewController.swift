@@ -47,10 +47,9 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fase = selectedDoor.number
+
         y = selectedDoor.numOfCards
-        print("Y:",y)
-        print("x:",fase)
+        
         
         for _ in 1 ... selectedDoor.numOfCards {
             cardsPlayer.append(CardGame())
@@ -215,10 +214,11 @@ extension GameViewController: UICollectionViewDelegate {
     
                               }
                               
-                              if UserKeys.allDoor <= self.selectedDoor.number{
+                              if portas <= self.selectedDoor.number{
                                   UserKeys.allDoor = self.selectedDoor.number + 1
                                   print("alldoor: ", UserKeys.allDoor)
                                   UserDefaults.standard.set(UserKeys.allDoor, forKey: "Porta")
+                             
                               }
                               
                               self.performSegue(withIdentifier: "Victory", sender: self)
