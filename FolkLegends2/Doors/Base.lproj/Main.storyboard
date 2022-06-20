@@ -204,7 +204,7 @@
                                 <rect key="frame" x="40" y="221" width="334" height="401"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drv-WQ-QTr">
-                                        <rect key="frame" x="20" y="50" width="294" height="301"/>
+                                        <rect key="frame" x="10" y="10" width="314" height="381"/>
                                         <string key="text">Você chegou aqui nesse santuário guiado pela força da natureza e das criaturas que nela habitam, as mesmas que tiraram do seu rumo comum de humano - uma excursão pela Amazônia - para lhe contar suas histórias.
 Você verá grandes portas com desenhos de elementos na frente ( Terra, Água, Ar e Fogo) e junto a eles há um “Bestiário” com uma mensagem: complete com as cartas que faltam para voltar pra casa!
 </string>
@@ -215,10 +215,10 @@ Você verá grandes portas com desenhos de elementos na frente ( Terra, Água, A
                                 </subviews>
                                 <color key="backgroundColor" name="TintColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Drv-WQ-QTr" secondAttribute="trailing" constant="20" id="Erp-pD-ULW"/>
-                                    <constraint firstItem="Drv-WQ-QTr" firstAttribute="top" secondItem="8RR-Jt-8IB" secondAttribute="top" constant="50" id="Ue3-T0-y9i"/>
-                                    <constraint firstItem="Drv-WQ-QTr" firstAttribute="leading" secondItem="8RR-Jt-8IB" secondAttribute="leading" constant="20" id="csT-KB-0N8"/>
-                                    <constraint firstAttribute="bottom" secondItem="Drv-WQ-QTr" secondAttribute="bottom" constant="50" id="p8R-cW-Pze"/>
+                                    <constraint firstAttribute="trailing" secondItem="Drv-WQ-QTr" secondAttribute="trailing" constant="10" id="Erp-pD-ULW"/>
+                                    <constraint firstItem="Drv-WQ-QTr" firstAttribute="top" secondItem="8RR-Jt-8IB" secondAttribute="top" constant="10" id="Ue3-T0-y9i"/>
+                                    <constraint firstItem="Drv-WQ-QTr" firstAttribute="leading" secondItem="8RR-Jt-8IB" secondAttribute="leading" constant="10" id="csT-KB-0N8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Drv-WQ-QTr" secondAttribute="bottom" constant="10" id="p8R-cW-Pze"/>
                                 </constraints>
                             </view>
                         </subviews>
