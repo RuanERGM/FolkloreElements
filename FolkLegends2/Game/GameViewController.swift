@@ -64,8 +64,13 @@ class GameViewController: UIViewController {
         
         cardPlayer.isHidden = true
         cardCpu.isHidden = true
+        
+        labelTitlePlayer.text = "Carta Player"
         labelTitlePlayer.isHidden = true
+        
+        labelTitleCpu.text = "Carta Inimigo"
         labelTitleCpu.isHidden = true
+        
         labelFeedback.text = "Sua vez!"
         
         deckPlayer.isUserInteractionEnabled = true
@@ -159,92 +164,97 @@ extension GameViewController: UICollectionViewDelegate {
               // Contra ataque
               
               let lifePlayer = String(self.selectedCardPlayer.counterattack(enemy: self.selectedCardCpu))
+            
               
               DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                   
                   // Atualizando valores de vida da cpu
                   
-                  self.labelBottomLifeCpu.text = lifeCpu
-             
-                  DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                  self.labelTitleCpu.text = "Inimigo perdeu \(self.labelBottomDamage.text ?? "") de vida!"
+                  
+                  DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                       
-                      // Atualizando valores de vida do player
-                      self.labelBottomLife.text = lifePlayer
-                  
-                  
+                      self.labelBottomLifeCpu.text = lifeCpu
+                 
                       DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                      
-                          if (Int(lifeCpu)! < 1) {
-                              self.cardsCpu.remove(at: indexCpu)
-                              self.countCardsCpu = self.cardsCpu.count
-                          }
                           
-                          if (Int(lifePlayer)! < 1) {
-                              self.cardsPlayer.remove(at: indexPath.item)
-                              self.countCardsPlayer = self.cardsPlayer.count
-                          }
+                          // Atualizando valores de vida do player
                           
-                          self.deckCpu.reloadData()
-                          self.deckPlayer.reloadData()
+                          self.labelTitlePlayer.text = "Você perdeu \(self.labelBottomDamageCpu.text ?? "") de vida!"
                           
-                          self.cardCpu.isHidden = true
-                          self.labelTitleCpu.isHidden = true
-                          
-                          self.cardPlayer.isHidden = true
-                          self.labelTitlePlayer.isHidden = true
-                          
-                          self.deckPlayer.isUserInteractionEnabled = true
-                          self.labelFeedback.text = "Sua vez!"
-                          
-                          self.deckPlayer.cellForItem(at: indexPath)?.alpha = 1
-                          self.deckCpu.cellForItem(at: IndexPath(row: indexCpu, section: 0))?.alpha = 1
-                          
-                          if self.cardsPlayer.count == 0 && self.cardsCpu.count > 0{
-                              self.deckPlayer.isUserInteractionEnabled = false
-                              self.labelFeedback.text = "Você perdeu :("
-                              self.performSegue(withIdentifier: "Loser", sender: self)
-                              // chamar tela
-                          }
-                          if self.cardsCpu.count == 0 && self.cardsPlayer.count > 0{
-                              self.deckPlayer.isUserInteractionEnabled = false
-                              self.labelFeedback.text = "Você ganhou :D"
+                          DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                               
-                              if !UserKeys.allKeys.contains(self.selectedDoor.keyUnlocked){
-                                  UserKeys.allKeys.append(self.selectedDoor.keyUnlocked)
-    
+                              self.labelBottomLife.text = lifePlayer
+                          
+                          
+                              DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                              
+                                  if (Int(lifeCpu)! < 1) {
+                                      self.cardsCpu.remove(at: indexCpu)
+                                      self.countCardsCpu = self.cardsCpu.count
+                                  }
+                                  
+                                  if (Int(lifePlayer)! < 1) {
+                                      self.cardsPlayer.remove(at: indexPath.item)
+                                      self.countCardsPlayer = self.cardsPlayer.count
+                                  }
+                                  
+                                  self.deckCpu.reloadData()
+                                  self.deckPlayer.reloadData()
+                                  
+                                  self.cardCpu.isHidden = true
+                                  
+                                  self.cardPlayer.isHidden = true
+                                  
+                                  self.labelTitlePlayer.text = "Carta Player"
+                                  self.labelTitlePlayer.isHidden = true
+                                  
+                                  self.labelTitleCpu.text = "Carta Inimigo"
+                                  self.labelTitleCpu.isHidden = true
+                                  
+                                  self.deckPlayer.isUserInteractionEnabled = true
+                                  self.labelFeedback.text = "Sua vez!"
+                                  
+                                  self.deckPlayer.cellForItem(at: indexPath)?.alpha = 1
+                                  self.deckCpu.cellForItem(at: IndexPath(row: indexCpu, section: 0))?.alpha = 1
+                                  
+                                  if self.cardsPlayer.count == 0 && self.cardsCpu.count > 0{
+                                      self.deckPlayer.isUserInteractionEnabled = false
+                                      self.labelFeedback.text = "Você perdeu :("
+                                      self.performSegue(withIdentifier: "Loser", sender: self)
+                                      // chamar tela
+                                  }
+                                  if self.cardsCpu.count == 0 && self.cardsPlayer.count > 0{
+                                      self.deckPlayer.isUserInteractionEnabled = false
+                                      self.labelFeedback.text = "Você ganhou :D"
+                                      
+                                      if !UserKeys.allKeys.contains(self.selectedDoor.keyUnlocked){
+                                          UserKeys.allKeys.append(self.selectedDoor.keyUnlocked)
+            
+                                      }
+                                      
+                                      if portas <= self.selectedDoor.number{
+                                          UserKeys.allDoor = self.selectedDoor.number + 1
+                                          print("alldoor: ", UserKeys.allDoor)
+                                          UserDefaults.standard.set(UserKeys.allDoor, forKey: "Porta")
+                                     
+                                      }
+                                      
+                                      self.performSegue(withIdentifier: "Victory", sender: self)
+                                      // chamar tela
+                                  }
+                                  if self.cardsPlayer.count == 0 && self.cardsCpu.count == 0{
+                                      self.deckPlayer.isUserInteractionEnabled = false
+                                      self.labelFeedback.text = "Você perdeu :("
+                                      self.performSegue(withIdentifier: "Loser", sender: self)
+                                      // chamar tela
+                                  }
                               }
-                              
-                              if portas <= self.selectedDoor.number{
-                                  UserKeys.allDoor = self.selectedDoor.number + 1
-                                  print("alldoor: ", UserKeys.allDoor)
-                                  UserDefaults.standard.set(UserKeys.allDoor, forKey: "Porta")
-                             
-                              }
-                              
-                              self.performSegue(withIdentifier: "Victory", sender: self)
-                              // chamar tela
                           }
-                          if self.cardsPlayer.count == 0 && self.cardsCpu.count == 0{
-                              self.deckPlayer.isUserInteractionEnabled = false
-                              self.labelFeedback.text = "Você perdeu :("
-                              self.performSegue(withIdentifier: "Loser", sender: self)
-                              // chamar tela
-                          }
-                      
-                          
                       }
-                      
-                      
-                      
-                      
                   }
-                  
               }
-              
-              
           }
-          
-          
       }
   }
 }

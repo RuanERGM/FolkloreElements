@@ -200,8 +200,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiE-e0-ZAH">
-                                <rect key="frame" x="207" y="304" width="126" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Player" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiE-e0-ZAH">
+                                <rect key="frame" x="195" y="287" width="150" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -247,8 +247,8 @@
                                     <constraint firstAttribute="width" constant="150" id="nAR-5P-apI"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Inimigo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ0-gU-twE">
-                                <rect key="frame" x="49" y="304" width="126" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Inimigo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ0-gU-twE">
+                                <rect key="frame" x="37" y="287" width="150" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -340,25 +340,27 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AEa-5E-4HP" secondAttribute="trailing" constant="20" id="01G-t1-oC9"/>
                             <constraint firstItem="nan-x2-sJY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3BU-aO-M8a"/>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6LL-Ql-TLV"/>
-                            <constraint firstItem="tiE-e0-ZAH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="207" id="6aP-Ki-sa9"/>
+                            <constraint firstItem="tiE-e0-ZAH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="195" id="6aP-Ki-sa9"/>
                             <constraint firstItem="gz8-O5-XLi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6gV-Cc-vLV"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dJ0-gU-twE" secondAttribute="trailing" constant="215" id="AU7-2K-o3f"/>
                             <constraint firstItem="jvD-Ch-z2X" firstAttribute="leading" secondItem="gz8-O5-XLi" secondAttribute="leading" id="Ax2-a7-tl9"/>
-                            <constraint firstItem="dJ0-gU-twE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="260" id="EIz-mV-2Qx"/>
-                            <constraint firstItem="tiE-e0-ZAH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="260" id="FJz-dZ-oae"/>
+                            <constraint firstItem="tiE-e0-ZAH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="243" id="FJz-dZ-oae"/>
                             <constraint firstItem="tiE-e0-ZAH" firstAttribute="centerX" secondItem="Wa7-Vo-Vbn" secondAttribute="centerX" id="FXr-IJ-1a1"/>
                             <constraint firstItem="7LV-na-irE" firstAttribute="top" secondItem="Pqa-VZ-Jyf" secondAttribute="bottom" constant="50" id="Ie8-Kw-1IN"/>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="35" id="OWu-3I-ejW"/>
+                            <constraint firstItem="7LV-na-irE" firstAttribute="top" secondItem="dJ0-gU-twE" secondAttribute="bottom" id="RSz-aL-XPQ"/>
+                            <constraint firstItem="dJ0-gU-twE" firstAttribute="baseline" secondItem="tiE-e0-ZAH" secondAttribute="baseline" id="SxQ-Bc-iaq"/>
                             <constraint firstItem="nan-x2-sJY" firstAttribute="centerX" secondItem="jvD-Ch-z2X" secondAttribute="centerX" id="Txq-8T-eAQ"/>
+                            <constraint firstItem="dJ0-gU-twE" firstAttribute="trailing" secondItem="7LV-na-irE" secondAttribute="trailing" id="Xrc-D1-HbQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gz8-O5-XLi" secondAttribute="bottom" constant="20" id="Zgc-jA-Jmu"/>
+                            <constraint firstItem="dJ0-gU-twE" firstAttribute="firstBaseline" secondItem="tiE-e0-ZAH" secondAttribute="firstBaseline" id="bjN-g7-VLu"/>
                             <constraint firstItem="gz8-O5-XLi" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ctK-kb-Wh6"/>
                             <constraint firstItem="nan-x2-sJY" firstAttribute="top" secondItem="Wa7-Vo-Vbn" secondAttribute="bottom" constant="5" id="eOG-y3-EhO"/>
+                            <constraint firstItem="dJ0-gU-twE" firstAttribute="leading" secondItem="7LV-na-irE" secondAttribute="leading" id="f6J-OQ-Cid"/>
                             <constraint firstItem="jvD-Ch-z2X" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="fil-pT-kQB"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tiE-e0-ZAH" secondAttribute="trailing" constant="57" id="h25-xX-yCH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tiE-e0-ZAH" secondAttribute="trailing" constant="45" id="h25-xX-yCH"/>
                             <constraint firstItem="7LV-na-irE" firstAttribute="top" secondItem="Wa7-Vo-Vbn" secondAttribute="top" id="iPi-p4-pXM"/>
                             <constraint firstItem="Pqa-VZ-Jyf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jj8-kn-K9q"/>
                             <constraint firstItem="CRA-Tu-iwS" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="33" id="krf-ND-p2K"/>
-                            <constraint firstItem="dJ0-gU-twE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="49" id="mvd-E7-Pxo"/>
                             <constraint firstItem="Wa7-Vo-Vbn" firstAttribute="leading" secondItem="7LV-na-irE" secondAttribute="trailing" constant="8" symbolic="YES" id="qA3-FJ-lgC"/>
                             <constraint firstItem="CRA-Tu-iwS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="9" id="v6q-uc-xSo"/>
                             <constraint firstItem="AEa-5E-4HP" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="33" id="vLb-qD-Vx2"/>
@@ -389,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.69565217391312" y="79.6875"/>
+            <point key="canvasLocation" x="807.69230769230762" y="79.620853080568722"/>
         </scene>
         <!--Instructions-->
         <scene sceneID="d3c-Iz-akY">

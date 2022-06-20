@@ -41,11 +41,11 @@ class TableViewController: UITableViewController {
         productArray = [
             Numbers(prNumber: 0, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 1),
             
-            Numbers(prNumber: 1, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 1),
+            Numbers(prNumber: 1, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 2),
             
-            Numbers(prNumber: 2, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 1),
+            Numbers(prNumber: 2, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 3),
             
-            Numbers(prNumber: 3, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 1)
+            Numbers(prNumber: 3, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 4)
         ]
         self.tableNumbers.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableNumbers.backgroundView = UIImageView(image: UIImage(named: "background 1"))
