@@ -486,16 +486,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhZ-Rt-zW2">
-                                <rect key="frame" x="57" y="232.33333333333337" width="276" height="402"/>
+                                <rect key="frame" x="57" y="355.66666666666674" width="276" height="402"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta desbloqueada !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lb1-V5-Zhf">
-                                        <rect key="frame" x="8" y="49.999999999999972" width="260" height="23"/>
+                                        <rect key="frame" x="8" y="50" width="260" height="23"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="card.bahira" translatesAutoresizingMaskIntoConstraints="NO" id="nHk-Cw-sO5">
-                                        <rect key="frame" x="83.666666666666657" y="98.999999999999972" width="109" height="200.00000000000003"/>
+                                        <rect key="frame" x="83.666666666666657" y="99" width="109" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Xd7-wA-hBf"/>
                                         </constraints>
@@ -507,7 +507,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-eS-wlw">
-                                        <rect key="frame" x="171.66666666666666" y="337" width="54.333333333333343" height="45"/>
+                                        <rect key="frame" x="171.66666666666666" y="336.99999999999994" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -517,7 +517,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuS-OG-zvA">
-                                        <rect key="frame" x="50" y="337" width="55" height="45"/>
+                                        <rect key="frame" x="50" y="336.99999999999994" width="55" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="return.dark">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -544,8 +544,8 @@
                                     <constraint firstAttribute="trailing" secondItem="qcd-eS-wlw" secondAttribute="trailing" constant="50" id="w8m-Az-Yxh"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-K6-IYr">
-                                <rect key="frame" x="87" y="141" width="216" height="104.33333333333331"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-K6-IYr">
+                                <rect key="frame" x="87" y="141" width="216" height="227.66666666666663"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hzl-I3-F1y"/>
@@ -564,7 +564,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQ6-x4-PNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="466.15384615384613" y="875.82938388625587"/>
+            <point key="canvasLocation" x="308" y="876"/>
         </scene>
         <!--Lose View-->
         <scene sceneID="60Y-IE-nfZ">
@@ -574,11 +574,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
-                                <rect key="frame" x="57" y="232.66666666666663" width="276" height="403"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
+                                <rect key="frame" x="55" y="216.66666666666663" width="275" height="401"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rV-8YZ">
-                                        <rect key="frame" x="171.66666666666666" y="338" width="54.333333333333343" height="45"/>
+                                        <rect key="frame" x="170.66666666666666" y="346" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -587,14 +587,14 @@
                                             <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="5ZU-gv-XYT"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="É uma grande pena mas estou pronto pra jogar novamente e você?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-SC-fLx">
-                                        <rect key="frame" x="28" y="259" width="220" height="71"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="É uma grande pena mas estou pronto pra jogar novamente e você?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-SC-fLx">
+                                        <rect key="frame" x="28" y="263" width="219" height="63"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-dn-EF6">
-                                        <rect key="frame" x="50" y="337" width="55" height="46"/>
+                                        <rect key="frame" x="55" y="346" width="55" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="return.dark">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -604,8 +604,12 @@
                                             <segue destination="Y6W-OH-hqX" kind="presentation" identifier="show" modalPresentationStyle="fullScreen" id="yrt-Ta-Nvz"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="LockedCard" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
-                                        <rect key="frame" x="64" y="39" width="149" height="199.99999999999997"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="derrota.bahira" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
+                                        <rect key="frame" x="63.666666666666686" y="50.000000000000028" width="148" height="193"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="193" id="E28-4i-rUp"/>
+                                            <constraint firstAttribute="width" constant="148" id="QCB-ow-dkc"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <integer key="value" value="8"/>
@@ -613,36 +617,44 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-zF-nZR">
+                                        <rect key="frame" x="45.666666666666686" y="-91.999999999999986" width="184" height="134"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="5l5-dP-Zij"/>
+                                            <constraint firstAttribute="height" constant="134" id="AUA-zj-5Np"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="cCj-dn-EF6" secondAttribute="bottom" constant="20" id="1C4-6U-9nM"/>
+                                    <constraint firstAttribute="bottom" secondItem="cCj-dn-EF6" secondAttribute="bottom" constant="10" id="1C4-6U-9nM"/>
                                     <constraint firstAttribute="trailing" secondItem="dmg-XI-qDf" secondAttribute="trailing" constant="63.5" id="4nj-Wt-XOU"/>
                                     <constraint firstItem="TNz-SC-fLx" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="28" id="4rt-Ve-hQc"/>
-                                    <constraint firstItem="cCj-dn-EF6" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="50" id="7Yj-LF-sGz"/>
-                                    <constraint firstItem="o2W-rV-8YZ" firstAttribute="top" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="39" id="HTN-yF-Tam"/>
+                                    <constraint firstItem="cCj-dn-EF6" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="55" id="7Yj-LF-sGz"/>
+                                    <constraint firstItem="ZV8-zF-nZR" firstAttribute="centerX" secondItem="dmg-XI-qDf" secondAttribute="centerX" id="Low-gE-7YP"/>
+                                    <constraint firstItem="dmg-XI-qDf" firstAttribute="top" secondItem="ZV8-zF-nZR" secondAttribute="bottom" constant="8" id="OeC-7V-ji9"/>
                                     <constraint firstItem="cCj-dn-EF6" firstAttribute="top" secondItem="TNz-SC-fLx" secondAttribute="bottom" constant="20" id="Q0V-j5-oqM"/>
                                     <constraint firstItem="dmg-XI-qDf" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="63.5" id="VA7-HJ-KVu"/>
-                                    <constraint firstItem="cCj-dn-EF6" firstAttribute="top" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="38" id="ZpV-rG-8ZM"/>
-                                    <constraint firstItem="dmg-XI-qDf" firstAttribute="top" secondItem="Y0I-5Q-oYC" secondAttribute="top" constant="99" id="doB-bY-XJp"/>
-                                    <constraint firstAttribute="bottom" secondItem="o2W-rV-8YZ" secondAttribute="bottom" constant="20" id="efM-H6-hZA"/>
+                                    <constraint firstItem="TNz-SC-fLx" firstAttribute="top" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="20" id="XaA-8p-skJ"/>
+                                    <constraint firstItem="dmg-XI-qDf" firstAttribute="top" secondItem="Y0I-5Q-oYC" secondAttribute="top" constant="50" id="doB-bY-XJp"/>
+                                    <constraint firstAttribute="bottom" secondItem="o2W-rV-8YZ" secondAttribute="bottom" constant="10" id="efM-H6-hZA"/>
+                                    <constraint firstItem="o2W-rV-8YZ" firstAttribute="top" secondItem="TNz-SC-fLx" secondAttribute="bottom" constant="20" id="evA-Os-s3C"/>
                                     <constraint firstAttribute="trailing" secondItem="TNz-SC-fLx" secondAttribute="trailing" constant="28" id="vMF-FI-H8L"/>
                                     <constraint firstAttribute="trailing" secondItem="o2W-rV-8YZ" secondAttribute="trailing" constant="50" id="wWB-Qb-4hW"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-zF-nZR">
-                                <rect key="frame" x="87" y="161" width="216" height="104.33333333333331"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bui-fP-Hai"/>
                         <constraints>
-                            <constraint firstItem="Y0I-5Q-oYC" firstAttribute="leading" secondItem="bui-fP-Hai" secondAttribute="leading" constant="57" id="0tc-nx-egT"/>
-                            <constraint firstItem="ZV8-zF-nZR" firstAttribute="leading" secondItem="bui-fP-Hai" secondAttribute="leading" constant="87" id="1a0-jW-2Nc"/>
-                            <constraint firstItem="bui-fP-Hai" firstAttribute="trailing" secondItem="ZV8-zF-nZR" secondAttribute="trailing" constant="87" id="57X-hD-0Ht"/>
-                            <constraint firstItem="bui-fP-Hai" firstAttribute="trailing" secondItem="Y0I-5Q-oYC" secondAttribute="trailing" constant="57" id="bOG-Zi-hlx"/>
-                            <constraint firstItem="ZV8-zF-nZR" firstAttribute="top" secondItem="bui-fP-Hai" secondAttribute="top" priority="999" constant="97" id="cdM-CL-L64"/>
+                            <constraint firstItem="Y0I-5Q-oYC" firstAttribute="leading" secondItem="bui-fP-Hai" secondAttribute="leading" constant="55" id="0tc-nx-egT"/>
+                            <constraint firstItem="Y0I-5Q-oYC" firstAttribute="centerY" secondItem="bui-fP-Hai" secondAttribute="centerY" id="Utv-La-cUI"/>
+                            <constraint firstItem="bui-fP-Hai" firstAttribute="trailing" secondItem="Y0I-5Q-oYC" secondAttribute="trailing" constant="60" id="bOG-Zi-hlx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageLose" destination="dmg-XI-qDf" id="H0g-bf-csI"/>
+                        <outlet property="labelLose" destination="TNz-SC-fLx" id="COB-V4-IB7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Gv-zB-XPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -658,14 +670,14 @@
         <image name="AR - MAIOR" width="150.33332824707031" height="200.33332824707031"/>
         <image name="Bira" width="130.33332824707031" height="130.33332824707031"/>
         <image name="Derrota" width="150.33332824707031" height="104.33333587646484"/>
-        <image name="LockedCard" width="150.33332824707031" height="200.33332824707031"/>
         <image name="SurgPei.name" width="303.66665649414062" height="84"/>
         <image name="TERRA - MAIOR" width="150.33332824707031" height="200.33332824707031"/>
-        <image name="Vitória" width="150.33332824707031" height="104.33333587646484"/>
+        <image name="Vitória" width="320.33334350585938" height="227.66667175292969"/>
         <image name="ataque" width="150.33332824707031" height="150.33332824707031"/>
         <image name="back.dark" width="30.333333969116211" height="30.333333969116211"/>
         <image name="board" width="428.33334350585938" height="926.33331298828125"/>
         <image name="card.bahira" width="320.33334350585938" height="600.33331298828125"/>
+        <image name="derrota.bahira" width="320.33334350585938" height="400.33334350585938"/>
         <image name="door.game.brown" width="30.333333969116211" height="30.333333969116211"/>
         <image name="quest.brown" width="30.333333969116211" height="30.333333969116211"/>
         <image name="return.dark" width="30.333333969116211" height="30.333333969116211"/>

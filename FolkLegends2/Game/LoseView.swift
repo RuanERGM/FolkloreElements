@@ -11,7 +11,9 @@ class LoseView: UIViewController {
 
     @IBOutlet weak var labelLoser: UILabel!
     
-    var storyIndex =  Int()
+    @IBOutlet weak var labelLose: UILabel!
+    
+    @IBOutlet weak var imageLose: UIImageView!
     
     var selectedDoor = Numbers()
     
@@ -27,8 +29,33 @@ class LoseView: UIViewController {
       }
     }
     
+    
+    var imgDerrota = ""
+    var txtDerrota = ""
+    
+    func getCardLose() {
+        switch CardControl {
+        case 0:
+            imgDerrota = "derrota.guarana"
+            txtDerrota = "É uma grande pena mas estou pronto pra jogar novamente e você?"
+        case 1:
+            imgDerrota = "derrota.peixe"
+            txtDerrota = "Assim como eu, você perdeu essa batalha mas não desanime, vamos tentar novamente!"
+        case 2:
+            imgDerrota = "derrota.tutu"
+            txtDerrota = "Haha! Vai desistir ou tentar perder de novo?"
+        case 3:
+            imgDerrota = "derrota.bahira"
+            txtDerrota = "Boa luta mas você ficará preso aqui para sempre enquanto não me ganhar!"
+        default:
+            imgDerrota = "bes.card.back"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getCardLose()
+        imageLose.image = UIImage(named: imgDerrota)
+        labelLose.text = txtDerrota
     }
 }
