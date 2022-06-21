@@ -575,10 +575,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-zF-nZR">
-                                <rect key="frame" x="87" y="141" width="216" height="104"/>
+                                <rect key="frame" x="87" y="141" width="216" height="104.33333333333331"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
-                                <rect key="frame" x="57" y="232.33333333333337" width="276" height="403"/>
+                                <rect key="frame" x="57" y="232.66666666666663" width="276" height="403"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rV-8YZ">
                                         <rect key="frame" x="171.66666666666666" y="338" width="54.333333333333343" height="45"/>
@@ -591,13 +591,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta bloqueada !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-SC-fLx">
-                                        <rect key="frame" x="28" y="49.999999999999972" width="220" height="23"/>
+                                        <rect key="frame" x="28" y="50.000000000000028" width="220" height="23"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LockedCard" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
-                                        <rect key="frame" x="63.666666666666686" y="98.999999999999972" width="149" height="200.00000000000003"/>
+                                        <rect key="frame" x="63.666666666666686" y="99.000000000000028" width="149" height="199.99999999999997"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <integer key="value" value="8"/>

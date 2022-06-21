@@ -39,7 +39,7 @@ class Victory: UIViewController{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        teste
         cardUnloked.image = UIImage(named: getCardUnloked())
         
     }
