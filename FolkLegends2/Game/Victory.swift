@@ -3,14 +3,14 @@ import UIKit
 class Victory: UIViewController{
     
     @IBOutlet weak var cardUnloked: UIImageView!
+    @IBOutlet weak var labelVictory: UILabel!
+    
     var selectedDoor = Numbers()
     
     
     @IBAction func ReturnGame(_ sender: Any) {
         
         performSegue(withIdentifier: "retornar", sender: self)
-        
-        
     }
     
     
@@ -23,24 +23,34 @@ class Victory: UIViewController{
       }
     }
     
-    func getCardUnloked() -> String {
+    var imgVictory = ""
+    var txtVictory = ""
+    
+    func getCardUnloked() {
         switch CardControl {
         case 0:
-            return "card.guarana"
+            imgVictory = "card.guarana"
+            txtVictory = "Que bacana! Você finalmente vai me conhecer melhor. Olha só a minha carta no bestiário!"
         case 1:
-            return "card.peixe"
+            imgVictory = "card.peixe"
+            txtVictory = "Que duelo excelente! Agora que terminamos essa partida, você conhecerá as injustiças que aconteceram comigo."
         case 2:
-            return "card.tutu"
+            imgVictory = "card.tutu"
+            txtVictory = "Claro que você ganhou… Eu deixei. Está aqui a minha carta."
         case 3:
-            return "card.bahira"
+            imgVictory = "card.bahira"
+            txtVictory = "Muita calma. Agora que você possui tal poder precisará entender a sua origem, olhe só minha carta no bestiário!"
         default:
-            return "bes.card.back"
+            imgVictory = "bes.card.back"
+            txtVictory = "Parabéns!"
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        teste
-        cardUnloked.image = UIImage(named: getCardUnloked())
+        getCardUnloked()
+        cardUnloked.image = UIImage(named: imgVictory)
+        labelVictory.text = txtVictory
         
     }
 }

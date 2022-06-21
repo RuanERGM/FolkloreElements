@@ -49,6 +49,7 @@ class LoseView: UIViewController {
             txtDerrota = "Boa luta mas você ficará preso aqui para sempre enquanto não me ganhar!"
         default:
             imgDerrota = "bes.card.back"
+            txtDerrota = "Tente novamente!"
         }
     }
     
