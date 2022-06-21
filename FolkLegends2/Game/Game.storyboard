@@ -574,10 +574,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-zF-nZR">
-                                <rect key="frame" x="87" y="141" width="216" height="104.33333333333331"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
                                 <rect key="frame" x="57" y="232.66666666666663" width="276" height="403"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rV-8YZ">
@@ -590,21 +587,12 @@
                                             <segue destination="KbY-1F-zPR" kind="presentation" modalPresentationStyle="fullScreen" id="5ZU-gv-XYT"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta bloqueada !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-SC-fLx">
-                                        <rect key="frame" x="28" y="50.000000000000028" width="220" height="23"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="É uma grande pena mas estou pronto pra jogar novamente e você?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-SC-fLx">
+                                        <rect key="frame" x="28" y="259" width="220" height="71"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LockedCard" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
-                                        <rect key="frame" x="63.666666666666686" y="99.000000000000028" width="149" height="199.99999999999997"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-dn-EF6">
                                         <rect key="frame" x="50" y="337" width="55" height="46"/>
                                         <state key="normal" title="Button"/>
@@ -616,6 +604,15 @@
                                             <segue destination="Y6W-OH-hqX" kind="presentation" identifier="show" modalPresentationStyle="fullScreen" id="yrt-Ta-Nvz"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="LockedCard" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
+                                        <rect key="frame" x="64" y="39" width="149" height="199.99999999999997"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="BackgroundColor"/>
                                 <constraints>
@@ -624,7 +621,7 @@
                                     <constraint firstItem="TNz-SC-fLx" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="28" id="4rt-Ve-hQc"/>
                                     <constraint firstItem="cCj-dn-EF6" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="50" id="7Yj-LF-sGz"/>
                                     <constraint firstItem="o2W-rV-8YZ" firstAttribute="top" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="39" id="HTN-yF-Tam"/>
-                                    <constraint firstItem="TNz-SC-fLx" firstAttribute="top" secondItem="Y0I-5Q-oYC" secondAttribute="top" constant="50" id="Mga-Ks-dkq"/>
+                                    <constraint firstItem="cCj-dn-EF6" firstAttribute="top" secondItem="TNz-SC-fLx" secondAttribute="bottom" constant="20" id="Q0V-j5-oqM"/>
                                     <constraint firstItem="dmg-XI-qDf" firstAttribute="leading" secondItem="Y0I-5Q-oYC" secondAttribute="leading" constant="63.5" id="VA7-HJ-KVu"/>
                                     <constraint firstItem="cCj-dn-EF6" firstAttribute="top" secondItem="dmg-XI-qDf" secondAttribute="bottom" constant="38" id="ZpV-rG-8ZM"/>
                                     <constraint firstItem="dmg-XI-qDf" firstAttribute="top" secondItem="Y0I-5Q-oYC" secondAttribute="top" constant="99" id="doB-bY-XJp"/>
@@ -633,6 +630,9 @@
                                     <constraint firstAttribute="trailing" secondItem="o2W-rV-8YZ" secondAttribute="trailing" constant="50" id="wWB-Qb-4hW"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-zF-nZR">
+                                <rect key="frame" x="87" y="161" width="216" height="104.33333333333331"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bui-fP-Hai"/>
                         <constraints>
@@ -641,7 +641,6 @@
                             <constraint firstItem="bui-fP-Hai" firstAttribute="trailing" secondItem="ZV8-zF-nZR" secondAttribute="trailing" constant="87" id="57X-hD-0Ht"/>
                             <constraint firstItem="bui-fP-Hai" firstAttribute="trailing" secondItem="Y0I-5Q-oYC" secondAttribute="trailing" constant="57" id="bOG-Zi-hlx"/>
                             <constraint firstItem="ZV8-zF-nZR" firstAttribute="top" secondItem="bui-fP-Hai" secondAttribute="top" priority="999" constant="97" id="cdM-CL-L64"/>
-                            <constraint firstItem="TNz-SC-fLx" firstAttribute="top" secondItem="ZV8-zF-nZR" secondAttribute="bottom" constant="37.333333333333258" id="txP-Bq-Ekd"/>
                         </constraints>
                     </view>
                 </viewController>
