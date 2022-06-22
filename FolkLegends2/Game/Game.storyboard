@@ -487,10 +487,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
-                                <rect key="frame" x="55" y="216.66666666666663" width="275" height="401"/>
+                                <rect key="frame" x="55" y="215.99999999999997" width="275" height="402.33333333333326"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rV-8YZ">
-                                        <rect key="frame" x="170.66666666666666" y="346" width="54.333333333333343" height="45"/>
+                                        <rect key="frame" x="170.66666666666666" y="347.33333333333337" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -500,13 +500,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="É uma grande pena mas estou pronto pra jogar novamente e você?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNz-SC-fLx">
-                                        <rect key="frame" x="20" y="263" width="235" height="63"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <rect key="frame" x="20" y="263" width="235" height="64.333333333333314"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-dn-EF6">
-                                        <rect key="frame" x="55" y="346" width="54.333333333333343" height="45"/>
+                                        <rect key="frame" x="55" y="347.33333333333337" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="return.dark">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -517,7 +517,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="derrota.bahira" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
-                                        <rect key="frame" x="63.666666666666686" y="50.000000000000028" width="148" height="193"/>
+                                        <rect key="frame" x="63.666666666666686" y="50" width="148" height="193"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="193" id="E28-4i-rUp"/>
                                             <constraint firstAttribute="width" constant="148" id="QCB-ow-dkc"/>
@@ -530,7 +530,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Derrota" translatesAutoresizingMaskIntoConstraints="NO" id="ZV8-zF-nZR">
-                                        <rect key="frame" x="45.666666666666686" y="-91.999999999999986" width="184" height="134"/>
+                                        <rect key="frame" x="45.666666666666686" y="-92" width="184" height="134"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="184" id="5l5-dP-Zij"/>
                                             <constraint firstAttribute="height" constant="134" id="AUA-zj-5Np"/>
@@ -581,10 +581,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ir7-8c-VxY">
-                                <rect key="frame" x="55" y="216.66666666666663" width="275" height="401"/>
+                                <rect key="frame" x="55" y="215.99999999999997" width="275" height="402.33333333333326"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpD-Kf-eqr">
-                                        <rect key="frame" x="170.66666666666666" y="346" width="54.333333333333343" height="45"/>
+                                        <rect key="frame" x="170.66666666666666" y="347.33333333333337" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="door.game.brown">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -594,13 +594,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Que bacana! Você finalmente vai me conhecer melhor. Olha só a minha carta no bestiário!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xt-nq-YJD">
-                                        <rect key="frame" x="15" y="263" width="245" height="63"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <rect key="frame" x="15" y="263" width="245" height="64.333333333333314"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laM-QP-6cw">
-                                        <rect key="frame" x="55" y="346" width="54.333333333333343" height="45"/>
+                                        <rect key="frame" x="55" y="347.33333333333337" width="54.333333333333343" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="return.dark">
                                             <color key="baseBackgroundColor" name="TintColor"/>
@@ -611,7 +611,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="card.guarana" translatesAutoresizingMaskIntoConstraints="NO" id="czE-4H-Ixf">
-                                        <rect key="frame" x="63.666666666666686" y="50.000000000000028" width="148" height="193"/>
+                                        <rect key="frame" x="63.666666666666686" y="50" width="148" height="193"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="148" id="LAs-RD-G3S"/>
                                             <constraint firstAttribute="height" constant="193" id="qIB-aP-VTM"/>
@@ -624,7 +624,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="2VV-mO-Ryn">
-                                        <rect key="frame" x="45.666666666666686" y="-98.999999999999986" width="184" height="134"/>
+                                        <rect key="frame" x="45.666666666666686" y="-99" width="184" height="134"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="134" id="Sbt-ef-DHD"/>
                                             <constraint firstAttribute="width" constant="184" id="YLF-DB-JdA"/>

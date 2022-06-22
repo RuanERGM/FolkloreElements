@@ -20,94 +20,113 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lb-ds-B15">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2100"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetivo do jogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-wT-poh">
-                                                <rect key="frame" x="20" y="30" width="374" height="97"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                <color key="textColor" name="FontColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vença os duelos para liberar as chaves que abrem os próximos níveis assim como as cartas para completar seu bestiário." lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
-                                                <rect key="frame" x="20" y="147" width="374" height="132"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Vença os duelos para liberar as chaves que abrem os próximos níveis assim como as cartas para completar seu bestiário." lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahb-Ld-cI4">
+                                                <rect key="frame" x="20" y="494" width="374" height="72"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona o jogo?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-Hg-dV2">
-                                                <rect key="frame" x="20" y="585" width="374" height="101"/>
+                                                <rect key="frame" x="20" y="885" width="374" height="101"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUX-zW-JQf">
-                                                <rect key="frame" x="20" y="694" width="374" height="144"/>
+                                                <rect key="frame" x="20" y="994" width="374" height="144"/>
                                                 <string key="text">Escolha uma de suas cartas para duelar com a carta do oponente, a carta que tiver sua vida zerada é removida. O jogador que ficar sem cartas primeiro perde. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="como funciona 1" translatesAutoresizingMaskIntoConstraints="NO" id="JyP-Oj-RSo">
-                                                <rect key="frame" x="20" y="846" width="374" height="317"/>
+                                                <rect key="frame" x="20" y="1146" width="374" height="317"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relação elemental :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vm-Bn-7gt">
-                                                <rect key="frame" x="20" y="1203" width="374" height="37"/>
+                                                <rect key="frame" x="20" y="1503" width="374" height="37"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQv-BN-KJT">
-                                                <rect key="frame" x="20" y="1280" width="374" height="119.5"/>
+                                                <rect key="frame" x="20" y="1580" width="374" height="119.5"/>
                                                 <string key="text">Cada elemento tem uma vantagem e desvantagem em relação a outro. O esquema abaixo mostra as vantagens e desvantagens de cada um. As cartas de ar por sua vez, não sofrem efeitos.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" name="FontColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relacao elemental" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-ec-RiE">
-                                                <rect key="frame" x="20" y="1439.5" width="374" height="300.5"/>
+                                                <rect key="frame" x="20" y="1739.5" width="374" height="300.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetivo do jogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-wT-poh">
+                                                <rect key="frame" x="20" y="28" width="374" height="76"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agl-yA-6Jc">
+                                                <rect key="frame" x="20" y="112" width="374" height="133"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="133" id="x4A-xc-2QB"/>
+                                                </constraints>
+                                                <string key="text">É apresentado 4 portas com características diferentes, cada uma representa um elemento da natureza, abaixo há um esquema explicando suas relações:</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="FontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="esquema.elementos" translatesAutoresizingMaskIntoConstraints="NO" id="TEq-O3-kX1">
+                                                <rect key="frame" x="20" y="253" width="374" height="211"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chaves_1" translatesAutoresizingMaskIntoConstraints="NO" id="vEc-yk-FY3">
-                                                <rect key="frame" x="20" y="287" width="374" height="258"/>
+                                                <rect key="frame" x="20" y="605" width="374" height="258"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" name="BackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="Ahb-Ld-cI4" firstAttribute="top" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="20" id="01q-7r-wxP"/>
                                             <constraint firstAttribute="bottom" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="400.5" id="0kT-w4-eo6"/>
-                                            <constraint firstItem="vEc-yk-FY3" firstAttribute="top" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="8" id="1J7-xV-vb5"/>
+                                            <constraint firstItem="vEc-yk-FY3" firstAttribute="top" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="39" id="1J7-xV-vb5"/>
                                             <constraint firstAttribute="trailing" secondItem="lG7-Hg-dV2" secondAttribute="trailing" constant="20" id="37A-fL-reX"/>
-                                            <constraint firstItem="lG7-Hg-dV2" firstAttribute="top" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="40" id="37w-bW-Ydu"/>
+                                            <constraint firstItem="lG7-Hg-dV2" firstAttribute="top" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="22" id="37w-bW-Ydu"/>
                                             <constraint firstItem="PQv-BN-KJT" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="4Ze-EV-kuN"/>
                                             <constraint firstItem="OXw-wT-poh" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="4dW-5T-aog"/>
-                                            <constraint firstAttribute="bottom" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="1673" id="61w-9f-7oX"/>
+                                            <constraint firstAttribute="bottom" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="1996" id="61w-9f-7oX"/>
                                             <constraint firstAttribute="trailing" secondItem="OXw-wT-poh" secondAttribute="trailing" constant="20" id="8fD-iV-IoU"/>
                                             <constraint firstAttribute="bottom" secondItem="cOn-ec-RiE" secondAttribute="bottom" constant="60" id="Awx-rk-zzN"/>
-                                            <constraint firstItem="OXw-wT-poh" firstAttribute="top" secondItem="7lb-ds-B15" secondAttribute="top" constant="30" id="COg-7p-PeM"/>
+                                            <constraint firstItem="Agl-yA-6Jc" firstAttribute="leading" secondItem="TEq-O3-kX1" secondAttribute="leading" id="Bdf-AI-Xt9"/>
+                                            <constraint firstItem="OXw-wT-poh" firstAttribute="top" secondItem="7lb-ds-B15" secondAttribute="top" constant="28" id="COg-7p-PeM"/>
                                             <constraint firstAttribute="trailing" secondItem="PQv-BN-KJT" secondAttribute="trailing" constant="20" id="D44-Oh-6FB"/>
                                             <constraint firstItem="3Vm-Bn-7gt" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="DIh-gr-58a"/>
                                             <constraint firstAttribute="bottom" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="637" id="E0p-0z-uwF"/>
                                             <constraint firstAttribute="trailing" secondItem="vEc-yk-FY3" secondAttribute="trailing" constant="20" id="HSN-Bx-Yzh"/>
                                             <constraint firstAttribute="trailing" secondItem="3Vm-Bn-7gt" secondAttribute="trailing" constant="20" id="Hp5-U2-nZ6"/>
+                                            <constraint firstItem="Agl-yA-6Jc" firstAttribute="top" secondItem="OXw-wT-poh" secondAttribute="bottom" constant="8" symbolic="YES" id="Hx9-mi-OcG"/>
                                             <constraint firstItem="lUX-zW-JQf" firstAttribute="top" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="8" id="IgV-I8-YQi"/>
                                             <constraint firstItem="JyP-Oj-RSo" firstAttribute="top" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="8" id="Mbr-Wa-x74"/>
                                             <constraint firstAttribute="trailing" secondItem="lUX-zW-JQf" secondAttribute="trailing" constant="20" id="MoN-Th-sCV"/>
                                             <constraint firstAttribute="bottom" secondItem="3Vm-Bn-7gt" secondAttribute="bottom" constant="560" id="Mrp-Hg-pUT"/>
                                             <constraint firstAttribute="trailing" secondItem="JyP-Oj-RSo" secondAttribute="trailing" constant="20" id="OkM-Xi-Jcq"/>
-                                            <constraint firstAttribute="bottom" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="1255" id="Wdg-rv-MCB"/>
+                                            <constraint firstAttribute="trailing" secondItem="Agl-yA-6Jc" secondAttribute="trailing" constant="20" id="Paa-dP-91b"/>
+                                            <constraint firstAttribute="bottom" secondItem="vEc-yk-FY3" secondAttribute="bottom" constant="1237" id="Wdg-rv-MCB"/>
                                             <constraint firstItem="JyP-Oj-RSo" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="Yrw-ML-Y5X"/>
                                             <constraint firstAttribute="trailing" secondItem="cOn-ec-RiE" secondAttribute="trailing" constant="20" id="Z5B-q9-XZf"/>
                                             <constraint firstItem="lUX-zW-JQf" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="ZuB-KH-7fx"/>
                                             <constraint firstItem="vEc-yk-FY3" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="cMV-ba-TTQ"/>
                                             <constraint firstItem="cOn-ec-RiE" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="chy-dr-54F"/>
                                             <constraint firstAttribute="bottom" secondItem="lUX-zW-JQf" secondAttribute="bottom" constant="962" id="ckb-bF-ekz"/>
-                                            <constraint firstAttribute="height" constant="1800" id="gsA-vB-CDa"/>
+                                            <constraint firstItem="TEq-O3-kX1" firstAttribute="top" secondItem="Agl-yA-6Jc" secondAttribute="bottom" constant="8" id="fS9-El-2CF"/>
+                                            <constraint firstAttribute="height" constant="2100" id="gsA-vB-CDa"/>
                                             <constraint firstItem="3Vm-Bn-7gt" firstAttribute="top" secondItem="JyP-Oj-RSo" secondAttribute="bottom" constant="40" id="iOf-5f-HAK"/>
+                                            <constraint firstItem="Agl-yA-6Jc" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="kEC-kE-Hde"/>
                                             <constraint firstAttribute="trailing" secondItem="Ahb-Ld-cI4" secondAttribute="trailing" constant="20" id="lXS-CU-iUa"/>
                                             <constraint firstItem="cOn-ec-RiE" firstAttribute="top" secondItem="PQv-BN-KJT" secondAttribute="bottom" constant="40" id="nHf-0S-rFa"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="1521" id="ofY-bH-NGn"/>
+                                            <constraint firstItem="Agl-yA-6Jc" firstAttribute="trailing" secondItem="TEq-O3-kX1" secondAttribute="trailing" id="niL-w3-SuA"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ahb-Ld-cI4" secondAttribute="bottom" constant="1534" id="ofY-bH-NGn"/>
                                             <constraint firstItem="lG7-Hg-dV2" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="qID-E7-7Uo"/>
                                             <constraint firstItem="PQv-BN-KJT" firstAttribute="top" secondItem="3Vm-Bn-7gt" secondAttribute="bottom" constant="40" id="rHx-jb-7ak"/>
                                             <constraint firstItem="Ahb-Ld-cI4" firstAttribute="leading" secondItem="7lb-ds-B15" secondAttribute="leading" constant="20" id="rm6-wJ-zF0"/>
+                                            <constraint firstItem="Ahb-Ld-cI4" firstAttribute="top" secondItem="TEq-O3-kX1" secondAttribute="bottom" constant="30" id="thc-Iz-pBW"/>
                                             <constraint firstAttribute="bottom" secondItem="lG7-Hg-dV2" secondAttribute="bottom" constant="1114" id="xsi-dG-6E3"/>
                                         </constraints>
                                     </view>
@@ -142,6 +161,7 @@
     <resources>
         <image name="chaves_1" width="150.5" height="200.5"/>
         <image name="como funciona 1" width="150.5" height="200.5"/>
+        <image name="esquema.elementos" width="150.5" height="200.5"/>
         <image name="relacao elemental" width="150.5" height="200.5"/>
         <namedColor name="BackgroundColor">
             <color red="0.95300000905990601" green="0.90600001811981201" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
