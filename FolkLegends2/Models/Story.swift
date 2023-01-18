@@ -7,7 +7,7 @@ class Story {
     var imgCharCardBestiary: UIImage
     var imgCharStoryBestiary: UIImage
     
-    var isCardBestiaryLocked: Bool
+    var isLocked: Bool
     
     var nameCharacter: String
 
@@ -19,11 +19,17 @@ class Story {
 
     var topicEndBestiary : String
     var labelEndBestiary : String
+    
+    var element: ElementsType
+    var imgInitialDoor: UIImage
+    var imgInitialDoorLocked: UIImage
+    var numOfGameCards: Int
 
     init(idDoor: Int,
          imgCharCardBestiary: UIImage,
          imgCharStoryBestiary: UIImage,
-         isCardBestiaryLocked: Bool,
+         
+         isLocked: Bool,
          nameCharacter: String,
          
          topicInitialBestiary: String,
@@ -33,12 +39,18 @@ class Story {
          labelMiddleBestiary: String,
          
          topicEndBestiary: String,
-         labelEndBestiary: String) {
+         labelEndBestiary: String,
+         
+         element: ElementsType,
+         imgInitialDoor: UIImage,
+         imgInitialDoorLocked: UIImage,
+         numOfGameCards: Int
+    ) {
         
         self.idDoor = idDoor
         self.imgCharCardBestiary = imgCharCardBestiary
         self.imgCharStoryBestiary = imgCharStoryBestiary
-        self.isCardBestiaryLocked = isCardBestiaryLocked
+        self.isLocked = isLocked
         self.nameCharacter = nameCharacter
         self.topicInitialBestiary = topicInitialBestiary
         self.labelInicialBestiary = labelInicialBestiary
@@ -46,13 +58,17 @@ class Story {
         self.labelMiddleBestiary = labelMiddleBestiary
         self.topicEndBestiary = topicEndBestiary
         self.labelEndBestiary = labelEndBestiary
+        self.element = element
+        self.imgInitialDoor = imgInitialDoor
+        self.imgInitialDoorLocked = imgInitialDoorLocked
+        self.numOfGameCards = numOfGameCards
     }
     
     init() {
         self.idDoor = 0
         self.imgCharCardBestiary = UIImage(named: "")!
         self.imgCharStoryBestiary = UIImage(named: "")!
-        self.isCardBestiaryLocked = false
+        self.isLocked = false
         self.nameCharacter = ""
         self.topicInitialBestiary = ""
         self.labelInicialBestiary = ""
@@ -60,5 +76,14 @@ class Story {
         self.labelMiddleBestiary = ""
         self.topicEndBestiary = ""
         self.labelEndBestiary = ""
+        self.element = .vazio
+        self.imgInitialDoor = UIImage(named: "")!
+        self.imgInitialDoorLocked = UIImage(named: "")!
+        self.numOfGameCards = 0
+        
     }
+}
+
+enum ElementsType {
+    case agua, terra, fogo, ar, vazio, todos
 }
