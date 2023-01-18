@@ -14,7 +14,7 @@
 		8BC266BB2847B05D00B72FBA /* CardCellGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266BA2847B05D00B72FBA /* CardCellGame.swift */; };
 		8BCB66A9284AE15C00DB793A /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB66A8284AE15C00DB793A /* Numbers.swift */; };
 		8BCB66AB284AE1D300DB793A /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB66AA284AE1D300DB793A /* UserKeys.swift */; };
-		9C0A7308285A249100BCB8E7 /* Historia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7307285A249100BCB8E7 /* Historia.swift */; };
+		9C0A7308285A249100BCB8E7 /* HistoriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7307285A249100BCB8E7 /* HistoriaView.swift */; };
 		9C919F7F2846BB5700E75495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919F7E2846BB5700E75495 /* AppDelegate.swift */; };
 		9C919F812846BB5700E75495 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919F802846BB5700E75495 /* SceneDelegate.swift */; };
 		9C919F832846BB5700E75495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919F822846BB5700E75495 /* ViewController.swift */; };
@@ -28,10 +28,10 @@
 		9C919FB12846BD0900E75495 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FB02846BD0900E75495 /* DetailViewController.swift */; };
 		9C919FB32846BD1800E75495 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FB22846BD1800E75495 /* Card.swift */; };
 		9C919FB52846BDC700E75495 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FB42846BDC700E75495 /* CardCell.swift */; };
-		9C919FBB2846BEDD00E75495 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FBA2846BEDD00E75495 /* Description.swift */; };
+		9C919FBB2846BEDD00E75495 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FBA2846BEDD00E75495 /* DescriptionView.swift */; };
 		9C919FBD2846BF0100E75495 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919FBC2846BF0100E75495 /* TableViewController.swift */; };
 		9C919FBF2846C02A00E75495 /* Bestiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C919FBE2846C02A00E75495 /* Bestiary.storyboard */; };
-		9CA7C41B284A49770056E106 /* Victory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA7C41A284A49770056E106 /* Victory.swift */; };
+		9CA7C41B284A49770056E106 /* VictoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA7C41A284A49770056E106 /* VictoryView.swift */; };
 		9CC290792848F2F800D12263 /* Instuctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC290782848F2F800D12263 /* Instuctions.swift */; };
 		9CC2907B2848F37000D12263 /* Instructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2907A2848F37000D12263 /* Instructions.storyboard */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,7 @@
 		8BC266BA2847B05D00B72FBA /* CardCellGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellGame.swift; sourceTree = "<group>"; };
 		8BCB66A8284AE15C00DB793A /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		8BCB66AA284AE1D300DB793A /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
-		9C0A7307285A249100BCB8E7 /* Historia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historia.swift; sourceTree = "<group>"; };
+		9C0A7307285A249100BCB8E7 /* HistoriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriaView.swift; sourceTree = "<group>"; };
 		9C919F7B2846BB5700E75495 /* FolkLegends2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolkLegends2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C919F7E2846BB5700E75495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C919F802846BB5700E75495 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +79,10 @@
 		9C919FB02846BD0900E75495 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9C919FB22846BD1800E75495 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9C919FB42846BDC700E75495 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		9C919FBA2846BEDD00E75495 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		9C919FBA2846BEDD00E75495 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		9C919FBC2846BF0100E75495 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		9C919FBE2846C02A00E75495 /* Bestiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bestiary.storyboard; sourceTree = "<group>"; };
-		9CA7C41A284A49770056E106 /* Victory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Victory.swift; sourceTree = "<group>"; };
+		9CA7C41A284A49770056E106 /* VictoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryView.swift; sourceTree = "<group>"; };
 		9CC290782848F2F800D12263 /* Instuctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instuctions.swift; sourceTree = "<group>"; };
 		9CC2907A2848F37000D12263 /* Instructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instructions.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,49 +112,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6688D11129783CD400F6BE1E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BCB66AA284AE1D300DB793A /* UserKeys.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		66DBD992297837A5004F2C88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BCB66A8284AE15C00DB793A /* Numbers.swift */,
+				8BC266B82847A58C00B72FBA /* CardGame.swift */,
+				9C919FB22846BD1800E75495 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66DBD993297837AB004F2C88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BC266BA2847B05D00B72FBA /* CardCellGame.swift */,
+				9C919F842846BB5700E75495 /* Main.storyboard */,
+				9CC2907A2848F37000D12263 /* Instructions.storyboard */,
+				8BC266B42847993000B72FBA /* Game.storyboard */,
+				9C919F892846BB5800E75495 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66DBD994297837B7004F2C88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C919FBC2846BF0100E75495 /* TableViewController.swift */,
+				9CA7C41A284A49770056E106 /* VictoryView.swift */,
+				6686954D284A60B30097585B /* LoseView.swift */,
+				8BC266B6284799B700B72FBA /* GameViewController.swift */,
+				9C0A7307285A249100BCB8E7 /* HistoriaView.swift */,
+				9CC290782848F2F800D12263 /* Instuctions.swift */,
+				9C919FBA2846BEDD00E75495 /* DescriptionView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8BE39B90284BE91200141A22 /* Bestiary */ = {
 			isa = PBXGroup;
 			children = (
 				9C919FAE2846BCE300E75495 /* BestiaryViewController.swift */,
 				9C919FBE2846C02A00E75495 /* Bestiary.storyboard */,
-				9C919FB22846BD1800E75495 /* Card.swift */,
 				9C919FB42846BDC700E75495 /* CardCell.swift */,
 				9C919FB02846BD0900E75495 /* DetailViewController.swift */,
 			);
 			path = Bestiary;
-			sourceTree = "<group>";
-		};
-		8BE39B91284BE92B00141A22 /* Game */ = {
-			isa = PBXGroup;
-			children = (
-				9CA7C41A284A49770056E106 /* Victory.swift */,
-				6686954D284A60B30097585B /* LoseView.swift */,
-				8BC266B42847993000B72FBA /* Game.storyboard */,
-				8BC266B6284799B700B72FBA /* GameViewController.swift */,
-				8BC266B82847A58C00B72FBA /* CardGame.swift */,
-				8BC266BA2847B05D00B72FBA /* CardCellGame.swift */,
-				9C0A7307285A249100BCB8E7 /* Historia.swift */,
-			);
-			path = Game;
-			sourceTree = "<group>";
-		};
-		8BE39B92284BE95A00141A22 /* Instructions */ = {
-			isa = PBXGroup;
-			children = (
-				9CC2907A2848F37000D12263 /* Instructions.storyboard */,
-				9CC290782848F2F800D12263 /* Instuctions.swift */,
-			);
-			path = Instructions;
-			sourceTree = "<group>";
-		};
-		8BE39B93284BE9AE00141A22 /* Doors */ = {
-			isa = PBXGroup;
-			children = (
-				9C919FBC2846BF0100E75495 /* TableViewController.swift */,
-				9C919F842846BB5700E75495 /* Main.storyboard */,
-				8BCB66A8284AE15C00DB793A /* Numbers.swift */,
-			);
-			path = Doors;
 			sourceTree = "<group>";
 		};
 		9C919F722846BB5700E75495 = {
@@ -180,16 +190,14 @@
 		9C919F7D2846BB5700E75495 /* FolkLegends2 */ = {
 			isa = PBXGroup;
 			children = (
-				8BE39B93284BE9AE00141A22 /* Doors */,
-				8BE39B92284BE95A00141A22 /* Instructions */,
-				8BE39B91284BE92B00141A22 /* Game */,
+				6688D11129783CD400F6BE1E /* Extension */,
+				66DBD994297837B7004F2C88 /* Controller */,
+				66DBD993297837AB004F2C88 /* View */,
+				66DBD992297837A5004F2C88 /* Model */,
 				8BE39B90284BE91200141A22 /* Bestiary */,
 				9C919F7E2846BB5700E75495 /* AppDelegate.swift */,
-				9C919FBA2846BEDD00E75495 /* Description.swift */,
 				9C919F802846BB5700E75495 /* SceneDelegate.swift */,
 				9C919F822846BB5700E75495 /* ViewController.swift */,
-				8BCB66AA284AE1D300DB793A /* UserKeys.swift */,
-				9C919F892846BB5800E75495 /* LaunchScreen.storyboard */,
 				9C919F872846BB5800E75495 /* Assets.xcassets */,
 				9C919F8C2846BB5800E75495 /* Info.plist */,
 			);
@@ -355,13 +363,13 @@
 				8BCB66A9284AE15C00DB793A /* Numbers.swift in Sources */,
 				8BC266B92847A58C00B72FBA /* CardGame.swift in Sources */,
 				9C919FAF2846BCE300E75495 /* BestiaryViewController.swift in Sources */,
-				9C0A7308285A249100BCB8E7 /* Historia.swift in Sources */,
+				9C0A7308285A249100BCB8E7 /* HistoriaView.swift in Sources */,
 				9C919FB12846BD0900E75495 /* DetailViewController.swift in Sources */,
-				9C919FBB2846BEDD00E75495 /* Description.swift in Sources */,
+				9C919FBB2846BEDD00E75495 /* DescriptionView.swift in Sources */,
 				6686954E284A60B30097585B /* LoseView.swift in Sources */,
 				9CC290792848F2F800D12263 /* Instuctions.swift in Sources */,
 				9C919F7F2846BB5700E75495 /* AppDelegate.swift in Sources */,
-				9CA7C41B284A49770056E106 /* Victory.swift in Sources */,
+				9CA7C41B284A49770056E106 /* VictoryView.swift in Sources */,
 				8BC266B7284799B700B72FBA /* GameViewController.swift in Sources */,
 				9C919F812846BB5700E75495 /* SceneDelegate.swift in Sources */,
 				8BC266BB2847B05D00B72FBA /* CardCellGame.swift in Sources */,
@@ -544,7 +552,7 @@
 				DEVELOPMENT_TEAM = 2VBT66DD5V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FolkLegends2/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FolkLegends;
+				INFOPLIST_KEY_CFBundleDisplayName = FolkloreElements;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -557,6 +565,9 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Academy.FolkLegends2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,7 +584,7 @@
 				DEVELOPMENT_TEAM = 2VBT66DD5V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FolkLegends2/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FolkLegends;
+				INFOPLIST_KEY_CFBundleDisplayName = FolkloreElements;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -586,6 +597,9 @@
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Academy.FolkLegends2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

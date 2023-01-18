@@ -1,6 +1,6 @@
 import UIKit
 
-class Victory: UIViewController{
+class VictoryView: UIViewController{
     
     @IBOutlet weak var cardUnloked: UIImageView!
     @IBOutlet weak var labelVictory: UILabel!

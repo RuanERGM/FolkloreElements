@@ -1,13 +1,15 @@
 import UIKit
 import Foundation
+
 public var historia:Bool = true
 public var control:Bool = true
 
-class Historia: UIViewController{
+class HistoriaView: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         historia = true
         UserDefaults.standard.set(historia, forKey: "History")
