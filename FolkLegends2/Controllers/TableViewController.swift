@@ -13,8 +13,6 @@ class TableViewController: UITableViewController {
     var productArray = [Numbers]()
     var selectedCell : Numbers = Numbers()
     
-    
-    
     func getKey() -> String {
         let defaults = UserDefaults.standard
         portas = defaults.integer(forKey: "Porta")

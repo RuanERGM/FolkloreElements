@@ -20,19 +20,19 @@ class DetailViewController: UIViewController {
   
   @IBOutlet weak var labelEnd: UILabel!
   
-  var selectedCard: Card = Card()
+  var selectedCard: Story = Story()
   
   override func viewDidLoad() {
-    imageCharacter.image = selectedCard.imageCharacterDesc
+    imageCharacter.image = selectedCard.imgCharCardBestiary
     labelNameCharacter.text = selectedCard.nameCharacter
     
-    topicInitial.text = selectedCard.topicInitial
-    labelInitial.text = selectedCard.labelInicial
+    topicInitial.text = selectedCard.topicInitialBestiary
+    labelInitial.text = selectedCard.labelInicialBestiary
     
-    topicMiddle.text = selectedCard.topicMiddle
-    labelMiddle.text = selectedCard.labelMiddle
+    topicMiddle.text = selectedCard.topicMiddleBestiary
+    labelMiddle.text = selectedCard.labelMiddleBestiary
     
-    topicEnd.text = selectedCard.topicEnd
-    labelEnd.text = selectedCard.labelEnd
+    topicEnd.text = selectedCard.topicEndBestiary
+    labelEnd.text = selectedCard.labelEndBestiary
   }
 }

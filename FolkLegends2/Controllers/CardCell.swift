@@ -5,12 +5,12 @@ class CardCell:UICollectionViewCell {
   
   @IBOutlet weak var imageCharacter: UIImageView!
   
-  func draw(card: Card){
+  func draw(story: Story){
     
-    if (card.locked) {
+    if (story.isCardBestiaryLocked) {
       imageCharacter.image = UIImage(named: "best.card.back")
     } else {
-      imageCharacter.image = card.imageCharacterCard
+      imageCharacter.image = story.imgCharCardBestiary
     }
   }
 }
