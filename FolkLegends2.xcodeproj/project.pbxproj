@@ -13,7 +13,6 @@
 		8BC266B7284799B700B72FBA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266B6284799B700B72FBA /* GameViewController.swift */; };
 		8BC266B92847A58C00B72FBA /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266B82847A58C00B72FBA /* CardGame.swift */; };
 		8BC266BB2847B05D00B72FBA /* CardCellGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266BA2847B05D00B72FBA /* CardCellGame.swift */; };
-		8BCB66A9284AE15C00DB793A /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB66A8284AE15C00DB793A /* Numbers.swift */; };
 		8BCB66AB284AE1D300DB793A /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB66AA284AE1D300DB793A /* UserKeys.swift */; };
 		9C0A7308285A249100BCB8E7 /* Historia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7307285A249100BCB8E7 /* Historia.swift */; };
 		9C919F7F2846BB5700E75495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C919F7E2846BB5700E75495 /* AppDelegate.swift */; };
@@ -58,7 +57,6 @@
 		8BC266B6284799B700B72FBA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8BC266B82847A58C00B72FBA /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
 		8BC266BA2847B05D00B72FBA /* CardCellGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellGame.swift; sourceTree = "<group>"; };
-		8BCB66A8284AE15C00DB793A /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 		8BCB66AA284AE1D300DB793A /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
 		9C0A7307285A249100BCB8E7 /* Historia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historia.swift; sourceTree = "<group>"; };
 		9C919F7B2846BB5700E75495 /* FolkLegends2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolkLegends2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				9C919FB22846BD1800E75495 /* Story.swift */,
-				8BCB66A8284AE15C00DB793A /* Numbers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -330,7 +327,6 @@
 				9C919FBD2846BF0100E75495 /* TableViewController.swift in Sources */,
 				8BCB66AB284AE1D300DB793A /* UserKeys.swift in Sources */,
 				9C919FB32846BD1800E75495 /* Story.swift in Sources */,
-				8BCB66A9284AE15C00DB793A /* Numbers.swift in Sources */,
 				8BC266B92847A58C00B72FBA /* CardGame.swift in Sources */,
 				9C919FAF2846BCE300E75495 /* BestiaryViewController.swift in Sources */,
 				9C0A7308285A249100BCB8E7 /* Historia.swift in Sources */,

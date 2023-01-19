@@ -23,7 +23,7 @@ class DetailViewController: UIViewController {
   var selectedCard: Story = Story()
   
   override func viewDidLoad() {
-    imageCharacter.image = selectedCard.imgCharCardBestiary
+    imageCharacter.image = selectedCard.imgCharStoryBestiary
     labelNameCharacter.text = selectedCard.nameCharacter
     
     topicInitial.text = selectedCard.topicInitialBestiary

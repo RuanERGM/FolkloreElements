@@ -9,9 +9,8 @@ class TableViewController: UITableViewController {
     @IBOutlet var tableNumbers: UITableView!
     
     @IBOutlet weak var currentKey: UIImageView!
-        
-    var productArray = [Numbers]()
-    var selectedCell : Numbers = Numbers()
+ 
+    var selectedCell : Story = Story()
     
     func getKey() -> String {
         let defaults = UserDefaults.standard
@@ -36,15 +35,6 @@ class TableViewController: UITableViewController {
        
         currentKey.image = UIImage(named: getKey())
         
-        productArray = [
-            Numbers(prNumber: 0, prImage: "ret.door.terra", prId: .terra, prImageLocked: "ret.lock.terra", prKeyUnlocked: .agua, prNumOfCards: 3),
-            
-            Numbers(prNumber: 1, prImage: "ret.door.agua", prId: .agua, prImageLocked: "ret.lock.agua", prKeyUnlocked: .ar, prNumOfCards: 4),
-            
-            Numbers(prNumber: 2, prImage: "ret.door.ar", prId: .ar, prImageLocked: "ret.lock.ar", prKeyUnlocked: .fogo, prNumOfCards: 4),
-            
-            Numbers(prNumber: 3, prImage: "ret.door.fogo", prId: .fogo, prImageLocked: "ret.lock.fogo", prKeyUnlocked: .todos, prNumOfCards: 5)
-        ]
         self.tableNumbers.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableNumbers.backgroundView = UIImageView(image: UIImage(named: "background 1"))
         tableNumbers.backgroundView?.contentMode = .scaleAspectFill
@@ -71,7 +61,7 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return productArray.count
+        return MockupStoryService.allStories.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -85,10 +75,10 @@ class TableViewController: UITableViewController {
             let defaults = UserDefaults.standard
             portas = defaults.integer(forKey: "Porta")
             
-            if portas >= self.productArray[indexPath.item].number  {
-                cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].image!)
+            if portas >= MockupStoryService.allStories[indexPath.item].idDoor  {
+                cell.CellViewImage.image = MockupStoryService.allStories[indexPath.item].imgInitialDoor
             } else {
-                cell.CellViewImage.image = UIImage(named: self.productArray[indexPath.item].imageLocked!)
+                cell.CellViewImage.image = MockupStoryService.allStories[indexPath.item].imgInitialDoorLocked
             }
             
             cell.CellViewImage.layer.cornerRadius = 10.0;
@@ -97,12 +87,12 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedCell = productArray[indexPath.item]
+        selectedCell = MockupStoryService.allStories[indexPath.item]
         
         let defaults = UserDefaults.standard
         portas = defaults.integer(forKey: "Porta")
         
-        if portas >= selectedCell.number {
+        if portas >= selectedCell.idDoor {
             performSegue(withIdentifier: "showdetail", sender: self)
             
         }
@@ -111,7 +101,7 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if let destination = segue.destination as? GameViewController {
           destination.selectedDoor = selectedCell
-          CardControl = selectedCell.number
+          CardControl = selectedCell.idDoor
           
       }
     }

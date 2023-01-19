@@ -14,8 +14,8 @@ class BestiaryViewController : UIViewController {
         let defaults = UserDefaults.standard
         let portas: Int = defaults.integer(forKey: "Porta")
         for i in 0 ... MockupStoryService.allStories.count - 1 {
-            if MockupStoryService.allStories[i].idDoor <= portas {
-                MockupStoryService.allStories[i].isCardBestiaryLocked = false
+            if MockupStoryService.allStories[i].idDoor < portas {
+                MockupStoryService.allStories[i].isCardLocked = false
             }
         }
     }
@@ -40,7 +40,7 @@ extension BestiaryViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedCard = MockupStoryService.allStories[indexPath.item]
         
-        if (!selectedCard.isCardBestiaryLocked) {
+        if (!selectedCard.isCardLocked) {
             performSegue(withIdentifier: "showDetail", sender: self)
         }
     }

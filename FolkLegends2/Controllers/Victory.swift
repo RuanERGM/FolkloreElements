@@ -5,7 +5,7 @@ class Victory: UIViewController{
     @IBOutlet weak var cardUnloked: UIImageView!
     @IBOutlet weak var labelVictory: UILabel!
     
-    var selectedDoor = Numbers()
+    var selectedDoor = Story()
     
     
     @IBAction func ReturnGame(_ sender: Any) {
@@ -15,7 +15,7 @@ class Victory: UIViewController{
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        selectedDoor.numOfCards = y
+        selectedDoor.numOfGameCards = y
         
         
       if let destination = segue.destination as? GameViewController {

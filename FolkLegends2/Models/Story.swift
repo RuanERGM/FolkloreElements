@@ -7,7 +7,8 @@ class Story {
     var imgCharCardBestiary: UIImage
     var imgCharStoryBestiary: UIImage
     
-    var isLocked: Bool
+    var isDoorLocked: Bool
+    var isCardLocked: Bool
     
     var nameCharacter: String
 
@@ -21,6 +22,8 @@ class Story {
     var labelEndBestiary : String
     
     var element: ElementsType
+    var unlockedElement: ElementsType
+    
     var imgInitialDoor: UIImage
     var imgInitialDoorLocked: UIImage
     var numOfGameCards: Int
@@ -29,7 +32,8 @@ class Story {
          imgCharCardBestiary: UIImage,
          imgCharStoryBestiary: UIImage,
          
-         isLocked: Bool,
+         isDoorLocked: Bool,
+         isCardLocked: Bool,
          nameCharacter: String,
          
          topicInitialBestiary: String,
@@ -42,6 +46,8 @@ class Story {
          labelEndBestiary: String,
          
          element: ElementsType,
+         unlockedElement: ElementsType,
+         
          imgInitialDoor: UIImage,
          imgInitialDoorLocked: UIImage,
          numOfGameCards: Int
@@ -50,7 +56,8 @@ class Story {
         self.idDoor = idDoor
         self.imgCharCardBestiary = imgCharCardBestiary
         self.imgCharStoryBestiary = imgCharStoryBestiary
-        self.isLocked = isLocked
+        self.isDoorLocked = isDoorLocked
+        self.isCardLocked = isCardLocked
         self.nameCharacter = nameCharacter
         self.topicInitialBestiary = topicInitialBestiary
         self.labelInicialBestiary = labelInicialBestiary
@@ -59,6 +66,7 @@ class Story {
         self.topicEndBestiary = topicEndBestiary
         self.labelEndBestiary = labelEndBestiary
         self.element = element
+        self.unlockedElement = unlockedElement
         self.imgInitialDoor = imgInitialDoor
         self.imgInitialDoorLocked = imgInitialDoorLocked
         self.numOfGameCards = numOfGameCards
@@ -66,9 +74,10 @@ class Story {
     
     init() {
         self.idDoor = 0
-        self.imgCharCardBestiary = UIImage(named: "")!
-        self.imgCharStoryBestiary = UIImage(named: "")!
-        self.isLocked = false
+        self.imgCharCardBestiary = UIImage()
+        self.imgCharStoryBestiary = UIImage()
+        self.isDoorLocked = false
+        self.isCardLocked = false
         self.nameCharacter = ""
         self.topicInitialBestiary = ""
         self.labelInicialBestiary = ""
@@ -76,9 +85,10 @@ class Story {
         self.labelMiddleBestiary = ""
         self.topicEndBestiary = ""
         self.labelEndBestiary = ""
+        self.unlockedElement = .vazio
         self.element = .vazio
-        self.imgInitialDoor = UIImage(named: "")!
-        self.imgInitialDoorLocked = UIImage(named: "")!
+        self.imgInitialDoor = UIImage()
+        self.imgInitialDoorLocked = UIImage()
         self.numOfGameCards = 0
         
     }

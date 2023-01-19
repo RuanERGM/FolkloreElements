@@ -7,7 +7,7 @@ class CardCell:UICollectionViewCell {
   
   func draw(story: Story){
     
-    if (story.isCardBestiaryLocked) {
+    if (story.isCardLocked) {
       imageCharacter.image = UIImage(named: "best.card.back")
     } else {
       imageCharacter.image = story.imgCharCardBestiary

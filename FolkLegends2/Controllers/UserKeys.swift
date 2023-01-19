@@ -10,6 +10,6 @@ import Foundation
 
 public class UserKeys {
 
-    static var allKeys: [KeyTypes] = [.terra]
-    static var allDoor: Int = 0
+    static var allKeys: [ElementsType] = [.terra]
+    static var allDoor: Int = 1
 }

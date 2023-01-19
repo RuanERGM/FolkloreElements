@@ -42,16 +42,16 @@ class GameViewController: UIViewController {
     
     var countCardsPlayer: Int = 0
     var countCardsCpu: Int = 0
-    var selectedDoor = Numbers()
+    var selectedDoor = Story()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 
-        y = selectedDoor.numOfCards
+        y = selectedDoor.numOfGameCards
         
         
-        for _ in 1 ... selectedDoor.numOfCards {
+        for _ in 1 ... selectedDoor.numOfGameCards {
             cardsPlayer.append(CardGame())
             cardsCpu.append(CardGame())
         }
@@ -228,13 +228,13 @@ extension GameViewController: UICollectionViewDelegate {
                                       self.deckPlayer.isUserInteractionEnabled = false
                                       self.labelFeedback.text = "Você ganhou :D"
                                       
-                                      if !UserKeys.allKeys.contains(self.selectedDoor.keyUnlocked){
-                                          UserKeys.allKeys.append(self.selectedDoor.keyUnlocked)
+                                      if !UserKeys.allKeys.contains(self.selectedDoor.unlockedElement){
+                                          UserKeys.allKeys.append(self.selectedDoor.unlockedElement)
             
                                       }
                                       
-                                      if portas <= self.selectedDoor.number{
-                                          UserKeys.allDoor = self.selectedDoor.number + 1
+                                      if portas <= self.selectedDoor.idDoor {
+                                          UserKeys.allDoor = self.selectedDoor.idDoor + 1
                                           print("alldoor: ", UserKeys.allDoor)
                                           UserDefaults.standard.set(UserKeys.allDoor, forKey: "Porta")
                                      

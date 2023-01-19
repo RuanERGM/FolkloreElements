@@ -15,15 +15,15 @@ class LoseView: UIViewController {
     
     @IBOutlet weak var imageLose: UIImageView!
     
-    var selectedDoor = Numbers()
+    var selectedDoor = Story()
     
     @IBAction func ReturnGame(_ sender: UIButton) {
         performSegue(withIdentifier: "show", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        selectedDoor.numOfCards = y
-        selectedDoor.number = fase
+        selectedDoor.numOfGameCards = y
+        selectedDoor.idDoor = fase
       if let destination = segue.destination as? GameViewController {
           destination.selectedDoor = self.selectedDoor
       }
