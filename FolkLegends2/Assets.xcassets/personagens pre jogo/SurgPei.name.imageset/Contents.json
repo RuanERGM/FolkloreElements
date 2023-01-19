@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "prejogo.birá.png",
+      "filename" : "prejogo.birá.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "prejogo.birá@2x.png",
+      "filename" : "prejogo.birá@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "prejogo.birá@3x.png",
+      "filename" : "prejogo.birá@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
