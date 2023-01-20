@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6686954E284A60B30097585B /* LoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686954D284A60B30097585B /* LoseView.swift */; };
+		66903C7729798ED300F8EE07 /* Bestiary.json in Resources */ = {isa = PBXBuildFile; fileRef = 66903C7629798ED300F8EE07 /* Bestiary.json */; };
 		8BC266B52847993000B72FBA /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC266B42847993000B72FBA /* Game.storyboard */; };
 		8BC266B7284799B700B72FBA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266B6284799B700B72FBA /* GameViewController.swift */; };
 		8BC266B92847A58C00B72FBA /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC266B82847A58C00B72FBA /* CardGame.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		6686954D284A60B30097585B /* LoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseView.swift; sourceTree = "<group>"; };
+		66903C7629798ED300F8EE07 /* Bestiary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Bestiary.json; path = ../../Bestiary.json; sourceTree = "<group>"; };
 		8BC266B42847993000B72FBA /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		8BC266B6284799B700B72FBA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8BC266B82847A58C00B72FBA /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				9C919F822846BB5700E75495 /* ViewController.swift */,
 				9C919F872846BB5800E75495 /* Assets.xcassets */,
 				9C919F8C2846BB5800E75495 /* Info.plist */,
+				66903C7629798ED300F8EE07 /* Bestiary.json */,
 			);
 			path = FolkLegends2;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66903C7729798ED300F8EE07 /* Bestiary.json in Resources */,
 				9C919F8B2846BB5800E75495 /* LaunchScreen.storyboard in Resources */,
 				9CC2907B2848F37000D12263 /* Instructions.storyboard in Resources */,
 				9C919FBF2846C02A00E75495 /* Bestiary.storyboard in Resources */,
