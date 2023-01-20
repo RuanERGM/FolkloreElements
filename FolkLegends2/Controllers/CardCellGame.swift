@@ -13,7 +13,7 @@ class CardCellGame: UICollectionViewCell {
     @IBOutlet weak var bottomValueLife: UILabel!
     
     @IBOutlet weak var bottomValueDamage: UILabel!
-   
+    
     @IBOutlet weak var element: UIImageView!
     
     func drawUser(cardGame: CardGame) {

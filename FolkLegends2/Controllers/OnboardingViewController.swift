@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-class Historia: UIViewController{
+class OnboardingViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()

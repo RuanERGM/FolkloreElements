@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ng-fv-xfl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ng-fv-xfl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -51,7 +52,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="9aC-tv-AG7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bhD-lz-PwY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -68,12 +69,12 @@
                 <viewControllerPlaceholder storyboardName="Instructions" id="vDh-Fo-6ge" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jZ-PW-ekb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395" y="-419"/>
+            <point key="canvasLocation" x="2743" y="-260"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="ZBV-FK-0vF">
             <objects>
-                <tableViewController id="uqa-e7-TJu" customClass="TableViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uqa-e7-TJu" customClass="HomeViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="t1o-8v-ZP8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +82,7 @@
                         <color key="separatorColor" name="BackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="152" id="Rnl-HJ-KOH" customClass="tableCell" customModule="FolkLegends2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="152"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rnl-HJ-KOH" id="a8A-uW-EJD">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="152"/>
@@ -190,21 +191,21 @@
                 <viewControllerPlaceholder storyboardName="Game" id="9NY-MF-lbH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kmh-a7-8tL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2749" y="-114"/>
+            <point key="canvasLocation" x="2772" y="-143"/>
         </scene>
-        <!--Historia-->
+        <!--Onboarding View Controller-->
         <scene sceneID="ytY-Mw-F21">
             <objects>
-                <viewController id="Jqp-y8-a0k" customClass="Historia" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jqp-y8-a0k" customClass="OnboardingViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fen-1N-6nl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RR-Jt-8IB">
-                                <rect key="frame" x="40" y="221" width="334" height="401"/>
+                                <rect key="frame" x="40" y="225" width="334" height="393"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drv-WQ-QTr">
-                                        <rect key="frame" x="10" y="10" width="314" height="381"/>
+                                        <rect key="frame" x="10" y="10" width="314" height="373"/>
                                         <string key="text">Você chegou aqui nesse santuário guiado pela força da natureza e das criaturas que nela habitam, as mesmas que tiraram do seu rumo comum de humano - uma excursão pela Amazônia - para lhe contar suas histórias.
 Você verá grandes portas com desenhos de elementos na frente ( Terra, Água, Ar e Fogo) e junto a eles há um “Bestiário” com uma mensagem: complete com as cartas que faltam para voltar pra casa!
 </string>
@@ -243,7 +244,7 @@ Você verá grandes portas com desenhos de elementos na frente ( Terra, Água, A
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3408.6956521739135" y="-115.17857142857142"/>
+            <point key="canvasLocation" x="3299" y="-27"/>
         </scene>
         <!--Bestiary-->
         <scene sceneID="L9I-C4-qB9">
@@ -255,7 +256,7 @@ Você verá grandes portas com desenhos de elementos na frente ( Terra, Água, A
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="atE-g8-Gn6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6KS-Yw-gSg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N9r-hS-BUr">

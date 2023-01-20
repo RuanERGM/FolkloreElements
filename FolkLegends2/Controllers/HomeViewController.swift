@@ -1,6 +1,6 @@
 import UIKit
 
-class TableViewController: UITableViewController {
+class HomeViewController: UITableViewController {
     
     @IBOutlet var tableNumbers: UITableView!
     

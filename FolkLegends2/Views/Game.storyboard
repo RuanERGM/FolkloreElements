@@ -19,7 +19,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRR-0E-fDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-312" y="505"/>
+            <point key="canvasLocation" x="1827" y="-331"/>
         </scene>
         <!--Game-->
         <scene sceneID="s0d-6b-0kx">
@@ -393,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807.69230769230762" y="79.620853080568722"/>
+            <point key="canvasLocation" x="846" y="142"/>
         </scene>
         <!--Instructions-->
         <scene sceneID="d3c-Iz-akY">
@@ -401,12 +401,12 @@
                 <viewControllerPlaceholder storyboardName="Instructions" id="Hug-dN-LiB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huK-7m-6sK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="-483"/>
+            <point key="canvasLocation" x="1862" y="-240"/>
         </scene>
-        <!--Description-->
+        <!--Pre Game View Controller-->
         <scene sceneID="m3y-6X-R2K">
             <objects>
-                <viewController id="svb-b1-rGe" customClass="Description" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="svb-b1-rGe" customClass="PreGameViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Zt-2G-xzR">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,7 +469,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1624.6153846153845" y="79.620853080568722"/>
+            <point key="canvasLocation" x="2002" y="157"/>
         </scene>
         <!--Main-->
         <scene sceneID="mjG-t3-QyZ">
@@ -477,12 +477,12 @@
                 <viewControllerPlaceholder storyboardName="Main" id="KbY-1F-zPR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3j-6o-rbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="467" y="1341"/>
+            <point key="canvasLocation" x="847" y="1489"/>
         </scene>
-        <!--Lose View-->
+        <!--Defeat View Controller-->
         <scene sceneID="60Y-IE-nfZ">
             <objects>
-                <viewController id="ZSZ-8k-sKP" customClass="LoseView" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZSZ-8k-sKP" customClass="DefeatViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cyy-nk-R7j">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -571,12 +571,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Gv-zB-XPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270.7692307692307" y="875.82938388625587"/>
+            <point key="canvasLocation" x="1491" y="994"/>
         </scene>
-        <!--Victory-->
+        <!--Victory View Controller-->
         <scene sceneID="2n9-gG-p8h">
             <objects>
-                <viewController id="iUy-v8-Z1M" customClass="Victory" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iUy-v8-Z1M" customClass="VictoryViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X3G-lb-Wmy">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -665,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKB-xH-5o2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="876"/>
+            <point key="canvasLocation" x="300" y="994"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

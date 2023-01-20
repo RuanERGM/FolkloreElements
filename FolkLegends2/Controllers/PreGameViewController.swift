@@ -1,7 +1,7 @@
 import UIKit
 import Foundation
 
-class Description: UIViewController{
+class PreGameViewController: UIViewController{
     
     var story = Story()
     

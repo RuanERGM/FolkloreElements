@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class LoseView: UIViewController {
+class DefeatViewController: UIViewController {
 
     @IBOutlet weak var labelLoser: UILabel!
     

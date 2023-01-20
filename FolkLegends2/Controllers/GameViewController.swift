@@ -78,15 +78,15 @@ class GameViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? Description {
+        if let destination = segue.destination as? PreGameViewController {
             destination.story = selectedDoor
         }
         
-        if let destionation = segue.destination as? Victory {
+        if let destionation = segue.destination as? VictoryViewController {
             destionation.story = selectedDoor
         }
         
-        if let destionation = segue.destination as? LoseView {
+        if let destionation = segue.destination as? DefeatViewController {
             destionation.story = selectedDoor
         }
     }
