@@ -1,8 +1,4 @@
-
-
 import UIKit
-public var CardControl:Int = 0
-public var portas: Int = 0
 
 class TableViewController: UITableViewController {
     
@@ -11,7 +7,7 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var currentKey: UIImageView!
     
     var selectedCell : Story = Story()
-//    var portas: Int = 0
+    var portas: Int = 0
     
     func getKey() -> String {
         let defaults = UserDefaults.standard
@@ -44,7 +40,7 @@ class TableViewController: UITableViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
-        control = defaults.bool(forKey: "History")
+        let control = defaults.bool(forKey: "History")
         
         if(control == false){
             performSegue(withIdentifier: "Hist", sender: self)
@@ -74,9 +70,9 @@ class TableViewController: UITableViewController {
             cell.frontView.roundCorners([.topRight, .bottomRight, .topLeft, .bottomLeft], radius: 10)
             
             let defaults = UserDefaults.standard
-            portas = defaults.integer(forKey: "Porta")
+            self.portas = defaults.integer(forKey: "Porta")
             
-            if portas >= MockupStoryService.allStories[indexPath.item].idDoor  {
+            if self.portas >= MockupStoryService.allStories[indexPath.item].idDoor  {
                 cell.CellViewImage.image = MockupStoryService.allStories[indexPath.item].imgInitialDoor
             } else {
                 cell.CellViewImage.image = MockupStoryService.allStories[indexPath.item].imgInitialDoorLocked

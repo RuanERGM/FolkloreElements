@@ -1,7 +1,5 @@
 import UIKit
 import Foundation
-public var historia:Bool = true
-public var control:Bool = true
 
 class Historia: UIViewController{
     
@@ -9,17 +7,13 @@ class Historia: UIViewController{
         super.viewDidLoad()
     }
     override func viewWillDisappear(_ animated: Bool) {
-        historia = true
-        UserDefaults.standard.set(historia, forKey: "History")
-        let defaults = UserDefaults.standard
-        control = defaults.bool(forKey: "History")
+        UserDefaults.standard.set(true, forKey: "History")
     }
 
     
     @IBAction func Gesture(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-        historia = true
-        UserDefaults.standard.set(historia, forKey: "History")
+        UserDefaults.standard.set(true, forKey: "History")
     }
 
 }

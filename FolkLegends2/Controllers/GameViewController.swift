@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 
-public var fase:Int = 0
-public var y:Int = 100
 class GameViewController: UIViewController {
     
     // colections
@@ -46,11 +44,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        y = selectedDoor.numOfGameCards
-        
-        
+    
         for _ in 1 ... selectedDoor.numOfGameCards {
             cardsPlayer.append(CardGame())
             cardsCpu.append(CardGame())
@@ -247,11 +241,12 @@ extension GameViewController: UICollectionViewDelegate {
             
                                       }
                                       
+                                      let defaults = UserDefaults.standard
+                                      let portas = defaults.integer(forKey: "Porta")
+                                      
                                       if portas <= self.selectedDoor.idDoor {
                                           UserKeys.allDoor = self.selectedDoor.idDoor + 1
-                                          print("alldoor: ", UserKeys.allDoor)
                                           UserDefaults.standard.set(UserKeys.allDoor, forKey: "Porta")
-                                     
                                       }
                                       
                                       self.performSegue(withIdentifier: "Victory", sender: self)
