@@ -9,8 +9,9 @@ class TableViewController: UITableViewController {
     @IBOutlet var tableNumbers: UITableView!
     
     @IBOutlet weak var currentKey: UIImageView!
- 
+    
     var selectedCell : Story = Story()
+//    var portas: Int = 0
     
     func getKey() -> String {
         let defaults = UserDefaults.standard
@@ -32,7 +33,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         currentKey.image = UIImage(named: getKey())
         
         self.tableNumbers.separatorStyle = UITableViewCell.SeparatorStyle.none
@@ -44,13 +45,13 @@ class TableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
         control = defaults.bool(forKey: "History")
-
+        
         if(control == false){
             performSegue(withIdentifier: "Hist", sender: self)
         }
-   
+        
     }
-   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -99,13 +100,10 @@ class TableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if let destination = segue.destination as? GameViewController {
-          destination.selectedDoor = selectedCell
-          CardControl = selectedCell.idDoor
-          
-      }
+        if let destination = segue.destination as? GameViewController {
+            destination.selectedDoor = selectedCell
+        }
     }
-    
 }
 
 class tableCell : UITableViewCell

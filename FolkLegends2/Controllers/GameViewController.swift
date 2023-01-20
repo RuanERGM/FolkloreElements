@@ -82,6 +82,20 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         performSegue(withIdentifier: "talk", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? Description {
+            destination.story = selectedDoor
+        }
+        
+        if let destionation = segue.destination as? Victory {
+            destionation.story = selectedDoor
+        }
+        
+        if let destionation = segue.destination as? LoseView {
+            destionation.story = selectedDoor
+        }
+    }
    
 }
 

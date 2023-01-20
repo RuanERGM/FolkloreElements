@@ -26,7 +26,13 @@ class MockupStoryService {
               unlockedElement: .agua,
               imgInitialDoor: UIImage(named: "ret.door.terra")!,
               imgInitialDoorLocked: UIImage(named: "ret.lock.terra")!,
-              numOfGameCards: 3
+              numOfGameCards: 3,
+              gameDesc: "Olá? Você deve tá se perguntando da onde vem essa voz…\n\nEu sou aquele nascido da terra, aquele que tem os olhos espalhados onde quer que pise… Meu nome é Guaraná!\n\nPara você saber mais sobre minha história tenho um jogo perfeito!!! O objetivo é eliminar primeiro todas as cartas do adversário. Se baseie nas relações elementais que você encontra no botão de ajuda.",
+              imgCharGame: UIImage(named: "Guarana.name")!,
+              imgCharNameGame: UIImage(named: "Guarana")!,
+              victoryLabel: "Que bacana! Você finalmente vai me conhecer melhor. Olha só a minha carta no bestiário!",
+              imgDefeat: UIImage(named: "derrota.guarana")!,
+              defeatLabel: "É uma grande pena mas estou pronto pra jogar novamente e você?"
              ),
         
             .init(idDoor: 1,
@@ -45,7 +51,13 @@ class MockupStoryService {
                   unlockedElement: .ar,
                   imgInitialDoor: UIImage(named: "ret.door.agua")!,
                   imgInitialDoorLocked: UIImage(named: "ret.lock.agua")!,
-                  numOfGameCards: 4
+                  numOfGameCards: 4,
+                  gameDesc: "Olá, alma perdida, eu sou aquele que foi traído e transformado em anta por aqueles que tinham inveja da minha beleza e sedução.\n\nBirá é meu nome! Fui o estopim para que algo importante acontecesse. Posso compartilhar essa história, se você tiver disposto a duelar comigo!",
+                  imgCharGame: UIImage(named: "SurgPei.name")!,
+                  imgCharNameGame: UIImage(named: "Bira")!,
+                  victoryLabel: "Que duelo excelente! Agora que terminamos essa partida, você conhecerá as injustiças que aconteceram comigo.",
+                  imgDefeat: UIImage(named: "derrota.peixe")!,
+                  defeatLabel: "Assim como eu, você perdeu essa batalha mas não desanime, vamos tentar novamente!"
                  ),
         
             .init(idDoor: 2,
@@ -64,7 +76,13 @@ class MockupStoryService {
                   unlockedElement: .fogo,
                   imgInitialDoor: UIImage(named: "ret.door.ar")!,
                   imgInitialDoorLocked: UIImage(named: "ret.lock.ar")!,
-                  numOfGameCards: 4
+                  numOfGameCards: 4,
+                  gameDesc: "Chegou a hora do caos e quem tiver na minha frente sofrerá!\n\nAs pessoas tremem enquanto tentam pronunciar meu nome. Eu sou aquele que vagueia nas profundezas dos seus sonhos. Se você tiver coragem, tente me vencer…",
+                  imgCharGame: UIImage(named: "tutu.name")!,
+                  imgCharNameGame: UIImage(named: "Tutu")!,
+                  victoryLabel: "Claro que você ganhou… Eu deixei. Está aqui a minha carta.",
+                  imgDefeat: UIImage(named: "derrota.tutu")!,
+                  defeatLabel: "Haha! Vai desistir ou tentar perder de novo?"
                  ),
         
             .init(idDoor: 3,
@@ -83,7 +101,13 @@ class MockupStoryService {
                   unlockedElement: .todos,
                   imgInitialDoor: UIImage(named: "ret.door.fogo")!,
                   imgInitialDoorLocked: UIImage(named: "ret.lock.fogo")!,
-                  numOfGameCards: 5
+                  numOfGameCards: 5,
+                  gameDesc: "Quem ousa invadir essas terras místicas? A natureza me deixou encarregado para impedir qualquer turista\n\nSou protetor do calor, senhor das chamas, minhas asas guardam os poderes do fogo. Qualquer um que tentar tomar esse poder terá que me enfrentar!",
+                  imgCharGame: UIImage(named: "urubu-rei.name")!,
+                  imgCharNameGame: UIImage(named: "Urubu")!,
+                  victoryLabel: "Muita calma. Agora que você possui tal poder precisará entender a sua origem, olhe só minha carta no bestiário!",
+                  imgDefeat: UIImage(named: "derrota.bahira")!,
+                  defeatLabel: "Boa luta mas você ficará preso aqui para sempre enquanto não me ganhar!"
                  )
     ]
     

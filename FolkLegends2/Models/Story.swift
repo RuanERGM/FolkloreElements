@@ -27,6 +27,15 @@ class Story {
     var imgInitialDoor: UIImage
     var imgInitialDoorLocked: UIImage
     var numOfGameCards: Int
+    
+    var gameDesc: String
+    var imgCharGame: UIImage
+    var imgCharNameGame: UIImage
+    
+    var victoryLabel: String
+    
+    var imgDefeat: UIImage
+    var defeatLabel: String
 
     init(idDoor: Int,
          imgCharCardBestiary: UIImage,
@@ -50,7 +59,16 @@ class Story {
          
          imgInitialDoor: UIImage,
          imgInitialDoorLocked: UIImage,
-         numOfGameCards: Int
+         numOfGameCards: Int,
+         
+         gameDesc: String,
+         imgCharGame: UIImage,
+         imgCharNameGame: UIImage,
+         
+         victoryLabel: String,
+         
+         imgDefeat: UIImage,
+         defeatLabel: String
     ) {
         
         self.idDoor = idDoor
@@ -70,6 +88,12 @@ class Story {
         self.imgInitialDoor = imgInitialDoor
         self.imgInitialDoorLocked = imgInitialDoorLocked
         self.numOfGameCards = numOfGameCards
+        self.gameDesc = gameDesc
+        self.imgCharGame = imgCharGame
+        self.imgCharNameGame = imgCharNameGame
+        self.victoryLabel = victoryLabel
+        self.imgDefeat = imgDefeat
+        self.defeatLabel = defeatLabel
     }
     
     init() {
@@ -90,7 +114,12 @@ class Story {
         self.imgInitialDoor = UIImage()
         self.imgInitialDoorLocked = UIImage()
         self.numOfGameCards = 0
-        
+        self.gameDesc = ""
+        self.imgCharGame = UIImage()
+        self.imgCharNameGame = UIImage()
+        self.victoryLabel = ""
+        self.imgDefeat = UIImage()
+        self.defeatLabel = ""
     }
 }
 
