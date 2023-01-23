@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6686954E284A60B30097585B /* DefeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686954D284A60B30097585B /* DefeatViewController.swift */; };
+		66D551AA297EBBDF0018E473 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D551A9297EBBDF0018E473 /* JSONReader.swift */; };
+		66D551AC297EBE220018E473 /* Bestiary.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D551AB297EBE220018E473 /* Bestiary.json */; };
 		8B5FD88A2978406F0045F441 /* MockupStoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FD8892978406F0045F441 /* MockupStoryService.swift */; };
 		8B9C22D4297EB93D00001610 /* UIView+RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C22D3297EB93D00001610 /* UIView+RoundCorners.swift */; };
 		8BC266B52847993000B72FBA /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC266B42847993000B72FBA /* Game.storyboard */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		6686954D284A60B30097585B /* DefeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefeatViewController.swift; sourceTree = "<group>"; };
+		66D551A9297EBBDF0018E473 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		66D551AB297EBE220018E473 /* Bestiary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bestiary.json; sourceTree = "<group>"; };
 		8B5FD8892978406F0045F441 /* MockupStoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupStoryService.swift; sourceTree = "<group>"; };
 		8B9C22D3297EB93D00001610 /* UIView+RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorners.swift"; sourceTree = "<group>"; };
 		8BC266B42847993000B72FBA /* Game.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5FD8892978406F0045F441 /* MockupStoryService.swift */,
+				66D551A9297EBBDF0018E473 /* JSONReader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		8B9C22D1297ADE1900001610 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				66D551AB297EBE220018E473 /* Bestiary.json */,
 				8BC266B82847A58C00B72FBA /* CardGame.swift */,
 			);
 			path = Utils;
@@ -305,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D551AC297EBE220018E473 /* Bestiary.json in Resources */,
 				9C919F8B2846BB5800E75495 /* LaunchScreen.storyboard in Resources */,
 				9CC2907B2848F37000D12263 /* Instructions.storyboard in Resources */,
 				9C919FBF2846C02A00E75495 /* Bestiary.storyboard in Resources */,
@@ -345,6 +352,7 @@
 				9C919FB12846BD0900E75495 /* DetailViewController.swift in Sources */,
 				9C919FBB2846BEDD00E75495 /* PreGameViewController.swift in Sources */,
 				8B9C22D4297EB93D00001610 /* UIView+RoundCorners.swift in Sources */,
+				66D551AA297EBBDF0018E473 /* JSONReader.swift in Sources */,
 				6686954E284A60B30097585B /* DefeatViewController.swift in Sources */,
 				9C919F7F2846BB5700E75495 /* AppDelegate.swift in Sources */,
 				9CA7C41B284A49770056E106 /* VictoryViewController.swift in Sources */,
