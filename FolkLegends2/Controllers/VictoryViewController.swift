@@ -13,9 +13,9 @@ class VictoryViewController: UIViewController{
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if let destination = segue.destination as? GameViewController {
-          destination.selectedDoor = story
-      }
+        if let destination = segue.destination as? GameViewController {
+            destination.selectedDoor = story
+        }
     }
     
     override func viewDidLoad() {

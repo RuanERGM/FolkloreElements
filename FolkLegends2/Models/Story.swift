@@ -11,13 +11,13 @@ class Story {
     var isCardLocked: Bool
     
     var nameCharacter: String
-
+    
     var topicInitialBestiary : String
     var labelInicialBestiary : String
-
+    
     var topicMiddleBestiary : String
     var labelMiddleBestiary : String
-
+    
     var topicEndBestiary : String
     var labelEndBestiary : String
     
@@ -36,7 +36,7 @@ class Story {
     
     var imgDefeat: UIImage
     var defeatLabel: String
-
+    
     init(idDoor: Int,
          imgCharCardBestiary: UIImage,
          imgCharStoryBestiary: UIImage,

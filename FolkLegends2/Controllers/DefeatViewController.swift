@@ -8,7 +8,7 @@ import Foundation
 import UIKit
 
 class DefeatViewController: UIViewController {
-
+    
     @IBOutlet weak var labelLoser: UILabel!
     
     @IBOutlet weak var labelLose: UILabel!
@@ -22,9 +22,9 @@ class DefeatViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if let destination = segue.destination as? GameViewController {
-          destination.selectedDoor = story
-      }
+        if let destination = segue.destination as? GameViewController {
+            destination.selectedDoor = story
+        }
     }
     
     override func viewDidLoad() {

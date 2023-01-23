@@ -131,7 +131,6 @@
 				9C0A7307285A249100BCB8E7 /* OnboardingViewController.swift */,
 				8BC266B6284799B700B72FBA /* GameViewController.swift */,
 				9C919FAE2846BCE300E75495 /* BestiaryViewController.swift */,
-				8BC266B82847A58C00B72FBA /* CardGame.swift */,
 				9C919FB42846BDC700E75495 /* CardCell.swift */,
 				9C919FB02846BD0900E75495 /* DetailViewController.swift */,
 				6686954D284A60B30097585B /* DefeatViewController.swift */,
@@ -152,6 +151,7 @@
 		8B9C22D1297ADE1900001610 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8BC266B82847A58C00B72FBA /* CardGame.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

@@ -12,7 +12,7 @@ class CardGame: Equatable {
     var life: Int
     var damage: Int
     var element: CardElement
-        
+    
     
     init(life: Int, damage: Int, element: CardElement){
         self.life = (life < 1 || life > 10) ? 1 : life
