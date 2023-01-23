@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <accessibilityOverrides dynamicTypePreference="7"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRR-0E-fDF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-312" y="505"/>
+            <point key="canvasLocation" x="1827" y="-331"/>
         </scene>
         <!--Game-->
         <scene sceneID="s0d-6b-0kx">
@@ -32,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pqa-VZ-Jyf">
-                                <rect key="frame" x="0.0" y="79" width="390" height="200"/>
+                                <rect key="frame" x="0.0" y="82" width="390" height="200"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.93333333333333335" blue="0.90588235294117647" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="lLN-kw-bzk"/>
@@ -202,13 +203,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Player" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiE-e0-ZAH">
-                                <rect key="frame" x="195" y="284" width="150" height="45"/>
+                                <rect key="frame" x="195" y="287" width="150" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wa7-Vo-Vbn">
-                                <rect key="frame" x="195" y="329" width="150" height="200"/>
+                                <rect key="frame" x="195" y="332" width="150" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AR - MAIOR" translatesAutoresizingMaskIntoConstraints="NO" id="nHz-DF-9ST">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
@@ -249,13 +250,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carta Inimigo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJ0-gU-twE">
-                                <rect key="frame" x="37" y="284" width="150" height="45"/>
+                                <rect key="frame" x="37" y="287" width="150" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-na-irE">
-                                <rect key="frame" x="37" y="329" width="150" height="200"/>
+                                <rect key="frame" x="37" y="332" width="150" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AGUA - MAIOR" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-By-vON">
                                         <rect key="frame" x="-0.33333333333334281" y="0.0" width="151" height="200"/>
@@ -321,7 +322,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nan-x2-sJY">
-                                <rect key="frame" x="20" y="539" width="350" height="46"/>
+                                <rect key="frame" x="20" y="542" width="350" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -392,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807.69230769230762" y="79.620853080568722"/>
+            <point key="canvasLocation" x="846" y="142"/>
         </scene>
         <!--Instructions-->
         <scene sceneID="d3c-Iz-akY">
@@ -400,18 +401,18 @@
                 <viewControllerPlaceholder storyboardName="Instructions" id="Hug-dN-LiB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huK-7m-6sK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="-483"/>
+            <point key="canvasLocation" x="1862" y="-240"/>
         </scene>
-        <!--Description-->
+        <!--Pre Game View Controller-->
         <scene sceneID="m3y-6X-R2K">
             <objects>
-                <viewController id="svb-b1-rGe" customClass="Description" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="svb-b1-rGe" customClass="PreGameViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Zt-2G-xzR">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agx-8e-Dep">
-                                <rect key="frame" x="0.0" y="464.66666666666674" width="390" height="325.33333333333326"/>
+                                <rect key="frame" x="0.0" y="461.66666666666674" width="390" height="325.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eu sou aquele nascido da terra, aquele que tem os olhos espalhados por ela toda! Meu nome é Guaraná. Agora me enfrente!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-dK-EMA">
                                         <rect key="frame" x="20" y="143.99999999999994" width="350" height="64.333333333333314"/>
@@ -468,7 +469,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1624.6153846153845" y="79.620853080568722"/>
+            <point key="canvasLocation" x="2002" y="157"/>
         </scene>
         <!--Main-->
         <scene sceneID="mjG-t3-QyZ">
@@ -476,14 +477,14 @@
                 <viewControllerPlaceholder storyboardName="Main" id="KbY-1F-zPR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3j-6o-rbT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="467" y="1341"/>
+            <point key="canvasLocation" x="847" y="1489"/>
         </scene>
-        <!--Lose View-->
+        <!--Defeat View Controller-->
         <scene sceneID="60Y-IE-nfZ">
             <objects>
-                <viewController id="ZSZ-8k-sKP" customClass="LoseView" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZSZ-8k-sKP" customClass="DefeatViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cyy-nk-R7j">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0I-5Q-oYC">
@@ -570,14 +571,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Gv-zB-XPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270.7692307692307" y="875.82938388625587"/>
+            <point key="canvasLocation" x="1491" y="994"/>
         </scene>
-        <!--Victory-->
+        <!--Victory View Controller-->
         <scene sceneID="2n9-gG-p8h">
             <objects>
-                <viewController id="iUy-v8-Z1M" customClass="Victory" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iUy-v8-Z1M" customClass="VictoryViewController" customModule="FolkLegends2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X3G-lb-Wmy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ir7-8c-VxY">
@@ -623,7 +624,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="2VV-mO-Ryn">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vitória" translatesAutoresizingMaskIntoConstraints="NO" id="2VV-mO-Ryn">
                                         <rect key="frame" x="45.666666666666686" y="-99" width="184" height="134"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="134" id="Sbt-ef-DHD"/>
@@ -664,7 +665,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKB-xH-5o2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="876"/>
+            <point key="canvasLocation" x="300" y="994"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -678,7 +679,7 @@
         <image name="Derrota" width="150.33332824707031" height="104.33333587646484"/>
         <image name="SurgPei.name" width="303.66665649414062" height="84"/>
         <image name="TERRA - MAIOR" width="150.33332824707031" height="200.33332824707031"/>
-        <image name="Vitória" width="320.33334350585938" height="227.66667175292969"/>
+        <image name="Vitória" width="320.33334350585938" height="227.66667175292969"/>
         <image name="ataque" width="150.33332824707031" height="150.33332824707031"/>
         <image name="back.dark" width="30.333333969116211" height="30.333333969116211"/>
         <image name="board" width="428.33334350585938" height="926.33331298828125"/>
