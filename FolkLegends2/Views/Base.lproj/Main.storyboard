@@ -81,7 +81,7 @@
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <color key="separatorColor" name="BackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="152" id="Rnl-HJ-KOH" customClass="tableCell" customModule="FolkLegends2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardCellHome" rowHeight="152" id="Rnl-HJ-KOH" customClass="tableCell" customModule="FolkLegends2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="414" height="152"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rnl-HJ-KOH" id="a8A-uW-EJD">
@@ -173,8 +173,8 @@
                     <connections>
                         <outlet property="currentKey" destination="FCo-fe-Eje" id="wIf-ju-hbm"/>
                         <outlet property="tableNumbers" destination="t1o-8v-ZP8" id="8Df-Jo-XTL"/>
-                        <segue destination="9NY-MF-lbH" kind="presentation" identifier="showdetail" modalPresentationStyle="fullScreen" id="Yjc-AD-L80"/>
-                        <segue destination="Jqp-y8-a0k" kind="presentation" identifier="Hist" id="byO-Nk-OwV"/>
+                        <segue destination="9NY-MF-lbH" kind="presentation" identifier="GoToGame" modalPresentationStyle="fullScreen" id="Yjc-AD-L80"/>
+                        <segue destination="Jqp-y8-a0k" kind="presentation" identifier="Onboarding" id="byO-Nk-OwV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjL-R3-4bQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

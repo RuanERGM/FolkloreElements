@@ -3,7 +3,6 @@ import UIKit
 class HomeViewController: UITableViewController {
     
     @IBOutlet var tableNumbers: UITableView!
-    
     @IBOutlet weak var currentKey: UIImageView!
     
     var selectedCell : Story = Story()
@@ -33,7 +32,7 @@ class HomeViewController: UITableViewController {
         currentKey.image = UIImage(named: getKey())
         
         self.tableNumbers.separatorStyle = UITableViewCell.SeparatorStyle.none
-        tableNumbers.backgroundView = UIImageView(image: UIImage(named: "background 1"))
+        tableNumbers.backgroundView = UIImageView(image: UIImage.backgroundCardsHome)
         tableNumbers.backgroundView?.contentMode = .scaleAspectFill
     }
     
@@ -42,9 +41,8 @@ class HomeViewController: UITableViewController {
         let control = defaults.bool(forKey: "History")
         
         if(control == false){
-            performSegue(withIdentifier: "Hist", sender: self)
+            performSegue(withIdentifier: "Onboarding", sender: self)
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,8 +70,7 @@ extension HomeViewController {
         portas = defaults.integer(forKey: "Porta")
         
         if portas >= selectedCell.idDoor {
-            performSegue(withIdentifier: "showdetail", sender: self)
-            
+            performSegue(withIdentifier: "GoToGame", sender: self)
         }
     }
     
@@ -82,7 +79,7 @@ extension HomeViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! tableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cardCellHome", for: indexPath) as! tableCellHome
         
         DispatchQueue.main.async
         {
@@ -92,7 +89,7 @@ extension HomeViewController {
             let defaults = UserDefaults.standard
             self.portas = defaults.integer(forKey: "Porta")
             
-            if self.portas >= MockupStoryService.allStories[indexPath.item].idDoor  {
+            if self.portas >= MockupStoryService.allStories[indexPath.item].idDoor {
                 cell.CellViewImage.image = MockupStoryService.allStories[indexPath.item].imgInitialDoor
             } else {
                 cell.CellViewImage.image = MockupStoryService.allStories[indexPath.item].imgInitialDoorLocked
@@ -104,7 +101,7 @@ extension HomeViewController {
     }
 }
 
-class tableCell : UITableViewCell
+class tableCellHome : UITableViewCell
 {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var frontView: UIView!

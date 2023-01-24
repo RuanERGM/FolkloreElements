@@ -6,6 +6,6 @@ class CardCellBestiary: UICollectionViewCell {
     @IBOutlet weak var imageCharacter: UIImageView!
     
     func draw(story: Story){
-        imageCharacter.image = story.isCardLocked ? UIImage.backCard: story.imgCharCardBestiary
+        imageCharacter.image = story.isCardLocked ? UIImage.backCardBestiary: story.imgCharCardBestiary
     }
 }

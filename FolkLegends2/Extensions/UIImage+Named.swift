@@ -9,5 +9,7 @@ import Foundation
 import UIKit
 
 extension UIImage {
-    static let backCard = UIImage(named: "best.card.back")
+    static let backCardBestiary = UIImage(named: "best.card.back")
+    static let backCardGame = UIImage(named: "cardBack")
+    static let backgroundCardsHome = UIImage(named: "background 1")
 }

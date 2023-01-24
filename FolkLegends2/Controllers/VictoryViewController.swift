@@ -22,6 +22,5 @@ class VictoryViewController: UIViewController{
         super.viewDidLoad()
         cardUnloked.image = story.imgCharCardBestiary
         labelVictory.text = story.victoryLabel
-        
     }
 }
