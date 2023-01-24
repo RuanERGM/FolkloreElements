@@ -456,10 +456,10 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="Descricao" destination="Kvs-dK-EMA" id="GvE-g5-Q9P"/>
                         <outlet property="Description" destination="4Zt-2G-xzR" id="twC-c4-463"/>
-                        <outlet property="Name" destination="825-4G-0gb" id="0ze-Yz-GyM"/>
-                        <outlet property="foto" destination="uFN-bv-YNw" id="ppa-kX-ni4"/>
+                        <outlet property="characterDesc" destination="Kvs-dK-EMA" id="qLN-ES-QHq"/>
+                        <outlet property="characterImg" destination="uFN-bv-YNw" id="NdX-4W-4nD"/>
+                        <outlet property="characterName" destination="825-4G-0gb" id="S0f-4W-jgx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRP-83-fFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -514,7 +514,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="ReturnGame:" destination="ZSZ-8k-sKP" eventType="touchUpInside" id="LZ8-rp-gKu"/>
-                                            <segue destination="Y6W-OH-hqX" kind="presentation" identifier="show" modalPresentationStyle="fullScreen" id="yrt-Ta-Nvz"/>
+                                            <segue destination="Y6W-OH-hqX" kind="presentation" identifier="returnToGame" modalPresentationStyle="fullScreen" id="yrt-Ta-Nvz"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="derrota.bahira" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-XI-qDf">
@@ -565,8 +565,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageLose" destination="dmg-XI-qDf" id="H0g-bf-csI"/>
-                        <outlet property="labelLose" destination="TNz-SC-fLx" id="COB-V4-IB7"/>
+                        <outlet property="defeatDesc" destination="TNz-SC-fLx" id="Yzl-dU-44G"/>
+                        <outlet property="defeatImg" destination="dmg-XI-qDf" id="x32-He-sgb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Gv-zB-XPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -608,7 +608,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="ReturnGame:" destination="iUy-v8-Z1M" eventType="touchUpInside" id="HMO-96-cN2"/>
-                                            <segue destination="Y6W-OH-hqX" kind="presentation" identifier="retornar" modalPresentationStyle="fullScreen" id="ubX-eG-shv"/>
+                                            <segue destination="Y6W-OH-hqX" kind="presentation" identifier="returnToGame" modalPresentationStyle="fullScreen" id="ubX-eG-shv"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="card.guarana" translatesAutoresizingMaskIntoConstraints="NO" id="czE-4H-Ixf">
@@ -670,7 +670,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5ZU-gv-XYT"/>
-        <segue reference="yrt-Ta-Nvz"/>
+        <segue reference="ubX-eG-shv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AGUA - MAIOR" width="150.33332824707031" height="200.33332824707031"/>

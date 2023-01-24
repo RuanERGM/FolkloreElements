@@ -5,14 +5,17 @@ class BestiaryViewController : UIViewController {
     @IBOutlet weak var deck: UICollectionView!
     
     var selectedCard: Story = Story()
+    let defaults = UserDefaults.standard
+    var portas: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         deck.dataSource = self
         deck.delegate = self
         
-        let defaults = UserDefaults.standard
-        let portas: Int = defaults.integer(forKey: "Porta")
+        portas = defaults.integer(forKey: "Porta")
+        
         for i in 0 ... MockupStoryService.allStories.count - 1 {
             if MockupStoryService.allStories[i].idDoor < portas {
                 MockupStoryService.allStories[i].isCardLocked = false
@@ -21,14 +24,14 @@ class BestiaryViewController : UIViewController {
     }
 }
 
-
-extension BestiaryViewController:UICollectionViewDataSource {
+//MARK: Delegate and Data Source
+extension BestiaryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return MockupStoryService.allStories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: CardCell = deck.dequeueReusableCell(withReuseIdentifier: "cardCell", for: indexPath) as! CardCell
+        let cell: CardCellBestiary = deck.dequeueReusableCell(withReuseIdentifier: "cardCellBestiary", for: indexPath) as! CardCellBestiary
         
         cell.draw(story: MockupStoryService.allStories[indexPath.item])
         
@@ -41,7 +44,7 @@ extension BestiaryViewController: UICollectionViewDelegate {
         selectedCard = MockupStoryService.allStories[indexPath.item]
         
         if (!selectedCard.isCardLocked) {
-            performSegue(withIdentifier: "showDetail", sender: self)
+            performSegue(withIdentifier: "showBestiaryDetail", sender: self)
         }
     }
     

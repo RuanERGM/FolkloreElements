@@ -3,21 +3,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    
     @IBOutlet weak var imageCharacter: UIImageView!
-    
     @IBOutlet weak var labelNameCharacter: UILabel!
-    
     @IBOutlet weak var topicInitial: UILabel!
-    
     @IBOutlet weak var labelInitial: UILabel!
-    
     @IBOutlet weak var topicMiddle: UILabel!
-    
     @IBOutlet weak var labelMiddle: UILabel!
-    
     @IBOutlet weak var topicEnd: UILabel!
-    
     @IBOutlet weak var labelEnd: UILabel!
     
     var selectedCard: Story = Story()

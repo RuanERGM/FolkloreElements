@@ -35,9 +35,8 @@ class HomeViewController: UITableViewController {
         self.tableNumbers.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableNumbers.backgroundView = UIImageView(image: UIImage(named: "background 1"))
         tableNumbers.backgroundView?.contentMode = .scaleAspectFill
-        tableNumbers.dataSource = self
-        tableNumbers.delegate = self
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         let defaults = UserDefaults.standard
         let control = defaults.bool(forKey: "History")
@@ -53,8 +52,29 @@ class HomeViewController: UITableViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? GameViewController {
+            destination.selectedDoor = selectedCell
+        }
+    }
+}
+
+extension HomeViewController {
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedCell = MockupStoryService.allStories[indexPath.item]
+        
+        let defaults = UserDefaults.standard
+        portas = defaults.integer(forKey: "Porta")
+        
+        if portas >= selectedCell.idDoor {
+            performSegue(withIdentifier: "showdetail", sender: self)
+            
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,24 +101,6 @@ class HomeViewController: UITableViewController {
             cell.CellViewImage.layer.cornerRadius = 10.0;
         }
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedCell = MockupStoryService.allStories[indexPath.item]
-        
-        let defaults = UserDefaults.standard
-        portas = defaults.integer(forKey: "Porta")
-        
-        if portas >= selectedCell.idDoor {
-            performSegue(withIdentifier: "showdetail", sender: self)
-            
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? GameViewController {
-            destination.selectedDoor = selectedCell
-        }
     }
 }
 

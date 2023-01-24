@@ -8,7 +8,7 @@ class VictoryViewController: UIViewController{
     var story = Story()
     
     @IBAction func ReturnGame(_ sender: Any) {
-        performSegue(withIdentifier: "retornar", sender: self)
+        performSegue(withIdentifier: "returnToGame", sender: self)
     }
     
     

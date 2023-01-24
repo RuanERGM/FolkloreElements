@@ -238,7 +238,6 @@ extension GameViewController: UICollectionViewDelegate {
                                         
                                         if !UserKeys.allKeys.contains(self.selectedDoor.unlockedElement){
                                             UserKeys.allKeys.append(self.selectedDoor.unlockedElement)
-                                            
                                         }
                                         
                                         let defaults = UserDefaults.standard

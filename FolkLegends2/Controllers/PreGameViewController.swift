@@ -5,20 +5,18 @@ class PreGameViewController: UIViewController{
     
     var story = Story()
     
-    @IBOutlet weak var foto: UIImageView!
-    @IBOutlet weak var Descricao: UILabel!
-    @IBOutlet weak var Name: UIImageView!
-    
-    @IBOutlet var Description: UIView!
+    @IBOutlet weak var characterName: UIImageView!
+    @IBOutlet weak var characterDesc: UILabel!
+    @IBOutlet weak var characterImg: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Descricao.text = story.gameDesc
-        Name.image = story.imgCharGame
-        foto.image = story.imgCharNameGame
-        
+        characterDesc.text = story.gameDesc
+        characterName.image = story.imgCharGame
+        characterImg.image = story.imgCharNameGame
     }
+    
     @IBAction func Gestor(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

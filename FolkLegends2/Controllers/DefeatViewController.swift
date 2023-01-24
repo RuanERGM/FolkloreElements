@@ -9,16 +9,13 @@ import UIKit
 
 class DefeatViewController: UIViewController {
     
-    @IBOutlet weak var labelLoser: UILabel!
-    
-    @IBOutlet weak var labelLose: UILabel!
-    
-    @IBOutlet weak var imageLose: UIImageView!
+    @IBOutlet weak var defeatImg: UIImageView!
+    @IBOutlet weak var defeatDesc: UILabel!
     
     var story = Story()
     
     @IBAction func ReturnGame(_ sender: UIButton) {
-        performSegue(withIdentifier: "show", sender: self)
+        performSegue(withIdentifier: "returnToGame", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -29,7 +26,7 @@ class DefeatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageLose.image = story.imgDefeat
-        labelLose.text = story.defeatLabel
+        defeatImg.image = story.imgDefeat
+        defeatDesc.text = story.defeatLabel
     }
 }

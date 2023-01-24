@@ -134,10 +134,6 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="uqa-e7-TJu" id="yTn-jA-2bd"/>
-                            <outlet property="delegate" destination="uqa-e7-TJu" id="BQV-lE-9gQ"/>
-                        </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="" image="door" selectedImage="door.fill" id="nhA-vk-bLD">
                         <color key="badgeColor" systemColor="systemGreenColor"/>
